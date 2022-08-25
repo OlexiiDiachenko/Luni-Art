@@ -1,0 +1,61 @@
+:root {
+    --sub-textcolor: #646464;
+    --second-textcolor: #313131;
+    --green-color: #4DAA6C;
+    --orange-color: #FEAA43;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.xlarge {
+    font-weight: 400;
+    font-size: 170px;
+    line-height: 227px;
+    color: #262626;
+}
+
+.large {
+    font-size: 40px;
+    line-height: 53px;
+    color: var(--second-textcolor);
+}
+
+.middle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--sub-textcolor);
+}
+
+.normal {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--second-textcolor);
+}
+
+.normal_sub {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--sub-textcolor);
+}
+
+.xsmall {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
