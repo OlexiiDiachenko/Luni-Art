@@ -199,3 +199,36 @@ section.about_us {
 .gift-text .middle {
     margin-top: 10px;
 }
+
+/* Footer */
+
+footer.footer {
+    background-color: #F7F7F7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info .links {
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    display: block;
+    max-height: 38px;
+}
+
+.links a:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.number {
+    text-align: right;
+}
