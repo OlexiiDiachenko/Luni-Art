@@ -44,6 +44,47 @@ function popular() {
 
 function popularAdd() {
   this.classList.add('popular_material');
+} // Amount people
+
+
+var people = document.querySelectorAll('.human');
+
+for (var i = 0; i < people.length; i++) {
+  var j = people[i];
+  j.addEventListener('mouseover', greenHumans);
+}
+
+function greenHumans() {
+  this.removeAttribute('src');
+  this.setAttribute('src', './images/greenMan.png');
+} // Choose card size
+
+
+var cardPrice = document.querySelectorAll('.choose-card-size');
+
+for (var i = 0; i < cardPrice.length; i++) {
+  cardPrice[i].addEventListener('click', chooseCardClick);
+}
+
+function chooseCardClick() {
+  this.classList.add('active');
+
+  if (this.classList.contains('choose-card-popular')) {
+    this.classList.remove('choose-card-popular');
+    this.addEventListener('click', popularReturnClick);
+  }
+
+  this.addEventListener('click', closeCardClick);
+}
+
+function closeCardClick() {
+  this.classList.remove('active');
+  this.addEventListener('click', chooseCardClick);
+  this.removeEventListener('click', closeCardClick);
+}
+
+function popularReturnClick() {
+  this.classList.add('choose-card-popular');
 } // Button for sent 
 
 

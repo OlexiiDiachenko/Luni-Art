@@ -405,6 +405,10 @@ img.constructor {
     margin-right: 65px;
 }
 
+.human:hover{
+    cursor: pointer;
+}
+
 .choose-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -427,10 +431,41 @@ img.constructor {
     border: 1px solid #B0B0B0;
     border-radius: 13px;
     padding: 8px 10px;
-    height: 66px;
+    height: 76px;
     box-sizing: border-box;
     box-shadow: 0px 0px 3px #B0B0B0;
     position: relative;
+}
+
+.choose-card-popular{
+    box-shadow: 0px 0px 5px #B0B0B0 , 0px 0px 5px var(--green-color);
+}
+
+.choose-card-popular::after{
+    content: 'ПОПУЛРЯНИЙ';
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background-color: var(--green-color);
+    position: absolute;
+    right: 10px;
+    bottom: -22px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 4px 8px;
+}
+
+.choose-card-size:hover{
+    border: 5px solid #FEAA43;
+    border-radius: 13px;
+}
+
+.choose-card-size.active{
+    border: 5px solid #FEAA43;
+    border-radius: 13px;
 }
 
 .card-main {
