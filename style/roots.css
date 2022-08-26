@@ -9,7 +9,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+label {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -25,6 +26,18 @@ p {
     font-size: 40px;
     line-height: 53px;
     color: var(--second-textcolor);
+}
+
+.large_order{
+    display: inline-block;
+    width: max-content;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    padding: 8px 25px;
+    border-radius: 35px;
+    color: #FFFFFF;
+    background-color: #4DAA6C;
 }
 
 .middle {
@@ -48,14 +61,58 @@ p {
     color: var(--sub-textcolor);
 }
 
+.normal_order{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--green-color);
+}
+
+.small_up{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.small_cost{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8F8F8F;
+}
+
 .xsmall {
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 17px;
+    color: #000000;
 }
+
+.xsmall_cost{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color:var(--green-color);
+}
+
 
 /* Links */
 
 a {
     text-decoration: none;
+}
+
+/* Buttons */
+
+button:hover {
+    cursor: grab;
+}
+
+button:active {
+    cursor: grabbing;
 }
