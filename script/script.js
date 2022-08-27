@@ -31,19 +31,48 @@ function slideToLeft() {
 
 // Choose a material
 
-let material = document.querySelectorAll('.popular_material');
+let material = document.querySelectorAll('.card');
 
 for ( var i = 0 ; i < material.length ; i++ ){
-    material[i].addEventListener('mouseover' , popular);
+    material[i].addEventListener('mouseover' , choose);
     material[i].addEventListener('mouseout' , popularAdd);
+    material[i].addEventListener('click' , chooseClick);
 }
 
-function popular() {
-    this.classList.remove('popular_material');
+function choose() { 
+    if ( this.classList.contains('choose') ){
+        return
+    }else if( this.classList.contains('popular_material') ){
+        this.classList.remove('popular_material');
+    }
+    this.classList.add('choose');
 }
 
-function popularAdd() {
-    this.classList.add('popular_material')
+function popularAdd() { 
+    this.classList.remove('choose');
+    if ( this.classList.contains('coal') ){
+        this.classList.add('popular_material');
+    }
+}
+
+function chooseClick() { 
+    this.removeEventListener('mouseout' , popularAdd);
+    this.classList.add('choose');
+    if( this.classList.contains('popular_material') ){
+        this.classList.remove('popular_material');
+    }
+    this.addEventListener('click' , popularRemoveCLick);
+    this.removeEventListener('click' , chooseClick);
+}
+
+function popularRemoveCLick() {
+    this.addEventListener('mouseout' , popularAdd);
+    this.classList.remove('choose');
+    if ( this.classList.contains('coal') ){
+        this.classList.add('popular_material');
+    }
+    this.addEventListener('click' , chooseClick);
+    this.removeEventListener('click' , popularRemoveCLick);
 }
 
 // Amount people
@@ -85,6 +114,8 @@ function closeCardClick() {
 
 function popularReturnClick() { 
     this.classList.add('choose-card-popular');
+    this.addEventListener('click' , chooseCardClick);
+    this.removeEventListener('click' , popularReturnClick);
 }
 
 // Button for sent 

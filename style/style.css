@@ -133,7 +133,8 @@ main {
 main::before {
     content: '';
     width: 70px;
-    border: 1px solid var(--second-textcolor);
+    height: 2px;
+    background-color: #646464;
     position: absolute;
     top: 80px;
     right: calc(50% - 30px);
@@ -314,6 +315,8 @@ section.about_us {
     padding-bottom: 140px;
 }
 
+/* Order Head */
+
 img.constructor {
     width: 142px;
     height: 142px;
@@ -323,6 +326,8 @@ img.constructor {
     display: flex;
     padding-top: 85px;
 }
+
+/* Cards , left pard of order. Cards with materials. */
 
 .cards {
     display: flex;
@@ -336,27 +341,7 @@ img.constructor {
     box-sizing: border-box;
     border: 4px solid #ffffff;
     border-radius: 40px;
-}
-
-.card.oil {
-    margin-top: 27px;
-}
-
-.card img {
-    border-radius: 40px;
-    width: 100%;
-    height: 100%;
-}
-
-.card p {
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
-    text-align: center;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 33px;
-    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .card.popular_material {
@@ -381,23 +366,42 @@ img.constructor {
     padding: 4px 8px;
 }
 
-.card:hover {
+.card.oil {
+    margin-top: 27px;
+}
+
+.card img {
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.card p {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.card.choose {
     border: 4px solid rgba(235, 4, 255, 0.83);
     border-radius: 45px;
 }
+
+/* Choose filters */
 
 .choose-flex {
     display: flex;
     align-items: center;
 }
 
-.pb {
-    padding-bottom: 36px;
-}
-
 .people_choose {
-    padding-top: 20px;
-    padding-bottom: 52px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     align-items: center;
 }
 
@@ -409,18 +413,66 @@ img.constructor {
     cursor: pointer;
 }
 
+/* Sliders on/off */
+
+input[name="video"],
+input[name="fast"] {
+    display: none;
+}
+
+label.slider-order {
+    display: inline-block;
+    width: 64px;
+    height: 34px;
+    position: relative;
+}
+
+.choose-slider {
+    width: 64px;
+    height: 34px;
+    border-radius: 29px;
+    background-color: #E6E6E6;
+    position: absolute;
+    left: 132px;
+    bottom: 0px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.video_slider {
+    left: 70px;
+}
+
+.choose-slider::before {
+    content: '';
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    transition: .4s ease-in-out;
+}
+
+input[type='checkbox']:checked+.choose-slider {
+    background-color: #FEAA43;
+}
+
+input[name="video"]:checked+.choose-slider::before,
+input[name="fast"]:checked+.choose-slider::before {
+    transform: translateX(30px);
+}
+
+/* Grid section with choose format */
+
 .choose-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 30px;
-    padding-bottom: 72px;
-    padding-top: 72px;
-}
-
-.choose-grid .normal_order {
-    display: flex;
-    align-items: flex-end;
+    padding-bottom: 70px;
+    padding-top: 65px;
 }
 
 .choose-grid .order-slider-wrapper {
@@ -430,11 +482,12 @@ img.constructor {
 .choose-card-size {
     border: 1px solid #B0B0B0;
     border-radius: 13px;
-    padding: 8px 10px;
+    padding: 9px;
     height: 76px;
     box-sizing: border-box;
     box-shadow: 0px 0px 3px #B0B0B0;
     position: relative;
+    cursor: pointer;
 }
 
 .choose-card-popular{
@@ -458,26 +511,14 @@ img.constructor {
     padding: 4px 8px;
 }
 
-.choose-card-size:hover{
-    border: 5px solid #FEAA43;
-    border-radius: 13px;
-}
-
+.choose-card-size:hover,
 .choose-card-size.active{
-    border: 5px solid #FEAA43;
+    border: 3px solid #FEAA43;
     border-radius: 13px;
-}
-
-.card-main {
-    align-items: center;
 }
 
 .choose-card-size:last-child p {
     text-align: center;
-}
-
-.choose-card-size:hover {
-    cursor: pointer;
 }
 
 button.info {
@@ -486,8 +527,8 @@ button.info {
     right: -5px;
     height: 18px;
     width: 18px;
-    background-color: #929292;
     border-radius: 50%;
+    background-color: #929292;
     border: none;
 }
 
@@ -501,6 +542,10 @@ button.info {
     padding: 3px;
     margin-bottom: 5px;
     border-radius: 4px;
+}
+
+.card-main {
+    align-items: center;
 }
 
 .choose-card-size img.info_image {
@@ -517,55 +562,7 @@ button.info:hover img.info_image {
     display: block;
 }
 
-input[name="video"],
-input[name="fast"] {
-    display: none;
-}
-
-label.slider-order {
-    height: 34px;
-    position: relative;
-    display: inline-block;
-    width: 64px;
-}
-
-.choose-slider {
-    background-color: #E6E6E6;
-    border-radius: 29px;
-    width: 64px;
-    height: 34px;
-    cursor: pointer;
-    position: absolute;
-    left: 150px;
-    bottom: 0px;
-    transition: .4s ease-in-out;
-}
-
-.video_slider {
-    left: 70px;
-    bottom: -5px;
-}
-
-.choose-slider::before {
-    content: '';
-    background-color: #ffffff;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 4px;
-    left: 4px;
-    height: 26px;
-    width: 26px;
-    transition: .4s ease-in-out;
-}
-
-input[type='checkbox']:checked+.choose-slider {
-    background-color: #FEAA43;
-}
-
-input[name="video"]:checked+.choose-slider::before,
-input[name="fast"]:checked+.choose-slider::before {
-    transform: translateX(30px);
-}
+/* User`s contacts */
 
 input.userInfo {
     outline: none;
@@ -577,6 +574,7 @@ input.userInfo {
     font-size: 20px;
     line-height: 27px;
     width: 160px;
+    position: relative;
 }
 
 .send {
