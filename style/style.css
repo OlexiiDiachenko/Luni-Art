@@ -33,8 +33,8 @@ header.header {
     justify-content: space-between;
 }
 
-div.head p,
-div.head h1,
+header.header p,
+header.header h1,
 .achivments {
     text-align: center;
     z-index: 2;
@@ -162,8 +162,9 @@ section.about_us {
 }
 
 .report {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
     margin-top: 90px;
 }
 
@@ -350,7 +351,7 @@ img.constructor {
 }
 
 .card.popular_material:after {
-    content: 'ПОПУЛРЯНИЙ';
+    content: 'ПОПУЛЯРНИЙ';
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
@@ -366,6 +367,17 @@ img.constructor {
     padding: 4px 8px;
 }
 
+.card.choose,
+.card:hover {
+    border: 4px solid rgba(235, 4, 255, 0.83);
+    border-radius: 45px;
+}
+
+.card.choose::after {
+    content: '';
+    padding: 0;
+}
+
 .card.oil {
     margin-top: 27px;
 }
@@ -374,6 +386,26 @@ img.constructor {
     border-radius: 40px;
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.card-material{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.card-material-label{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: none;
+    position: absolute;
+    border-radius: 40px;
 }
 
 .card p {
@@ -387,16 +419,22 @@ img.constructor {
     color: #FFFFFF;
 }
 
-.card.choose {
-    border: 4px solid rgba(235, 4, 255, 0.83);
-    border-radius: 45px;
-}
-
 /* Choose filters */
 
 .choose-flex {
     display: flex;
     align-items: center;
+}
+
+input.choose-material-accept {
+    margin-left: 25px;
+    color: #000000;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid var(--green-color);
+    background: none;
+    text-align: center;
+    width: 150px;
 }
 
 .people_choose {
@@ -409,8 +447,60 @@ img.constructor {
     margin-right: 65px;
 }
 
-.human:hover{
+.humans-count {
+    position: relative;
+    display: inline-block;
+    font-style: 40px;
+}
+
+.humans-count::before {
+    content: url('../images/greenMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png');
+    display: block;
+
+}
+
+.humans-count-items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.humans-count-item {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.humans-count-label {
+    flex: 0 0 10%;
+    height: 100%;
     cursor: pointer;
+}
+
+.humans-count-label::before {
+    content: url('../images/greyMan.png');
+    display: block;
+    transition: 0.3s ease-in;
+}
+
+.humans-count-item:checked,
+.humans-count-item:checked~.humans-count-label {
+    content: url('../images/greenMan.png');
+}
+
+.humans-count-label:hover,
+.humans-count-label:hover~.humans-count-label,
+.humans-count-label:checked~.humans-count-label:hover {
+    content: url('../images/greenMan.png');
 }
 
 /* Sliders on/off */
@@ -479,76 +569,104 @@ input[name="fast"]:checked+.choose-slider::before {
     grid-column: 2 / span 2;
 }
 
-.choose-card-size {
-    border: 1px solid #B0B0B0;
-    border-radius: 13px;
-    padding: 9px;
-    height: 76px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 3px #B0B0B0;
+.size-choose{
     position: relative;
+    width: 195px;
+    height: 66px;
+    border-radius: 33px;
+}
+
+.choose-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.choose-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
     cursor: pointer;
 }
 
-.choose-card-popular{
-    box-shadow: 0px 0px 5px #B0B0B0 , 0px 0px 5px var(--green-color);
+.choose-label:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 3px solid #FFFFFF;
+    border-radius: 16px;
+    width: min-content;
+    height: min-content;
 }
 
-.choose-card-popular::after{
-    content: 'ПОПУЛРЯНИЙ';
+.choose-label-5::before{
+    content: url('../images/A-5.png');
+}
+
+.choose-label-4::before{
+    content: url('../images/A-4.png');
+}
+
+.choose-label-3::before{
+    content: url('../images/A-5.png');
+}
+
+.choose-label-2::before{
+    content: url('../images/A-5.png');
+}
+
+.choose-label-1::before{
+    content: url('../images/A-5.png');
+}
+
+.choose-label-client::before{
+    content: url('../images/ClientVariant.png');
+}
+
+.choose-item:hover ~ label::before,
+.choose-item:checked ~ label::before{
+    border: 3px solid #FEAA43;
+}
+
+button.info{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    border: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #929292;
+    cursor: help;
+}
+
+div.popular-size::after {
+    content: 'ПОПУЛЯРНИЙ';
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
     color: #FFFFFF;
-    background-color: var(--green-color);
+    background-color: #4DAA6C;
     position: absolute;
     right: 10px;
-    bottom: -22px;
+    bottom: -40px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 4px 8px;
 }
 
-.choose-card-size:hover,
-.choose-card-size.active{
-    border: 3px solid #FEAA43;
-    border-radius: 13px;
-}
-
-.choose-card-size:last-child p {
-    text-align: center;
-}
-
-button.info {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
+.unactive{
     background-color: #929292;
-    border: none;
+    filter: blur(.5px);
 }
 
-.card-flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-head {
-    background-color: rgba(217, 217, 217, 0.5);
-    padding: 3px;
-    margin-bottom: 5px;
-    border-radius: 4px;
-}
-
-.card-main {
-    align-items: center;
-}
-
-.choose-card-size img.info_image {
+.info img.info_image {
     position: absolute;
     top: -200px;
     right: -200px;
@@ -561,6 +679,7 @@ button.info {
 button.info:hover img.info_image {
     display: block;
 }
+
 
 /* User`s contacts */
 

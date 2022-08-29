@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ua">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -8,62 +8,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style/roots.css">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Luni Art</title>
+    <title>LuniArt</title>
 </head>
 
 <body>
 
     <header class="header">
-        <section class="header-info">
-            <div class="head">
-                <p class="normal_sub">Творці Ваших незабутніх вражень</p>
-                <h1 class="xlarge">Luni Art</h1>
+        <!-- Site Head -->
+        <p class="normal_sub">Творці Ваших незабутніх вражень</p>
+        <h1 class="xlarge">Luni Art</h1>
+
+        <!-- Our Achivments -->
+        <div class="achivments">
+            <div class="cell">
+                <img src="./images/achivment_left.png" alt="">
+                <p class="normal"> <b>Професійні художники </b> </p>
+                <p class="normal_sub"> Команда з самих найкращих<br>
+                    художників України!</p>
             </div>
-            <div class="achivments">
-                <div class="cell">
-                    <img src="./images/achivment_left.png" alt="">
-                    <p class="normal"> <b>Професійні художники </b> </p>
-                    <p class="normal_sub"> Команда з самих найкращих<br>
-                        художників України!</p>
-                </div>
-                <div class="cell">
-                    <img src="./images/achivment_middle.png" alt="">
-                    <p class="normal"> <b>Картини з відео</b> </p>
-                    <p class="normal_sub"> Ми автори ідеї з<br>
-                        відеонаписання картин </p>
-                </div>
-                <div class="cell">
-                    <img src="./images/achivment_right.png" alt="">
-                    <p class="normal"> <b>Допомагаємо армії</b> </p>
-                    <p class="normal_sub"> Частину коштів надсилаємо<br>
-                        в офіційний фонд ЗСУ</p>
-                </div>
+            <div class="cell">
+                <img src="./images/achivment_middle.png" alt="">
+                <p class="normal"> <b>Картини з відео</b> </p>
+                <p class="normal_sub"> Ми автори ідеї з<br>
+                    відеонаписання картин </p>
             </div>
-        </section>
-        <section class="header-photo">
+            <div class="cell">
+                <img src="./images/achivment_right.png" alt="">
+                <p class="normal"> <b>Допомагаємо армії</b> </p>
+                <p class="normal_sub"> Частину коштів надсилаємо<br>
+                    в офіційний фонд ЗСУ</p>
+            </div>
+        </div>
+        <!-- Photo With Painting -->
+        <div class="header-photo">
             <div class="order">
                 <img src="./images/header.png" alt="">
                 <a class="large" href="#order">Замовити</a>
             </div>
-        </section>
+        </div>
+        <!-- Top-Left Card -->
         <div class="pseudo pseudoTopLeft"><img src="./images/pseudoTopLeft.png" alt=""></div>
+        <!-- Top-Left Orange Card -->
         <div class="pseudo pseudoTopLeftCenter"><img src="./images/pseudoTopLeftCenter.png" alt=""></div>
+        <!-- Top-Rigth Card -->
         <div class="pseudo pseudoRightTop"><img src="./images/pseudoRightTop.png" alt=""></div>
+        <!-- Bottom-Right Orange Card -->
         <div class="pseudo pseudoRightBottom"><img src="./images/pseudoRightBottom.png" alt=""></div>
+        <!-- Blue Circle -->
         <div class="pseudo pseudoRadiusBlue"></div>
+        <!-- White Circle -->
         <div class="pseudo pseudoRadiusWhite"></div>
     </header>
 
     <main>
-
+        <!-- Wrapper -->
         <div class="wrapper">
+
+            <!-- Section About Us -->
             <section class="about_us">
                 <div class="container">
+                    <!-- About Us Head -->
                     <div class="about_us_text">
                         <h2 class="large">Ми - Українська студія Luniart</h2>
                         <p class="middle">Створюємо картини вже більше двох років та<br>маємо сотні щасливих клієнтів та
                             блогерів</p>
                     </div>
+
+                    <!-- Section With Links To Video With Gifts -->
                     <div class="report">
                         <div class="report_cell">
                             <div class="report_cell_image">
@@ -98,11 +109,16 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Section With Links To Video With Gifts End -->
                 </div>
             </section>
+            <!-- Section About Us End -->
 
+            <!-- Section Gift -->
             <section class="gift">
                 <div class="container">
+
+                    <!-- Section With Gift Text. Gift "Head" -->
                     <div class="gift-text">
                         <div class="pencil">
                             <img src="./images/tassel.png" alt="">
@@ -110,6 +126,8 @@
                         </div>
                         <p class="middle">Ми професійно створимо<br>картину та якісно підготуємо ії оформлення</p>
                     </div>
+
+                    <!-- Gift Main - Slider -->
                     <div class="slider">
                         <button id="slideLeft" type="button"><img src="./images/slideLeft.png" alt=""></button>
                         <div class="slider-wrapper">
@@ -209,133 +227,176 @@
                         </div>
                         <button id="slideRight" type="button"><img src="./images/slideRight.png" alt=""></button>
                     </div>
+                    <!-- SLider End -->
                 </div>
             </section>
+            <!-- Section Gift End -->
+
+            <!-- Constructor Section -->
 
             <section id="order">
+                <!-- Constructor Section -->
                 <img class="constructor" src="./images/orderHead.png" alt="">
-                <h1 class="large_order">Конструктор замовлення</h1>
-                <div class="constructor-section">
-                    <div class="cards">
-                        <div class="card coal popular_material">
-                            <img src="./images/coal.png" alt="">
-                            <p>Вугілля</p>
+                <h2 class="large_order">Конструктор замовлення</h2>
+                <!-- Constructor Form. Info About Client -->
+                <form action="" method="get">
+                    <div class="constructor-section">
+                        <!-- Cards With Material -->
+                        <div class="cards">
+                            <div class="card coal popular_material">
+                                <img src="./images/coal.png" alt="">
+                                <input class="card-material" type="radio" name="material" id="coal" value="coal">
+                                <label class="card-material-label coal-label" for="coal"></label>
+                                <p>Вугілля</p>
+                            </div>
+                            <div class="card oil">
+                                <img src="./images/oil.png" alt="">
+                                <input class="card-material" type="radio" name="material" id="oil" value="oil">
+                                <label class="card-material-label oil-label" for="oil"></label>
+                                <p>Олія</p>
+                            </div>
                         </div>
-                        <div class="card oil">
-                            <img src="./images/oil.png" alt="">
-                            <p>Олія</p>
-                        </div>
-                    </div>
-                    <div class="choose">
-                        <p class="normal_order">1.Оберіть бажаний матеріал</p>
-                        <div class="choose-flex people_choose">
-                            <p class="people normal_order">2.Кількість людей :</p>
-                            <img class="human" src="./images/greenMan.png" alt="">
-                            <img class="human" src="./images/greyMan.png" alt="">
-                            <img class="human" src="./images/greyMan.png" alt="">
-                            <img class="human" src="./images/greyMan.png" alt="">
-                            <img class="human" src="./images/greyMan.png" alt="">
-                            <img class="human" src="./images/greyMan.png" alt="">
-                            <img class="human" src="./images/greyMan.png" alt="">
-                            <img class="human" src="./images/greyMan.png" alt="">
-                            <img class="human" src="./images/greyMan.png" alt="">
-                        </div>
-                        <div class="order-slider-wrapper">
-                            <label class="slider-order normal_order" for="fast">3.Терміново
-                                <input type="checkbox" name="fast" id="fast">
-                                <div class="choose-slider"></div>
-                            </label>
-                        </div>
-                        <div class="choose-grid">
-                            <p class="normal_order">4. Розмір</p>
+                        <!-- The main context in form -->
+                        <div class="choose-section">
+                            <div class="choose-flex">
+                                <label for="choose-material-accept" class="normal_order">1.Оберіть бажаний
+                                    матеріал</label>
+                            </div>
+
+                            <!-- Count people -->
+                            <div class="choose-flex people_choose">
+                                <p class="people normal_order">2.Кількість людей :</p>
+                                <div class="humans-count">
+                                    <div class="humans-count-items">
+                                        <input id="humans-count-10" type="radio" value="10" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-10" class="humans-count-label"></label>
+
+                                        <input id="humans-count-9" type="radio" value="9" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-9" class="humans-count-label"></label>
+
+                                        <input id="humans-count-8" type="radio" value="8" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-8" class="humans-count-label"></label>
+
+                                        <input id="humans-count-7" type="radio" value="7" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-7" class="humans-count-label"></label>
+
+                                        <input id="humans-count-6" type="radio" value="6" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-6" class="humans-count-label"></label>
+
+                                        <input id="humans-count-5" type="radio" value="5" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-5" class="humans-count-label"></label>
+
+                                        <input id="humans-count-4" type="radio" value="4" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-4" class="humans-count-label"></label>
+
+                                        <input id="humans-count-3" type="radio" value="3" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-3" class="humans-count-label"></label>
+
+                                        <input id="humans-count-2" type="radio" value="2" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-2" class="humans-count-label"></label>
+
+                                        <input id="humans-count-1" type="radio" value="1" class="humans-count-item"
+                                            name="humans-count">
+                                        <label for="humans-count-1" class="humans-count-label"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Count people -->
+
+                            <!-- Fast -->
                             <div class="order-slider-wrapper">
-                                <label class="slider-order normal_order" for="video">Відео
-                                    <input type="checkbox" name="video" id="video">
-                                    <div class="choose-slider video_slider"></div>
+                                <label class="slider-order normal_order" for="fast">3.Терміново
+                                    <input type="checkbox" name="fast" id="fast">
+                                    <div class="choose-slider"></div>
                                 </label>
                             </div>
-                            <div class="choose-card-size info">
-                                <div class="card-size-info card-flex card-head">
-                                    <p class="small_up">А-5</p>
-                                    <p class="small_cost">650₴</p>
+
+                            <!-- Section with size choose -->
+                            <div class="choose-grid">
+                                <p class="normal_order">4. Розмір</p>
+                                <div class="order-slider-wrapper">
+                                    <label class="slider-order normal_order" for="video">Відео
+                                        <input type="checkbox" name="video" id="video">
+                                        <div class="choose-slider video_slider"></div>
+                                    </label>
                                 </div>
-                                <div class="card-size-info card-flex card-main">
-                                    <p class="xsmall">20% до сплати:</p>
-                                    <p class="xsmall_cost">130₴</p>
+
+                                <div class="size-choose">
+                                    <input class="choose-item" type="radio" name="card-size" id="size-A-5" value="A-5">
+                                    <label class="choose-label choose-label-5" for="size-A-5"></label>
+                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
                                 </div>
-                                <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                        class="info_image" src="./images/sliderImageOne.png" alt=""></button>
-                            </div>
-                            <div class="choose-card-size info">
-                                <div class="card-size-info card-flex card-head">
-                                    <p class="small_up">А-4</p>
-                                    <p class="small_cost">1150₴</p>
+
+                                <div class="size-choose">
+                                    <input class="choose-item" type="radio" name="card-size" id="size-A-4" value="A-4">
+                                    <label class="choose-label choose-label-4" for="size-A-4"></label>
+                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
                                 </div>
-                                <div class="card-size-info card-flex card-main">
-                                    <p class="xsmall">20% до сплати:</p>
-                                    <p class="xsmall_cost">230₴</p>
+
+                                <div class="size-choose popular-size">
+                                    <input class="choose-item" type="radio" name="card-size" id="size-A-3" value="A-3">
+                                    <label class="choose-label choose-label-3" for="size-A-3"></label>
+                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
                                 </div>
-                                <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                        class="info_image" src="./images/sliderImageOne.png" alt=""></button>
-                            </div>
-                            <div class="choose-card-size info choose-card-popular">
-                                <div class="card-size-info card-flex card-head">
-                                    <p class="small_up">А-3</p>
-                                    <p class="small_cost">1900₴</p>
+
+                                <div class="size-choose popular-size">
+                                    <input class="choose-item" type="radio" name="card-size" id="size-A-2" value="A-2">
+                                    <label class="choose-label choose-label-2" for="size-A-2"></label>
+                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
                                 </div>
-                                <div class="card-size-info card-flex card-main">
-                                    <p class="xsmall">20% до сплати:</p>
-                                    <p class="xsmall_cost">380₴</p>
+
+                                <div class="size-choose">
+                                    <input class="choose-item" type="radio" name="card-size" id="size-A-1" value="A-1">
+                                    <label class="choose-label choose-label-1" for="size-A-1"></label>
+                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
                                 </div>
-                                <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                        class="info_image" src="./images/sliderImageOne.png" alt=""></button>
-                            </div>
-                            <div class="choose-card-size info choose-card-popular">
-                                <div class="card-size-info card-flex card-head">
-                                    <p class="small_up">А-2</p>
-                                    <p class="small_cost">2300₴</p>
-                                </div>
-                                <div class="card-size-info card-flex card-main">
-                                    <p class="xsmall">20% до сплати:</p>
-                                    <p class="xsmall_cost">460₴</p>
-                                </div>
-                                <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                        class="info_image" src="./images/sliderImageOne.png" alt=""></button>
-                            </div>
-                            <div class="choose-card-size info">
-                                <div class="card-size-info card-flex card-head">
-                                    <p class="small_up">А-1</p>
-                                    <p class="small_cost">3500₴</p>
-                                </div>
-                                <div class="card-size-info card-flex card-main">
-                                    <p class="xsmall">20% до сплати:</p>
-                                    <p class="xsmall_cost">700₴</p>
-                                </div>
-                                <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                        class="info_image" src="./images/sliderImageOne.png" alt=""></button>
-                            </div>
-                            <div class="choose-card-size">
-                                <div class="card-size-info card-head">
-                                    <p class="small_up">Індивідуальний</p>
-                                </div>
-                                <div class="card-size-info">
-                                    <p class="small_up">розмір</p>
+
+                                <div class="size-choose">
+                                    <input class="choose-item" type="radio" name="card-size" id="ClientVariant"
+                                        value="ClientVariant">
+                                    <label class="choose-label choose-label-client" for="ClientVariant"></label>
+                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
                                 </div>
                             </div>
-                        </div>
-                        <div class="choose-flex">
-                            <label for="call_number" class="normal_order">5.Номер телефону:</label>
-                                <input class="userInfo" type="text" name="call_number" id="call_number" value="+380" maxlength="13">
-                            <label for="username" class="normal_order">6. Ім’я:</label>
+                            <!-- Section With Size Choose -->
+
+                            <!-- Client Info -->
+                            <div class="choose-flex">
+                                <label for="call_number" class="normal_order">5.Номер телефону:</label>
+                                <input class="userInfo" type="text" name="call_number" id="call_number" value="+380"
+                                    maxlength="13">
+                                <label for="username" class="normal_order">6. Ім’я:</label>
                                 <input class="userInfo" type="text" id="username" name="username" maxlength="15">
-                            <button class="send" type="button"><img src="./images/send.png" alt=""></button>
+                                <button class="send" type="submit"><img src="./images/send.png" alt=""></button>
+                            </div>
+                            <!-- Client Info -->
                         </div>
+                        <!-- The Main Context In Form End -->
                     </div>
-                </div>
+                </form>
+                <!-- Form End -->
             </section>
 
+            <!-- Obligations -->
             <section class="obligations">
                 <div class="container">
+
+                    <!-- Obligations "Head" -->
                     <div class="obligations-text">
                         <h2 class="large">Наші зобов’язання перед вами</h2>
                         <p class="middle">Ми команда професійних художників-портретистів із однією чіткою місією:<br>
@@ -343,6 +404,7 @@
                             задоволення на першому, середньому та останньому місці для нас.</p>
                     </div>
 
+                    <!-- Obligations "Table" -->
                     <div class="achivments">
                         <div class="cell">
                             <img src="./images/obligations_first.png" alt="">
@@ -368,18 +430,24 @@
                             <img src="./images/obligations_fifth.png" alt="">
                             <p class="middle">Чудове обслуговування</p>
                         </div>
-
                     </div>
+                    <!-- Obligations Table End -->
+
                 </div>
             </section>
+            <!-- Obligations End -->
         </div>
+        <!-- Wrapper End -->
 
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-info">
+                <!-- Left Part Of Footer -->
                 <p class="sub">© 2022 LuniArt.ua</p>
+                <!-- Links For Social -->
                 <div class="links">
                     <div class="number">
                         <p class="sub">Працюємо 24/7 по всій Україні</p>
@@ -392,6 +460,7 @@
             </div>
         </div>
     </footer>
+    <!-- Footer End -->
 
     <script src="./script/script.js"></script>
 </body>

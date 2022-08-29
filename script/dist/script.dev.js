@@ -28,10 +28,11 @@ function slideToLeft() {
   }
 
   content.style.left = left + 'px';
-} // Choose a material
+} //Choose a material
 
 
 var material = document.querySelectorAll('.card');
+var inputMaterial = document.querySelector('.choose-material-accept');
 
 for (var i = 0; i < material.length; i++) {
   material[i].addEventListener('mouseover', choose);
@@ -40,88 +41,67 @@ for (var i = 0; i < material.length; i++) {
 }
 
 function choose() {
-  if (this.classList.contains('choose')) {
-    return;
-  } else if (this.classList.contains('popular_material')) {
+  if (this.classList.contains('popular_material')) {
     this.classList.remove('popular_material');
   }
-
-  this.classList.add('choose');
 }
 
 function popularAdd() {
-  this.classList.remove('choose');
-
   if (this.classList.contains('coal')) {
     this.classList.add('popular_material');
   }
 }
 
 function chooseClick() {
-  this.removeEventListener('mouseout', popularAdd);
-  this.classList.add('choose');
+  var inside = this.classList.contains('choose');
 
-  if (this.classList.contains('popular_material')) {
-    this.classList.remove('popular_material');
+  for (var j = 0; j < material.length; j++) {
+    if (inside) {
+      return;
+    } else if (inside == false) {
+      if (material[j].classList.contains('choose')) {
+        material[j].classList.toggle('choose');
+      } else {
+        this.classList.add('choose');
+      }
+    }
   }
 
-  this.addEventListener('click', popularRemoveCLick);
-  this.removeEventListener('click', chooseClick);
-}
-
-function popularRemoveCLick() {
-  this.addEventListener('mouseout', popularAdd);
-  this.classList.remove('choose');
-
-  if (this.classList.contains('coal')) {
-    this.classList.add('popular_material');
-  }
-
-  this.addEventListener('click', chooseClick);
-  this.removeEventListener('click', popularRemoveCLick);
-} // Amount people
-
-
-var people = document.querySelectorAll('.human');
-
-for (var i = 0; i < people.length; i++) {
-  var j = people[i];
-  j.addEventListener('mouseover', greenHumans);
-}
-
-function greenHumans() {
-  this.removeAttribute('src');
-  this.setAttribute('src', './images/greenMan.png');
+  var chooseMaterial = document.querySelector('.choose');
+  inputMaterial.value = chooseMaterial.querySelector('p').innerHTML;
 } // Choose card size
 
 
-var cardPrice = document.querySelectorAll('.choose-card-size');
+var popular = document.querySelectorAll('.choose-item');
+var popularLabel = document.querySelectorAll('.choose-label');
 
-for (var i = 0; i < cardPrice.length; i++) {
-  cardPrice[i].addEventListener('click', chooseCardClick);
-}
+for (var i = 0; i < popular.length; i++) {
+  popular[i].addEventListener('click', chooseSize);
 
-function chooseCardClick() {
-  this.classList.add('active');
-
-  if (this.classList.contains('choose-card-popular')) {
-    this.classList.remove('choose-card-popular');
-    this.addEventListener('click', popularReturnClick);
+  if (popular[i].parentElement.classList.contains('popular-size')) {
+    popular[i].parentElement.addEventListener('mouseover', popularUnactive);
   }
-
-  this.addEventListener('click', closeCardClick);
 }
 
-function closeCardClick() {
-  this.classList.remove('active');
-  this.addEventListener('click', chooseCardClick);
-  this.removeEventListener('click', closeCardClick);
+function chooseSize() {
+  if (this.type == "radio" && this.checked) {
+    for (var j = 0; j < popularLabel.length; j++) {
+      if (popularLabel[j].previousElementSibling.checked) {
+        this.nextElementSibling.classList.remove('unactive');
+      } else {
+        popularLabel[j].classList.add('unactive');
+      }
+    }
+  }
 }
 
-function popularReturnClick() {
-  this.classList.add('choose-card-popular');
-  this.addEventListener('click', chooseCardClick);
-  this.removeEventListener('click', popularReturnClick);
+function popularUnactive() {
+  this.classList.remove('popular-size');
+  this.addEventListener('mouseout', popularActive);
+}
+
+function popularActive() {
+  this.classList.add('popular-size');
 } // Button for sent 
 
 
