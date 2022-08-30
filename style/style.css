@@ -342,7 +342,6 @@ img.constructor {
     box-sizing: border-box;
     border: 4px solid #ffffff;
     border-radius: 40px;
-    cursor: pointer;
 }
 
 .card.popular_material {
@@ -406,6 +405,7 @@ img.constructor {
     background-color: none;
     position: absolute;
     border-radius: 40px;
+    cursor: pointer;
 }
 
 .card p {
@@ -644,7 +644,7 @@ button.info{
     cursor: help;
 }
 
-div.popular-size::after {
+.popular-size label::after {
     content: 'ПОПУЛЯРНИЙ';
     font-family: 'Ubuntu';
     font-style: normal;
@@ -659,6 +659,12 @@ div.popular-size::after {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 4px 8px;
+}
+
+.choose-item:checked ~ label::after{
+    width: 0;
+    height: 0;
+    padding: 0;
 }
 
 .unactive{

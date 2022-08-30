@@ -31,13 +31,12 @@ function slideToLeft() {
 } //Choose a material
 
 
-var material = document.querySelectorAll('.card');
-var inputMaterial = document.querySelector('.choose-material-accept');
+var cardMaterial = document.querySelectorAll('.card');
 
-for (var i = 0; i < material.length; i++) {
-  material[i].addEventListener('mouseover', choose);
-  material[i].addEventListener('mouseout', popularAdd);
-  material[i].addEventListener('click', chooseClick);
+for (var i = 0; i < cardMaterial.length; i++) {
+  cardMaterial[i].addEventListener('mouseover', choose);
+  cardMaterial[i].addEventListener('mouseout', popularAdd);
+  cardMaterial[i].addEventListener('click', chooseClick);
 }
 
 function choose() {
@@ -53,22 +52,13 @@ function popularAdd() {
 }
 
 function chooseClick() {
-  var inside = this.classList.contains('choose');
-
-  for (var j = 0; j < material.length; j++) {
-    if (inside) {
-      return;
-    } else if (inside == false) {
-      if (material[j].classList.contains('choose')) {
-        material[j].classList.toggle('choose');
-      } else {
-        this.classList.add('choose');
-      }
+  for (var i = 0; i < cardMaterial.length; i++) {
+    if (cardMaterial[i].querySelector('input').checked) {
+      cardMaterial[i].classList.add('choose');
+    } else {
+      cardMaterial[i].classList.remove('choose');
     }
   }
-
-  var chooseMaterial = document.querySelector('.choose');
-  inputMaterial.value = chooseMaterial.querySelector('p').innerHTML;
 } // Choose card size
 
 
