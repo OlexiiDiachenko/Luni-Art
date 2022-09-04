@@ -393,7 +393,7 @@ section.about_us {
 }
 
 /* Слайдер */
-.slick-slider{
+.slick-slider {
     position: relative;
     padding: 0 60px;
 }
@@ -405,12 +405,12 @@ section.about_us {
 
 
 /* Лента слайдов */
-.slick-track{
+.slick-track {
     display: flex;
 }
 
 /* Стрелка */
-.slick-arrow{
+.slick-arrow {
     position: absolute;
     top: 210px;
     z-index: 1;
@@ -422,36 +422,36 @@ section.about_us {
 }
 
 /* Стрелка влево */
-.slick-arrow.slick-prev{
+.slick-arrow.slick-prev {
     left: 0;
     background: url('../images/slide-left.svg') 0 0 / 100% no-repeat;
 }
 
 /* Стрелка вправо */
-.slick-arrow.slick-next{
+.slick-arrow.slick-next {
     right: 0;
     background: url('../images/slide-right.svg') 0 0 / 100% no-repeat;
 }
 
 /* Точки (булиты) */
-.slider_size .slick-dots{
+.slider_size .slick-dots {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 0;
 }
 
-.slider_size .slick-dots li{
+.slider_size .slick-dots li {
     list-style: none;
     margin-left: 10px;
 }
 
-.slider_size .slick-dots li:first-child{
+.slider_size .slick-dots li:first-child {
     margin-left: 0;
 }
 
 /* Элемент точки */
-.slider_size .slick-dots li button{
+.slider_size .slick-dots li button {
     font-size: 0;
     padding: 0;
     border: none;
@@ -462,41 +462,41 @@ section.about_us {
 }
 
 /* Активная точка */
-.slider_size .slick-dots li.slick-active button{
+.slider_size .slick-dots li.slick-active button {
     background-color: #FF2257;
 }
 
-.slider_photo_item{
+.slider_photo_item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 30px;
 }
 
-.slider_photo_item_text{
+.slider_photo_item_text {
     text-align: center;
     max-width: 300px;
     margin-top: 20px;
 }
 
-.slider_photo_item .normal{
+.slider_photo_item .normal {
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.slider-button{
+.slider-button {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slider_photo + .slider-button{
+.slider_photo+.slider-button {
     margin-top: 30px;
     margin-bottom: 60px;
 }
 
-.slider_size_item{
+.slider_size_item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -506,7 +506,7 @@ section.about_us {
     margin-left: 33px;
 }
 
-.slider-order-button{
+.slider-order-button {
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
@@ -516,7 +516,7 @@ section.about_us {
     margin-top: 5px;
 }
 
-.slider_size_item{
+.slider_size_item {
     padding-top: 60px;
 }
 
@@ -524,7 +524,7 @@ section.about_us {
     top: 330px;
 }
 
-.video-process { 
+.video-process {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -535,33 +535,33 @@ section.about_us {
     text-align: center;
 }
 
-.video-process h2.large{
+.video-process h2.large {
     font-weight: 500;
     border-bottom: none;
     margin-bottom: 10px;
 }
 
-.slider_video_item{
+.slider_video_item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 30px;
 }
 
-.slider_video_item_text{
+.slider_video_item_text {
     text-align: center;
     max-width: 300px;
     margin-top: 20px;
 }
 
-.slider-button{
+.slider-button {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slider_video + .slider-button{
+.slider_video+.slider-button {
     margin-top: 64px;
     margin-bottom: 70px;
 }
@@ -712,17 +712,9 @@ input.choose-material-accept {
 }
 
 .humans-count::before {
-    content: url('../images/greenMan.png') 
-    url('../images/greyMan.png') 
-    url('../images/greyMan.png') 
-    url('../images/greyMan.png') 
-    url('../images/greyMan.png') 
-    url('../images/greyMan.png') 
-    url('../images/greyMan.png') 
-    url('../images/greyMan.png') 
-    url('../images/greyMan.png') url('../images/greyMan.png');
+    content: url('../images/greenMan.svg') url('../images/greyMan.svg') url('../images/greyMan.svg') url('../images/greyMan.svg') url('../images/greyMan.svg') url('../images/greyMan.svg') url('../images/greyMan.svg') url('../images/greyMan.svg') url('../images/greyMan.svg') url('../images/greyMan.svg');
     display: block;
-
+    height: 74px;
 }
 
 .humans-count-items {
@@ -753,20 +745,22 @@ input.choose-material-accept {
 }
 
 .humans-count-label::before {
-    content: url('../images/greyMan.png');
+    content: url('../images/greyMan.svg');
     display: block;
     transition: 0.3s ease-in;
 }
 
 .humans-count-item:checked,
 .humans-count-item:checked~.humans-count-label {
-    content: url('../images/greenMan.png');
+    content: url('../images/greenMan.svg');
+    width: 36px;
 }
 
 .humans-count-label:hover,
 .humans-count-label:hover~.humans-count-label,
 .humans-count-label:checked~.humans-count-label:hover {
-    content: url('../images/greenMan.png');
+    content: url('../images/greenMan.svg');
+    width: 36px;
 }
 
 /* Sliders on/off */
