@@ -1,33 +1,66 @@
-// Slider
+$(document).ready(function(){
+function imageComparison(selector){
+    let comparison = $(selector)
+        .addClass('image-comparison')
+        .prepend('<div class="image-comparison_before"></div>')
+        .append('<button class="image-comparison_slider"></button>');
 
-let slideLeft = document.querySelector('#slideLeft');
-let slideRight = document.querySelector('#slideRight');
+    let images = comparison
+        .find('img')
+        .addClass('image-comparison_image')
+        .css('max-width' , comparison.width());
 
-let content = document.querySelector('#sliderContent');
-let cells = document.querySelectorAll('.sliderCell');
+    let before = comparison
+        .find('.image-comparison_before')
+        .append(images.eq(0))
 
-let left = 0;
+    comparison
+        .find('.image-comparison_slider')
+        .on('dragstart' , () => false)
+        .on('mousedown' , function (e) {
+            let slider = $(this);
 
-let sliderLength = (cells.length-3) * 300;
+            let doc = $(document).on('mousemove' , (e) => {
+                let offset = e.pageX - comparison.position().left;
+                let width = comparison.width();
 
-slideRight.addEventListener('click' , slideToRight);
-slideLeft.addEventListener('click' , slideToLeft);
+                if(offset < 0) offset = 0;
+                if(offset > width) offset = width;
 
-function slideToRight() {
-    left -= 330;
-    if (left < -sliderLength ){
-        left = 0;
-    }
-    content.style.left = left + 'px';
+                slider.css('left' , offset + 'px');
+                before.css('width' , offset + 'px');
+
+            });
+
+            doc.on('mouseup', () => doc.off('mousemove'));
+        });
 }
 
-function slideToLeft() {
-    left += 330;
-    if ( left > 0 ){
-        left = 0;
-    }
-    content.style.left = left + 'px';
-}
+imageComparison('#image-comparison');
+imageComparison('#image-comparison_down');
+
+    $('.slider_photo').slick({
+        slidesToShow:3,
+        speed:600,
+        easing:'ease',
+        draggable:false,
+    });
+
+    $('.slider_size').slick({
+        dots:true,
+        slidesToShow:2,
+        speed:600,
+        easing:'ease',
+        draggable:false,
+    });
+
+    $('.slider_video').slick({
+        slidesToShow:3,
+        speed:600,
+        easing:'ease',
+        draggable:false,
+    });
+})
 
 //Choose a material
 
@@ -68,9 +101,9 @@ var popularLabel = document.querySelectorAll('.choose-label')
 
 for ( var i = 0 ; i < popular.length ; i++ ){
     popular[i].addEventListener('click' , chooseSize);
-    if ( popular[i].parentElement.classList.contains('popular-size') ){
-        popular[i].parentElement.addEventListener('mouseover' , popularUnactive);
-    }
+    // if ( popular[i].parentElement.classList.contains('popular-size') ){
+    //     popular[i].parentElement.addEventListener('mouseover' , popularUnactive);
+    // }
 }
 
 function chooseSize() {
@@ -85,14 +118,14 @@ function chooseSize() {
     }
 }
 
-function popularUnactive() { 
-    this.classList.remove('popular-size');
-    this.addEventListener('mouseout' , popularActive);
-}
+// function popularUnactive() { 
+//     this.classList.remove('popular-size');
+//     this.addEventListener('mouseout' , popularActive);
+// }
 
-function popularActive() { 
-    this.classList.add('popular-size');
-}
+// function popularActive() { 
+//     this.classList.add('popular-size');
+// }
 
 // Button for sent 
 

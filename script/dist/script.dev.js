@@ -1,35 +1,50 @@
 "use strict";
 
-// Slider
-var slideLeft = document.querySelector('#slideLeft');
-var slideRight = document.querySelector('#slideRight');
-var content = document.querySelector('#sliderContent');
-var cells = document.querySelectorAll('.sliderCell');
-var left = 0;
-var sliderLength = (cells.length - 3) * 300;
-slideRight.addEventListener('click', slideToRight);
-slideLeft.addEventListener('click', slideToLeft);
-
-function slideToRight() {
-  left -= 330;
-
-  if (left < -sliderLength) {
-    left = 0;
+$(document).ready(function () {
+  function imageComparison(selector) {
+    var comparison = $(selector).addClass('image-comparison').prepend('<div class="image-comparison_before"></div>').append('<button class="image-comparison_slider"></button>');
+    var images = comparison.find('img').addClass('image-comparison_image').css('max-width', comparison.width());
+    var before = comparison.find('.image-comparison_before').append(images.eq(0));
+    comparison.find('.image-comparison_slider').on('dragstart', function () {
+      return false;
+    }).on('mousedown', function (e) {
+      var slider = $(this);
+      var doc = $(document).on('mousemove', function (e) {
+        var offset = e.pageX - comparison.position().left;
+        var width = comparison.width();
+        if (offset < 0) offset = 0;
+        if (offset > width) offset = width;
+        slider.css('left', offset + 'px');
+        before.css('width', offset + 'px');
+      });
+      doc.on('mouseup', function () {
+        return doc.off('mousemove');
+      });
+    });
   }
 
-  content.style.left = left + 'px';
-}
-
-function slideToLeft() {
-  left += 330;
-
-  if (left > 0) {
-    left = 0;
-  }
-
-  content.style.left = left + 'px';
-} //Choose a material
-
+  imageComparison('#image-comparison');
+  imageComparison('#image-comparison_down');
+  $('.slider_photo').slick({
+    slidesToShow: 3,
+    speed: 600,
+    easing: 'ease',
+    draggable: false
+  });
+  $('.slider_size').slick({
+    dots: true,
+    slidesToShow: 2,
+    speed: 600,
+    easing: 'ease',
+    draggable: false
+  });
+  $('.slider_video').slick({
+    slidesToShow: 3,
+    speed: 600,
+    easing: 'ease',
+    draggable: false
+  });
+}); //Choose a material
 
 var cardMaterial = document.querySelectorAll('.card');
 
@@ -66,11 +81,9 @@ var popular = document.querySelectorAll('.choose-item');
 var popularLabel = document.querySelectorAll('.choose-label');
 
 for (var i = 0; i < popular.length; i++) {
-  popular[i].addEventListener('click', chooseSize);
-
-  if (popular[i].parentElement.classList.contains('popular-size')) {
-    popular[i].parentElement.addEventListener('mouseover', popularUnactive);
-  }
+  popular[i].addEventListener('click', chooseSize); // if ( popular[i].parentElement.classList.contains('popular-size') ){
+  //     popular[i].parentElement.addEventListener('mouseover' , popularUnactive);
+  // }
 }
 
 function chooseSize() {
@@ -83,16 +96,14 @@ function chooseSize() {
       }
     }
   }
-}
-
-function popularUnactive() {
-  this.classList.remove('popular-size');
-  this.addEventListener('mouseout', popularActive);
-}
-
-function popularActive() {
-  this.classList.add('popular-size');
-} // Button for sent 
+} // function popularUnactive() { 
+//     this.classList.remove('popular-size');
+//     this.addEventListener('mouseout' , popularActive);
+// }
+// function popularActive() { 
+//     this.classList.add('popular-size');
+// }
+// Button for sent 
 
 
 var buttonSent = document.querySelector('.send');

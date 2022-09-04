@@ -116,3 +116,17 @@ button:hover {
 button:active {
     cursor: grabbing;
 }
+
+button.forClick{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: #FFFFFF;
+    background-color: #FF2257;
+    border-radius: 36px;
+    border: none;
+}
+
+button.forClick.sliderButton{
+    padding: 8px 15px;
+}
