@@ -70,23 +70,23 @@ let coalPrice = document.querySelector('.choose-grid_coal')
 let oil = document.querySelector('.oil input');
 let oilLabel = document.querySelector('.oil label');
 let oilPrice = document.querySelector('.choose-grid_oil')
-let defaultPrice = document.querySelector('.default');
 let people = document.querySelectorAll('.humans-count-item');
 let countPeople = 0;
 
 if ( !coal.checked ){
     coalLabel.addEventListener('click' , coalTable);
+}else{
+    percentCost(coalPrice);
 }
 
 if ( !oil.checked ){
     oilLabel.addEventListener('click' , oilTable);
+}else{
+    percentCost(oilPrice);
 }
 
 function coalTable(){
     coalPrice.classList.add('active_material');
-    if(defaultPrice.classList.contains('active_material')){
-        defaultPrice.classList.remove('active_material');
-    }
     if(oilPrice.classList.contains('active_material')){
         oilPrice.classList.remove('active_material');
     }
@@ -96,14 +96,10 @@ function coalTable(){
 
 function oilTable(){
     oilPrice.classList.add('active_material');
-    if(defaultPrice.classList.contains('active_material')){
-        defaultPrice.classList.remove('active_material');
-    }
     if(coalPrice.classList.contains('active_material')){
         coalPrice.classList.remove('active_material');
     }
     percentCost(oilPrice);
-    
 }
 
 function percentCost(materialPercent) { 

@@ -52,24 +52,23 @@ var coalPrice = document.querySelector('.choose-grid_coal');
 var oil = document.querySelector('.oil input');
 var oilLabel = document.querySelector('.oil label');
 var oilPrice = document.querySelector('.choose-grid_oil');
-var defaultPrice = document.querySelector('.default');
 var people = document.querySelectorAll('.humans-count-item');
 var countPeople = 0;
 
 if (!coal.checked) {
   coalLabel.addEventListener('click', coalTable);
+} else {
+  percentCost(coalPrice);
 }
 
 if (!oil.checked) {
   oilLabel.addEventListener('click', oilTable);
+} else {
+  percentCost(oilPrice);
 }
 
 function coalTable() {
   coalPrice.classList.add('active_material');
-
-  if (defaultPrice.classList.contains('active_material')) {
-    defaultPrice.classList.remove('active_material');
-  }
 
   if (oilPrice.classList.contains('active_material')) {
     oilPrice.classList.remove('active_material');
@@ -80,10 +79,6 @@ function coalTable() {
 
 function oilTable() {
   oilPrice.classList.add('active_material');
-
-  if (defaultPrice.classList.contains('active_material')) {
-    defaultPrice.classList.remove('active_material');
-  }
 
   if (coalPrice.classList.contains('active_material')) {
     coalPrice.classList.remove('active_material');
