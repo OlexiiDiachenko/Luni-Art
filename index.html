@@ -126,7 +126,7 @@
                 </div>
                 <!-- Button Order -->
                 <div class="order_now_section order_now_right">
-                    <button class="large">Хочу картину</button>
+                    <button class="large order_button">Хочу картину</button>
                 </div>
             </section>
             <!-- End Pink Section With Order -->
@@ -136,8 +136,8 @@
             <section class="comparison">
 
                 <div id="image-comparison">
-                    <img src="./images/ilon_painting.png" alt="">
-                    <img src="./images/ilon_color.png" alt="">
+                    <img src="./images/ilon_paintingNew.png" alt="">
+                    <img src="./images/ilon_colorNew.png" alt="">
                 </div>
 
                 <div class="text-comparison text-comparison-coal">
@@ -146,7 +146,7 @@
                     <p class="middle">Кожне Ваше замовлення виконують професійні художники з роками практики за
                         плечами.<br><br>
                         Ми гарантуємо якість побудовану на досвіді.</p>
-                    <button class="forClick">Хочу вугілля</button>
+                    <button class="forClick order_button">Хочу вугілля</button>
                 </div>
 
                 <div id="image-comparison_down">
@@ -160,7 +160,7 @@
                     <p class="middle">Кожне Ваше замовлення виконують професійні художники з роками практики за
                         плечами.<br><br>
                         Ми гарантуємо якість побудовану на досвіді.</p>
-                    <button class="forClick">Хочу олію</button>
+                    <button class="forClick order_button">Хочу олію</button>
                 </div>
 
             </section>
@@ -271,7 +271,7 @@
                         </div>
                     </div>
                     <div class="slider-button">
-                        <button class="forClick sliderButton">Замовити</button>
+                        <button class="forClick sliderButton order_button">Замовити</button>
                     </div>
                     
                     <!-- Slider with photos ( feedback ) END -->
@@ -283,7 +283,7 @@
                             <div class="slider_size_item_text">
                                 <h3 class="large">A5</h3>
                                 <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button">Замовити ></button>
+                                <button class="slider-order-button order_button">Замовити ></button>
                             </div>
                             <img data-lazy="./images/slider_size_image.png" alt="">
                         </div>
@@ -291,7 +291,7 @@
                             <div class="slider_size_item_text">
                                 <h3 class="large">A4</h3>
                                 <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button">Замовити ></button>
+                                <button class="slider-order-button order_button">Замовити ></button>
                             </div>
                             <img data-lazy="./images/slider_size_image.png" alt="">
                         </div>
@@ -299,7 +299,7 @@
                             <div class="slider_size_item_text">
                                 <h3 class="large">A3</h3>
                                 <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button">Замовити ></button>
+                                <button class="slider-order-button order_button">Замовити ></button>
                             </div>
                             <img data-lazy="./images/slider_size_image.png" alt="">
                         </div>
@@ -307,7 +307,7 @@
                             <div class="slider_size_item_text">
                                 <h3 class="large">A2</h3>
                                 <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button">Замовити ></button>
+                                <button class="slider-order-button order_button">Замовити ></button>
                             </div>
                             <img data-lazy="./images/slider_size_image.png" alt="">
                         </div>
@@ -315,7 +315,7 @@
                             <div class="slider_size_item_text">
                                 <h3 class="large">A1</h3>
                                 <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button">Замовити ></button>
+                                <button class="slider-order-button order_button">Замовити ></button>
                             </div>
                             <img data-lazy="./images/slider_size_image.png" alt="">
                         </div>
@@ -375,7 +375,7 @@
                         </div>
                     </div>
                     <div class="slider-button">
-                        <button class="forClick sliderButton">Замовити</button>
+                        <button class="forClick sliderButton order_button">Замовити</button>
                     </div>
                     <!-- Slider with videos END -->
 
@@ -388,10 +388,11 @@
 
             <section id="order">
                 <!-- Constructor Section -->
-                <img class="constructor" src="./images/orderHead.png" alt="">
-                <h2 class="large_order">Конструктор замовлення</h2>
-                <!-- Constructor Form. Info About Client -->
-                <form action="" method="get">
+                <div class="order_head">
+                    <h2 class="large">Дізнайтесь ціну</h2>
+                    <p class="middle">Зручний конструктор завдяки якому ви дізнаєтесь ціну всього в 3 кроки</p>
+                </div>
+        
                     <div class="constructor-section">
                         <!-- Cards With Material -->
                         <div class="cards">
@@ -410,140 +411,335 @@
                         </div>
                         <!-- The main context in form -->
                         <div class="choose-section">
-                            <div class="choose-flex">
-                                <label for="choose-material-accept" class="normal_order">1.Оберіть бажаний
-                                    матеріал</label>
-                            </div>
-
+        
                             <!-- Count people -->
                             <div class="choose-flex people_choose">
                                 <p class="people normal_order">2.Кількість людей :</p>
                                 <div class="humans-count">
                                     <div class="humans-count-items">
-                                        <input id="humans-count-10" type="radio" value="10" class="humans-count-item"
-                                            name="humans-count">
-                                        <label for="humans-count-10" class="humans-count-label"></label>
-
-                                        <input id="humans-count-9" type="radio" value="9" class="humans-count-item"
-                                            name="humans-count">
-                                        <label for="humans-count-9" class="humans-count-label"></label>
-
                                         <input id="humans-count-8" type="radio" value="8" class="humans-count-item"
-                                            name="humans-count">
+                                            name="humans-count" data-count="8">
                                         <label for="humans-count-8" class="humans-count-label"></label>
-
+        
                                         <input id="humans-count-7" type="radio" value="7" class="humans-count-item"
-                                            name="humans-count">
+                                            name="humans-count" data-count="7">
                                         <label for="humans-count-7" class="humans-count-label"></label>
-
+        
                                         <input id="humans-count-6" type="radio" value="6" class="humans-count-item"
-                                            name="humans-count">
+                                            name="humans-count" data-count="6">
                                         <label for="humans-count-6" class="humans-count-label"></label>
-
+        
                                         <input id="humans-count-5" type="radio" value="5" class="humans-count-item"
-                                            name="humans-count">
+                                            name="humans-count" data-count="5">
                                         <label for="humans-count-5" class="humans-count-label"></label>
-
+        
                                         <input id="humans-count-4" type="radio" value="4" class="humans-count-item"
-                                            name="humans-count">
+                                            name="humans-count" data-count="4">
                                         <label for="humans-count-4" class="humans-count-label"></label>
-
+        
                                         <input id="humans-count-3" type="radio" value="3" class="humans-count-item"
-                                            name="humans-count">
+                                            name="humans-count" data-count="3">
                                         <label for="humans-count-3" class="humans-count-label"></label>
-
+        
                                         <input id="humans-count-2" type="radio" value="2" class="humans-count-item"
-                                            name="humans-count">
+                                            name="humans-count" data-count="2">
                                         <label for="humans-count-2" class="humans-count-label"></label>
-
+        
                                         <input id="humans-count-1" type="radio" value="1" class="humans-count-item"
-                                            name="humans-count">
+                                            name="humans-count" data-count="1" checked>
                                         <label for="humans-count-1" class="humans-count-label"></label>
                                     </div>
                                 </div>
                             </div>
                             <!-- Count people -->
-
-                            <!-- Fast -->
-                            <div class="order-slider-wrapper">
-                                <label class="slider-order normal_order" for="fast">3.Терміново
-                                    <input type="checkbox" name="fast" id="fast">
-                                    <div class="choose-slider"></div>
-                                </label>
-                            </div>
-
+        
                             <!-- Section with size choose -->
-                            <div class="choose-grid">
-                                <p class="normal_order">4. Розмір</p>
-                                <div class="order-slider-wrapper">
-                                    <label class="slider-order normal_order" for="video">Відео
-                                        <input type="checkbox" name="video" id="video">
-                                        <div class="choose-slider video_slider"></div>
-                                    </label>
+                            <p class="normal_order">3. Розмір</p>
+                            <div class="choose-grid choose-grid_coal">
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-5</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">850</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent"></p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
                                 </div>
-
-                                <div class="size-choose">
-                                    <input class="choose-item" type="radio" name="card-size" id="size-A-5" value="A-5">
-                                    <label class="choose-label choose-label-5" for="size-A-5"></label>
-                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-4</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">1150</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent"></p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
                                 </div>
-
-                                <div class="size-choose">
-                                    <input class="choose-item" type="radio" name="card-size" id="size-A-4" value="A-4">
-                                    <label class="choose-label choose-label-4" for="size-A-4"></label>
-                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-3</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">1900</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent"></p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
                                 </div>
-
-                                <div class="size-choose popular-size">
-                                    <input class="choose-item" type="radio" name="card-size" id="size-A-3" value="A-3">
-                                    <label class="choose-label choose-label-3" for="size-A-3"></label>
-                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-2</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">2300</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent"></p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
                                 </div>
-
-                                <div class="size-choose popular-size">
-                                    <input class="choose-item" type="radio" name="card-size" id="size-A-2" value="A-2">
-                                    <label class="choose-label choose-label-2" for="size-A-2"></label>
-                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-1</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">3500</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent"></p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
                                 </div>
-
-                                <div class="size-choose">
-                                    <input class="choose-item" type="radio" name="card-size" id="size-A-1" value="A-1">
-                                    <label class="choose-label choose-label-1" for="size-A-1"></label>
-                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
+        
+                                <div class="size_choose order_button">
+                                    <div class="individual_size">
+                                        <h3 class="individual_font">Індивідуальний</h3>
+                                    </div>
+                                    <div class="individual_size">
+                                        <p class="individual_font">розмір</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
                                 </div>
-
-                                <div class="size-choose">
-                                    <input class="choose-item" type="radio" name="card-size" id="ClientVariant"
-                                        value="ClientVariant">
-                                    <label class="choose-label choose-label-client" for="ClientVariant"></label>
-                                    <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button>
+        
+                              
+                            </div>
+        
+                            <div class="choose-grid choose-grid_oil">
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-5</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">1275</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
                                 </div>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-4</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">1725</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-3</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">2850</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-2</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">3450</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-1</h3>
+                                        <div class="format-cost">
+                                            <p class="cost xsmall_light">5250</p>
+                                            <div class="hrn xsmall_light">₴</div>
+                                        </div>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                                <div class="size_choose order_button">
+                                    <div class="individual_size">
+                                        <h3 class="individual_font">Індивідуальний </h3>
+                                    </div>
+                                    <div class="individual_size">
+                                        <p class="individual_font">розмір</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+                              
+                            </div>
+        
+                            <div class="choose-grid default active_material">
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-5</h3>
+                                        <p class="cost xsmall_light">0₴</p>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-4</h3>
+                                        <p class="cost xsmall_light">0₴</p>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-3</h3>
+                                        <p class="cost xsmall_light">0₴</p>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-2</h3>
+                                        <p class="cost xsmall_light">0₴</p>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                                <div class="size_choose">
+                                    <div class="size_choose_item">
+                                        <h3 class="small_black">А-1</h3>
+                                        <p class="cost xsmall_light">0₴</p>
+                                    </div>
+                                    <div class="size_choose_item">
+                                        <h3 class="xsmall">20% до сплати:</h3>
+                                        <p class="percent">0₴</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                                <div class="size_choose order_button">
+                                    <div class="individual_size">
+                                        <h3 class="individual_font">Індивідуальний </h3>
+                                    </div>
+                                    <div class="individual_size">
+                                        <p class="individual_font">розмір</p>
+                                    </div>
+                                    <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+                                </div>
+        
+                              
                             </div>
                             <!-- Section With Size Choose -->
-
-                            <!-- Client Info -->
-                            <div class="choose-flex">
-                                <label for="call_number" class="normal_order">5.Номер телефону:</label>
-                                <input class="userInfo" type="text" name="call_number" id="call_number" value="+380"
-                                    maxlength="13">
-                                <label for="username" class="normal_order">6. Ім’я:</label>
-                                <input class="userInfo" type="text" id="username" name="username" maxlength="15">
-                                <button class="send" type="submit"><img src="./images/send.png" alt=""></button>
-                            </div>
-                            <!-- Client Info -->
                         </div>
                         <!-- The Main Context In Form End -->
                     </div>
-                </form>
-                <!-- Form End -->
             </section>
 
+            <section class="createPainting">
+                <div class="create-text">
+                    <h1 class="large">Створимо картину за вашим фото</h1>
+                    <p class="normal">Повністю продукт ручної праці, також оформимо картину в сучасному стилі</p>
+                </div>
+                <button class="order_button large">Отримати консультацію</button>
+            </section>
+        
         </div>
         <!-- Wrapper End -->
 
@@ -568,6 +764,39 @@
             </div>
         </div>
     </footer>
+
+    <div class="consult">
+        <div class="consult-info">
+            <h2>Безкоштовна консультація</h2>
+            <img src="./images/consult.png" alt="" class="consult_image">
+            <form id="consult_form" action="">
+                <div class="userInfo">
+                    <input class="userInfo-input" type="text" name="name" id="name" data-length="1" pattern="[A-Za-zА-Яа-яЇїЁё]{1,}" required>
+                    <label class="userInfo-label" for="name">Ваше Ім’я</label>
+                </div>
+
+                <div class="userInfo">
+                    <input class="userInfo-input" type="tel" name="phone" id="phone" pattern="\+[0-9]{12}" maxlength="13" 
+                        data-length="13" required>
+                    <label class="userInfo-label" for="phone">Номер телефону</label>
+                    <p class="example">Приклад +380111111111</p>
+                </div>
+
+                <h4 class="contact">Як з вами зв’язатися?</h4>
+
+                <div class="massangers">
+                    <img src="./images/whatsappActive.png" alt="">
+                    <img src="./images/telegramActive.png" alt="">
+                    <img src="./images/viberActive.png" alt="">
+                </div>
+
+                <button type="submit" class="submit large">Хочу картину</button>
+                <button class="close" type="button"></button>
+            </form>
+        </div>
+    </div>
+
+</div>
     <!-- Footer End -->
 
     <script src="./libruary/jQuery.js"></script>

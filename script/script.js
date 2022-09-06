@@ -41,7 +41,7 @@ imageComparison('#image-comparison_down');
 
     $('.slider_photo').slick({
         slidesToShow:3,
-        speed:600,
+        speed:1000,
         easing:'ease',
         draggable:false,
     });
@@ -49,91 +49,208 @@ imageComparison('#image-comparison_down');
     $('.slider_size').slick({
         dots:true,
         slidesToShow:2,
-        speed:600,
+        speed:1000,
         easing:'ease',
         draggable:false,
     });
 
     $('.slider_video').slick({
         slidesToShow:3,
-        speed:600,
+        speed:1000,
         easing:'ease',
         draggable:false,
     });
 })
 
-//Choose a material
+// Function for Material - Cost
 
-let cardMaterial = document.querySelectorAll('.card');
+let coal = document.querySelector('.coal input');
+let coalLabel = document.querySelector('.coal label');
+let coalPrice = document.querySelector('.choose-grid_coal')
+let oil = document.querySelector('.oil input');
+let oilLabel = document.querySelector('.oil label');
+let oilPrice = document.querySelector('.choose-grid_oil')
+let defaultPrice = document.querySelector('.default');
+let people = document.querySelectorAll('.humans-count-item');
+let countPeople = 0;
 
-for ( var i = 0 ; i < cardMaterial.length ; i++ ){
-    cardMaterial[i].addEventListener('mouseover' , choose);
-    cardMaterial[i].addEventListener('mouseout' , popularAdd);
-    cardMaterial[i].addEventListener('click' , chooseClick);
+if ( !coal.checked ){
+    coalLabel.addEventListener('click' , coalTable);
 }
 
-function choose() { 
-    if( this.classList.contains('popular_material') ){
-        this.classList.remove('popular_material');
+if ( !oil.checked ){
+    oilLabel.addEventListener('click' , oilTable);
+}
+
+function coalTable(){
+    coalPrice.classList.add('active_material');
+    if(defaultPrice.classList.contains('active_material')){
+        defaultPrice.classList.remove('active_material');
     }
-}
-
-function popularAdd() { 
-    if ( this.classList.contains('coal') ){
-        this.classList.add('popular_material');
+    if(oilPrice.classList.contains('active_material')){
+        oilPrice.classList.remove('active_material');
     }
+    percentCost(coalPrice);
+
 }
 
-function chooseClick() { 
-    for ( var i = 0 ; i < cardMaterial.length ; i++ ){
-        if ( cardMaterial[i].querySelector('input').checked ){
-            cardMaterial[i].classList.add('choose');
-        } else {
-            cardMaterial[i].classList.remove('choose');
+function oilTable(){
+    oilPrice.classList.add('active_material');
+    if(defaultPrice.classList.contains('active_material')){
+        defaultPrice.classList.remove('active_material');
+    }
+    if(coalPrice.classList.contains('active_material')){
+        coalPrice.classList.remove('active_material');
+    }
+    percentCost(oilPrice);
+    
+}
+
+function percentCost(materialPercent) { 
+    let size = materialPercent.querySelectorAll('.size_choose');
+    for ( let i = 0 ; i < size.length ; i++ ){
+        let cost = size[i].querySelector('.cost');
+        let percent = size[i].querySelector('.percent');
+        if ( percent == null ){
+            continue;
+        }else{
+            percent.innerHTML = parseInt(cost.innerHTML) * 0.2 + '₴';
         }
     }
 }
 
-// Choose card size
-
-var popular = document.querySelectorAll('.choose-item');
-var popularLabel = document.querySelectorAll('.choose-label')
-
-for ( var i = 0 ; i < popular.length ; i++ ){
-    popular[i].addEventListener('click' , chooseSize);
-    // if ( popular[i].parentElement.classList.contains('popular-size') ){
-    //     popular[i].parentElement.addEventListener('mouseover' , popularUnactive);
-    // }
+for ( let i = 0 ; i < people.length ; i++ ){
+    people[i].nextElementSibling.addEventListener('click' , newCount);
 }
 
-function chooseSize() {
-    if (this.type == "radio" && this.checked) {
-        for ( var j = 0 ; j < popularLabel.length ; j++ ){
-            if ( popularLabel[j].previousElementSibling.checked ) { 
-                this.nextElementSibling.classList.remove('unactive');
-            }else{
-                popularLabel[j].classList.add('unactive');
-            }
-        } 
+function newCount() { 
+    countPeople = this.previousElementSibling.getAttribute('data-count');
+    console.log(countPeople);
+    if ( !coal.checked ){
+        newCost(oilPrice , countPeople);
+    } else if ( !oil.checked ){
+        newCost(coalPrice , countPeople);
     }
 }
 
-// function popularUnactive() { 
-//     this.classList.remove('popular-size');
-//     this.addEventListener('mouseout' , popularActive);
-// }
+function newCost(tablePrice , count , costSize ) { 
 
-// function popularActive() { 
-//     this.classList.add('popular-size');
-// }
+    let arrCost = [];
+    let NewCost = tablePrice.querySelectorAll('.size_choose');
+    for ( let i = 0 ; i < NewCost.length ; i++ ){ 
+        let a = NewCost[i];
+        let cost = a.querySelector('.cost');
+        if ( cost == null ){
+            continue;
+        }else{
+            arrCost.push(parseInt(cost.innerHTML));
+        }
+    }
+    console.log(arrCost);
+ 
+    for ( let j = 0 ; j < NewCost.length ; j++ ){
+        let cost = NewCost[j].querySelector('.cost');
+        if( j == 0 ){
+            if ( count > 2 ){
+                NewCost[j].classList.add('unactive');
+                cost.innerHTML = cost.innerHTML;
+            }else{
+                if ( NewCost[j].classList.contains('unactive') ){
+                    NewCost[j].classList.remove('unactive')
+                }
+                cost.innerHTML = arrCost[j] + ((count-1) * 150);
+            }
+        }else if( j == 1 ){
+            if ( count > 4 ){
+                NewCost[j].classList.add('unactive');
+                cost.innerHTML = cost.innerHTML;
+            }else{
+                if ( NewCost[j].classList.contains('unactive') ){
+                    NewCost[j].classList.remove('unactive')
+                }
+                cost.innerHTML = arrCost[j] + ((count-1) * 200);
+            }
+        }else if( j == 2 ){
+            if ( count > 6 ){
+                NewCost[j].classList.add('unactive');
+                cost.innerHTML = cost.innerHTML;
+            }else{
+                if ( NewCost[j].classList.contains('unactive') ){
+                    NewCost[j].classList.remove('unactive')
+                }
+                cost.innerHTML = arrCost[j] + ((count-1) * 300);
+            }
+        }else if( j == 3 ){
+            cost.innerHTML = arrCost[j] + ((count-1) * 400);
+        }else if( j == 4 ){
+            cost.innerHTML = arrCost[j] + ((count-1) * 500);
+        }
+    }
+    let activeMaterial = document.querySelector('.active_material');
+    percentCost(activeMaterial);
+}
 
-// Button for sent 
+// Order Section on/off ( Last form )
 
-let buttonSent = document.querySelector('.send');
+let order = document.querySelectorAll('.order_button');
+let consult = document.querySelector('.consult');
+let close = document.querySelector('.close');
 
-buttonSent.addEventListener('click', sendForm);
+for ( let i = 0 ; i < order.length ; i++ ){ 
+    order[i].addEventListener('click' , showOrder);
+}
 
-function sendForm() {
-    this.innerHTML = '<img src="./images/checked.png" alt="" />';
-    this.style.backgroundColor = 'var(--green-color)';
+function showOrder() { 
+    consult.style.animationName = 'show';
+    consult.style.display = 'flex';
+}
+
+close.addEventListener('click' , closeOrder);
+
+function closeOrder() { 
+    consult.style.display = 'none'; 
+}
+
+// A little validate a form in order menu
+
+const phone = document.querySelector('#phone');
+const name = document.querySelector('#name');
+let inputsConsult = document.querySelectorAll('.userInfo-input');
+
+for ( let i = 0 ; i < inputsConsult.length ; i++ ){ 
+    inputsConsult[i].addEventListener('blur' , validate);
+    inputsConsult[i].addEventListener('input' , validate)
+}
+
+function validate() { 
+    let lengthWrite = parseInt(this.value.length);
+    let validateLength = this.getAttribute('data-length');
+    if ( lengthWrite < validateLength ){
+        this.style.borderBottom = '1px solid rgba(255 , 0 , 0 , 0.25)';
+        if ( this.parentElement.classList.contains('valid') ){
+            this.parentElement.classList.remove('valid');
+        }
+    }else{
+        this.style.borderBottom = '1px solid rgba(0 , 255 , 0 , 0.25)';
+        this.parentElement.classList.add('valid');
+    }
+}
+
+phone.addEventListener('focus' , startNubmer);
+phone.addEventListener('blur' , removeNubmer);
+
+function startNubmer() { 
+    if ( this.value.length > 4 ){
+        this.value = this.value;
+    }else{
+        this.value = '+' + 380;
+    }
+}
+
+function removeNubmer() { 
+    if ( this.value == +380 ){
+        this.value = '';
+    } else { 
+        this.value = this.value;
+    }
 }

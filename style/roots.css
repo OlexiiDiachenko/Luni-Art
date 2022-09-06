@@ -68,7 +68,7 @@ label {
     color: var(--green-color);
 }
 
-.small_up{
+.small_black{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -76,12 +76,20 @@ label {
     color: #000000;
 }
 
-.small_cost{
+.xsmall_light{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     color: #8F8F8F;
+}
+
+.percent{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color:var(--green-color);
 }
 
 .xsmall {
@@ -92,14 +100,20 @@ label {
     color: #000000;
 }
 
-.xsmall_cost{
-    font-family: 'Ubuntu', sans-serif;
+.individual_font { 
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    color:var(--green-color);
+    color: #1d1d1d;
 }
 
+.individual_font:hover{
+    cursor: grab;
+}
+
+.individual_font:active{
+    cursor: grabbing;
+}
 
 /* Links */
 
