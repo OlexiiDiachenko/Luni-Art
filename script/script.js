@@ -2,8 +2,6 @@ $(document).ready(function(){
 function imageComparison(selector){
     let comparison = $(selector)
         .addClass('image-comparison')
-        .prepend('<div class="image-comparison_before"></div>')
-        .append('<button class="image-comparison_slider"></button>');
 
     let images = comparison
         .find('img')
@@ -81,8 +79,6 @@ if ( !coal.checked ){
 
 if ( !oil.checked ){
     oilLabel.addEventListener('click' , oilTable);
-}else{
-    percentCost(oilPrice);
 }
 
 function coalTable(){
@@ -91,10 +87,11 @@ function coalTable(){
         oilPrice.classList.remove('active_material');
     }
     percentCost(coalPrice);
-
 }
 
 function oilTable(){
+    coal.removeAttribute('checked');
+    console.log(coal.getAttribute('checked'));
     oilPrice.classList.add('active_material');
     if(coalPrice.classList.contains('active_material')){
         coalPrice.classList.remove('active_material');
