@@ -60,16 +60,22 @@ imageComparison('#image-comparison_down');
     });
 })
 
-// Function for Material - Cost
+// Function for Material Cost
 
 let coal = document.querySelector('.coal input');
 let coalLabel = document.querySelector('.coal label');
-let coalPrice = document.querySelector('.choose-grid_coal')
+let coalPrice = document.querySelector('.choose-grid_coal');
 let oil = document.querySelector('.oil input');
 let oilLabel = document.querySelector('.oil label');
-let oilPrice = document.querySelector('.choose-grid_oil')
+let oilPrice = document.querySelector('.choose-grid_oil');
 let people = document.querySelectorAll('.humans-count-item');
-let countPeople = 0;
+let peopleChoose = document.querySelectorAll('.humans-count-label');
+let totalCountPeople = 1;
+let arrCoalCost = [];
+let arrOilCost = [];
+
+coalPrice.classList.add('active_material');
+percentCost(coalPrice);
 
 if ( !coal.checked ){
     coalLabel.addEventListener('click' , coalTable);
@@ -79,6 +85,23 @@ if ( !coal.checked ){
 
 if ( !oil.checked ){
     oilLabel.addEventListener('click' , oilTable);
+}else { 
+    percentCost(oilPrice);
+}
+
+for ( let i = 0 ; i < peopleChoose.length ; i++ ){
+    peopleChoose[i].addEventListener('click' , newCount);
+}
+
+function newCount() { 
+    let countPeople = this.previousElementSibling.getAttribute('data-count');
+    if ( coal.checked ){
+        newCost(coalPrice , countPeople , arrCoalCost )
+    }
+    
+    if ( oil.checked ){
+        newCost(oilPrice , countPeople , arrOilCost )
+    }
 }
 
 function coalTable(){
@@ -86,17 +109,45 @@ function coalTable(){
     if(oilPrice.classList.contains('active_material')){
         oilPrice.classList.remove('active_material');
     }
+    peopleCount();
+    
+    console.log(totalCountPeople);
+    newCost(coalPrice , totalCountPeople , arrCoalCost )
     percentCost(coalPrice);
+
 }
 
 function oilTable(){
     coal.removeAttribute('checked');
-    console.log(coal.getAttribute('checked'));
     oilPrice.classList.add('active_material');
     if(coalPrice.classList.contains('active_material')){
         coalPrice.classList.remove('active_material');
     }
+    peopleCount();
+    console.log(totalCountPeople);
+    newCost(oilPrice , totalCountPeople , arrOilCost)
     percentCost(oilPrice);
+}
+
+
+// Function for reading a count people. 
+function peopleCount(){ 
+
+    // Array with a peoples ( green peoples on website. ) Our radioinputs
+
+    for ( i = 0 ; i < people.length ; i++ ){ 
+
+        // If we found a people, who has checked status, we need get his Number, our data-count
+
+        if ( people[i].checked ){
+            totalCountPeople = people[i].getAttribute('data-count');
+
+        // Else , we checked next
+
+        } else { 
+            continue;
+        }
+    }
 }
 
 function percentCost(materialPercent) { 
@@ -112,23 +163,8 @@ function percentCost(materialPercent) {
     }
 }
 
-for ( let i = 0 ; i < people.length ; i++ ){
-    people[i].nextElementSibling.addEventListener('click' , newCount);
-}
+function newCost(tablePrice , count , arrCost ) { 
 
-function newCount() { 
-    countPeople = this.previousElementSibling.getAttribute('data-count');
-    console.log(countPeople);
-    if ( !coal.checked ){
-        newCost(oilPrice , countPeople);
-    } else if ( !oil.checked ){
-        newCost(coalPrice , countPeople);
-    }
-}
-
-function newCost(tablePrice , count , costSize ) { 
-
-    let arrCost = [];
     let NewCost = tablePrice.querySelectorAll('.size_choose');
     for ( let i = 0 ; i < NewCost.length ; i++ ){ 
         let a = NewCost[i];
@@ -137,6 +173,9 @@ function newCost(tablePrice , count , costSize ) {
             continue;
         }else{
             arrCost.push(parseInt(cost.innerHTML));
+            if ( arrCost.length > 5 ){
+                arrCost.pop()
+            }
         }
     }
     console.log(arrCost);
@@ -183,6 +222,8 @@ function newCost(tablePrice , count , costSize ) {
     percentCost(activeMaterial);
 }
 
+
+
 // Order Section on/off ( Last form )
 
 let order = document.querySelectorAll('.order_button');
@@ -193,15 +234,14 @@ for ( let i = 0 ; i < order.length ; i++ ){
     order[i].addEventListener('click' , showOrder);
 }
 
-function showOrder() { 
-    consult.style.animationName = 'show';
+function showOrder() {
     consult.style.display = 'flex';
 }
 
 close.addEventListener('click' , closeOrder);
 
-function closeOrder() { 
-    consult.style.display = 'none'; 
+function closeOrder() {
+    consult.style.display = 'none';
 }
 
 // A little validate a form in order menu
@@ -245,5 +285,26 @@ function removeNubmer() {
         this.value = '';
     } else { 
         this.value = this.value;
+    }
+}
+
+// Choose the massanger
+
+let massangersImages = document.querySelectorAll('.massanger_images');
+
+for ( let i = 0 ; i < massangersImages.length ; i++ ){ 
+    massangersImages[i].addEventListener('click' , massangerChoose);
+}
+
+function massangerChoose() {
+    for ( let j = 0 ; j < massangersImages.length ; j++ ){ 
+        if ( !massangersImages[j].classList.contains('unactive_massanger') ){
+            massangersImages[j].classList.add('unactive_massanger')
+        }else{
+            continue;
+        }
+    }
+    if ( this.classList.contains('unactive_massanger') ){
+        this.classList.remove('unactive_massanger');
     }
 }

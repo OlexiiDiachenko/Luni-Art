@@ -44,7 +44,7 @@ $(document).ready(function () {
     easing: 'ease',
     draggable: false
   });
-}); // Function for Material - Cost
+}); // Function for Material Cost
 
 var coal = document.querySelector('.coal input');
 var coalLabel = document.querySelector('.coal label');
@@ -53,7 +53,12 @@ var oil = document.querySelector('.oil input');
 var oilLabel = document.querySelector('.oil label');
 var oilPrice = document.querySelector('.choose-grid_oil');
 var people = document.querySelectorAll('.humans-count-item');
-var countPeople = 0;
+var peopleChoose = document.querySelectorAll('.humans-count-label');
+var totalCountPeople = 1;
+var arrCoalCost = [];
+var arrOilCost = [];
+coalPrice.classList.add('active_material');
+percentCost(coalPrice);
 
 if (!coal.checked) {
   coalLabel.addEventListener('click', coalTable);
@@ -63,6 +68,24 @@ if (!coal.checked) {
 
 if (!oil.checked) {
   oilLabel.addEventListener('click', oilTable);
+} else {
+  percentCost(oilPrice);
+}
+
+for (var _i = 0; _i < peopleChoose.length; _i++) {
+  peopleChoose[_i].addEventListener('click', newCount);
+}
+
+function newCount() {
+  var countPeople = this.previousElementSibling.getAttribute('data-count');
+
+  if (coal.checked) {
+    newCost(coalPrice, countPeople, arrCoalCost);
+  }
+
+  if (oil.checked) {
+    newCost(oilPrice, countPeople, arrOilCost);
+  }
 }
 
 function coalTable() {
@@ -72,27 +95,46 @@ function coalTable() {
     oilPrice.classList.remove('active_material');
   }
 
+  peopleCount();
+  console.log(totalCountPeople);
+  newCost(coalPrice, totalCountPeople, arrCoalCost);
   percentCost(coalPrice);
 }
 
 function oilTable() {
   coal.removeAttribute('checked');
-  console.log(coal.getAttribute('checked'));
   oilPrice.classList.add('active_material');
 
   if (coalPrice.classList.contains('active_material')) {
     coalPrice.classList.remove('active_material');
   }
 
+  peopleCount();
+  console.log(totalCountPeople);
+  newCost(oilPrice, totalCountPeople, arrOilCost);
   percentCost(oilPrice);
+} // Function for reading a count people. 
+
+
+function peopleCount() {
+  // Array with a peoples ( green peoples on website. ) Our radioinputs
+  for (i = 0; i < people.length; i++) {
+    // If we found a people, who has checked status, we need get his Number, our data-count
+    if (people[i].checked) {
+      totalCountPeople = people[i].getAttribute('data-count'); // Else , we checked next
+    } else {
+      continue;
+    }
+  }
 }
 
 function percentCost(materialPercent) {
   var size = materialPercent.querySelectorAll('.size_choose');
 
-  for (var i = 0; i < size.length; i++) {
-    var cost = size[i].querySelector('.cost');
-    var percent = size[i].querySelector('.percent');
+  for (var _i2 = 0; _i2 < size.length; _i2++) {
+    var cost = size[_i2].querySelector('.cost');
+
+    var percent = size[_i2].querySelector('.percent');
 
     if (percent == null) {
       continue;
@@ -102,33 +144,21 @@ function percentCost(materialPercent) {
   }
 }
 
-for (var i = 0; i < people.length; i++) {
-  people[i].nextElementSibling.addEventListener('click', newCount);
-}
-
-function newCount() {
-  countPeople = this.previousElementSibling.getAttribute('data-count');
-  console.log(countPeople);
-
-  if (!coal.checked) {
-    newCost(oilPrice, countPeople);
-  } else if (!oil.checked) {
-    newCost(coalPrice, countPeople);
-  }
-}
-
-function newCost(tablePrice, count, costSize) {
-  var arrCost = [];
+function newCost(tablePrice, count, arrCost) {
   var NewCost = tablePrice.querySelectorAll('.size_choose');
 
-  for (var _i = 0; _i < NewCost.length; _i++) {
-    var a = NewCost[_i];
+  for (var _i3 = 0; _i3 < NewCost.length; _i3++) {
+    var a = NewCost[_i3];
     var cost = a.querySelector('.cost');
 
     if (cost == null) {
       continue;
     } else {
       arrCost.push(parseInt(cost.innerHTML));
+
+      if (arrCost.length > 5) {
+        arrCost.pop();
+      }
     }
   }
 
@@ -186,12 +216,11 @@ var order = document.querySelectorAll('.order_button');
 var consult = document.querySelector('.consult');
 var close = document.querySelector('.close');
 
-for (var _i2 = 0; _i2 < order.length; _i2++) {
-  order[_i2].addEventListener('click', showOrder);
+for (var _i4 = 0; _i4 < order.length; _i4++) {
+  order[_i4].addEventListener('click', showOrder);
 }
 
 function showOrder() {
-  consult.style.animationName = 'show';
   consult.style.display = 'flex';
 }
 
@@ -206,10 +235,10 @@ var phone = document.querySelector('#phone');
 var name = document.querySelector('#name');
 var inputsConsult = document.querySelectorAll('.userInfo-input');
 
-for (var _i3 = 0; _i3 < inputsConsult.length; _i3++) {
-  inputsConsult[_i3].addEventListener('blur', validate);
+for (var _i5 = 0; _i5 < inputsConsult.length; _i5++) {
+  inputsConsult[_i5].addEventListener('blur', validate);
 
-  inputsConsult[_i3].addEventListener('input', validate);
+  inputsConsult[_i5].addEventListener('input', validate);
 }
 
 function validate() {
@@ -244,5 +273,26 @@ function removeNubmer() {
     this.value = '';
   } else {
     this.value = this.value;
+  }
+} // Choose the massanger
+
+
+var massangersImages = document.querySelectorAll('.massanger_images');
+
+for (var _i6 = 0; _i6 < massangersImages.length; _i6++) {
+  massangersImages[_i6].addEventListener('click', massangerChoose);
+}
+
+function massangerChoose() {
+  for (var j = 0; j < massangersImages.length; j++) {
+    if (!massangersImages[j].classList.contains('unactive_massanger')) {
+      massangersImages[j].classList.add('unactive_massanger');
+    } else {
+      continue;
+    }
+  }
+
+  if (this.classList.contains('unactive_massanger')) {
+    this.classList.remove('unactive_massanger');
   }
 }
