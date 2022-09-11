@@ -29,7 +29,13 @@ $(document).ready(function () {
     slidesToShow: 3,
     speed: 1000,
     easing: 'ease',
-    draggable: false
+    draggable: false,
+    responsive: [{
+      breakpoint: 1720,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
   });
   $('.slider_size').slick({
     dots: true,
@@ -42,7 +48,13 @@ $(document).ready(function () {
     slidesToShow: 3,
     speed: 1000,
     easing: 'ease',
-    draggable: false
+    draggable: false,
+    responsive: [{
+      breakpoint: 1720,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
   });
 }); // Function for Material Cost
 

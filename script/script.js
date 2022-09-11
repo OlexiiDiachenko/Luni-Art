@@ -42,6 +42,14 @@ imageComparison('#image-comparison_down');
         speed:1000,
         easing:'ease',
         draggable:false,
+        responsive:[
+            {
+                breakpoint: 1720,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     });
 
     $('.slider_size').slick({
@@ -57,6 +65,14 @@ imageComparison('#image-comparison_down');
         speed:1000,
         easing:'ease',
         draggable:false,
+        responsive:[
+            {
+                breakpoint: 1720,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     });
 })
 

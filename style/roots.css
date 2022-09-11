@@ -144,3 +144,72 @@ button.forClick{
 button.forClick.sliderButton{
     padding: 8px 15px;
 }
+
+
+@media ( min-width: 1451px ) and ( max-width: 1600px ) {
+    .xlarge {
+        font-size: 120px;
+        line-height: 160px;
+    }
+    
+    .large {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .large_order{
+        font-size: 30px;
+        line-height: 43px;
+        padding: 5px 18px;
+    }
+    
+    .middle {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .normal {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .normal_sub {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .normal_order{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .small_black{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .xsmall_light{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .percent{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .xsmall {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    
+    .individual_font { 
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    button.forClick{
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

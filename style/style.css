@@ -43,16 +43,16 @@ header.header h1,
 
 .header-photo {
     position: absolute;
+    left: 0;
     bottom: 0;
-    left: calc(50% - 345px);
     z-index: 0;
+    width: 100%;
 }
 
 .header-photo .order {
     position: relative;
-    max-width: 100%;
-    width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .header-photo img {
@@ -130,7 +130,7 @@ header.header h1,
     clip-path: circle(49.6% at 89% 50%);
     right: 0px;
     bottom: 50px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
     z-index: 0;
 }
 
@@ -148,7 +148,7 @@ main::before {
     background-color: #646464;
     position: absolute;
     top: 80px;
-    right: calc(50% - 30px);
+    right: calc(50% - 35px);
     transform: rotate(90deg);
 }
 
@@ -177,7 +177,6 @@ section.about_us {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: max-content;
 }
 
 .report_cell {
@@ -190,6 +189,7 @@ section.about_us {
 
 .report_cell_image {
     position: relative;
+    max-width: 100%;
 }
 
 .video-link {
@@ -207,6 +207,7 @@ section.about_us {
     width: 86px;
     background-image: url('../images/webp/youtube.webp');
     border-radius: 50%;
+    background-size: contain;
 }
 
 .report_cell_text {
@@ -280,11 +281,19 @@ section.about_us {
     padding-left: 250px;
 }
 
+.comparison img{
+    max-width: 100%;
+}
+
 .image-comparison {
     position: relative;
     display: inline-block;
     overflow: hidden;
     max-height: 735px;
+}
+
+.image-comparison img{
+    object-fit: contain;
 }
 
 .image-comparison_before {
@@ -538,7 +547,7 @@ section.about_us {
     line-height: 27px;
     color: #FF2257;
     border: none;
-    background: transparent;
+    background-color: transparent;
     margin-top: 5px;
 }
 
@@ -721,17 +730,6 @@ section.about_us {
     align-items: center;
 }
 
-input.choose-material-accept {
-    margin-left: 25px;
-    color: #000000;
-    font-size: 20px;
-    border: none;
-    border-bottom: 1px solid var(--green-color);
-    background: none;
-    text-align: center;
-    width: 150px;
-}
-
 .people_choose {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -745,7 +743,6 @@ input.choose-material-accept {
 .humans-count {
     position: relative;
     display: inline-block;
-    font-style: 40px;
 }
 
 .humans-count::before {
