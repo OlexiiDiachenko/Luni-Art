@@ -28,7 +28,7 @@ label {
     color: var(--second-textcolor);
 }
 
-.large_order{
+.large_order {
     display: inline-block;
     width: max-content;
     font-weight: 700;
@@ -61,14 +61,14 @@ label {
     color: var(--sub-textcolor);
 }
 
-.normal_order{
+.normal_order {
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
     color: var(--green-color);
 }
 
-.small_black{
+.small_black {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -76,7 +76,7 @@ label {
     color: #000000;
 }
 
-.xsmall_light{
+.xsmall_light {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -84,12 +84,12 @@ label {
     color: #8F8F8F;
 }
 
-.percent{
+.percent {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    color:var(--green-color);
+    color: var(--green-color);
 }
 
 .xsmall {
@@ -100,18 +100,18 @@ label {
     color: #000000;
 }
 
-.individual_font { 
+.individual_font {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: #1d1d1d;
 }
 
-.individual_font:hover{
+.individual_font:hover {
     cursor: grab;
 }
 
-.individual_font:active{
+.individual_font:active {
     cursor: grabbing;
 }
 
@@ -123,6 +123,11 @@ a {
 
 /* Buttons */
 
+button {
+    font-family: 'Playfair Display';
+    border: none;
+}
+
 button:hover {
     cursor: grab;
 }
@@ -131,84 +136,85 @@ button:active {
     cursor: grabbing;
 }
 
-button.forClick{
+a.forClick,
+button.forClick {
     font-weight: 700;
     font-size: 40px;
     line-height: 53px;
     color: #FFFFFF;
     background-color: #FF2257;
     border-radius: 36px;
-    border: none;
 }
 
-button.forClick.sliderButton{
+button.forClick.pink {
+    background-color: #FFFFFF;
+    color: #FF2257;
+}
+
+button.forClick.sliderButton {
     padding: 8px 15px;
 }
 
 
-@media ( min-width: 1451px ) and ( max-width: 1600px ) {
+@media (min-width: 1451px) and (max-width: 1600px) {
     .xlarge {
-        font-size: 120px;
-        line-height: 160px;
+        font-size: 135px;
+        line-height: 180px;
     }
-    
+
     .large {
         font-size: 30px;
         line-height: 40px;
     }
-    
-    .large_order{
+
+    .large_order {
         font-size: 30px;
         line-height: 43px;
         padding: 5px 18px;
     }
-    
+
     .middle {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 25px;
+        line-height: 33px;
     }
-    
-    .normal {
-        font-size: 18px;
-        line-height: 25px;
-    }
-    
+
     .normal_sub {
-        font-size: 18px;
-        line-height: 25px;
-    }
-    
-    .normal_order{
-        font-size: 18px;
-        line-height: 25px;
-    }
-    
-    .small_black{
         font-size: 15px;
+        line-height: 20px;
+    }
+
+    .normal_order {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .small_black {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .xsmall_light {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .percent {
+        font-size: 16px;
         line-height: 18px;
     }
-    
-    .xsmall_light{
-        font-size: 15px;
-        line-height: 18px;
-    }
-    
-    .percent{
-        font-size: 15px;
-        line-height: 18px;
-    }
-    
+
     .xsmall {
-        font-size: 13px;
-        line-height: 15px;
+        font-size: 12px;
+        line-height: 13px;
     }
-    
-    .individual_font { 
-        font-size: 15px;
-        line-height: 18px;
+
+    .individual_font {
+        font-size: 12px;
+        line-height: 14px;
     }
-    
-    button.forClick{
+
+    a.forClick,
+    button.forClick {
         font-size: 30px;
         line-height: 40px;
     }
