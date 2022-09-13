@@ -463,7 +463,7 @@ section.about_us {
 /* Стрелка влево */
 .slick-arrow.slick-prev {
     left: 0;
-    background: url('../images/slide-left.svg') 0 0 / 100% no-repeat;
+    background: url('../images/webp/slide-left.webp') 0 0 / 100% no-repeat;
     background-size:contain;
 }
 
@@ -752,7 +752,7 @@ section.about_us {
 }
 
 .humans-count::before {
-    content: url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png') url('../images/greyMan.png');
+    content: url('../images/webp/greyMan.webp') url('../images/webp/greyMan.webp') url('../images/webp/greyMan.webp') url('../images/webp/greyMan.webp') url('../images/webp/greyMan.webp') url('../images/webp/greyMan.webp') url('../images/webp/greyMan.webp') url('../images/webp/greyMan.webp');
     display: block;
     height: 74px;
 }
@@ -785,21 +785,21 @@ section.about_us {
 }
 
 .humans-count-label::before {
-    content: url('../images/greyMan.png');
+    content: url('../images/webp/greyMan.webp');
     display: block;
     transition: 0.3s ease-in;
 }
 
 .humans-count-item:checked,
 .humans-count-item:checked~.humans-count-label {
-    content: url('../images/greenMan.png');
+    content: url('../images/webp/greenMan.webp');
     width: 35px;
 }
 
 .humans-count-label:hover,
 .humans-count-label:hover~.humans-count-label,
 .humans-count-label:checked~.humans-count-label:hover {
-    content: url('../images/greenMan.png');
+    content: url('../images/webp/greenMan.webp');
     width: 35px;
 }
 
