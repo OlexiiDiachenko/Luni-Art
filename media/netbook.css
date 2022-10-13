@@ -171,16 +171,18 @@
   }
 
   .slider_photo_item {
-    max-height: 500px;
+    max-height: 350px;
   }
 
   .slider_photo_item img {
     width: 100%;
   }
 
-  .slider_photo .slick-arrow {
-    top: 192px;
-    transform: translateY(-17.5px);
+  /* Стрелка */
+  .slick-arrow {
+    top: 150px;
+    width: 28px;
+    height: 28px;
   }
 
   .slider_photo + .slider-button {

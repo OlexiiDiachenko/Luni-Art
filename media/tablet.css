@@ -273,18 +273,13 @@
 
   /* Card status popular */
   .card-material-label.popular_material:after {
-    content: "ПОПУЛЯРНИЙ";
-    font-weight: 900;
-    font-size: 13px;
-    line-height: 17px;
-    color: rgba(255, 255, 255, 0.9);
-    background-color: var(--green-color);
-    position: absolute;
-    top: -25px;
-    right: 3px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 3px 15px;
+    font-size: 8px;
+    line-height: 11px;
+    top: -18px;
+    right: 2px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 3px 4px;
   }
 
   /* Grid section with choose format */
