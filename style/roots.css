@@ -335,3 +335,50 @@ button.forClick.sliderButton {
     line-height: 27px;
   }
 }
+
+@media (min-width: 550px) and (max-width: 768px) {
+  .xlarge {
+    font-size: 65px;
+    line-height: 87px;
+  }
+
+  .large {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .middle {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .normal {
+    font-weight: 700;
+  }
+
+  .normal_sub {
+    font-weight: 400;
+  }
+
+  .normal,
+  .normal_sub,
+  .normal_order,
+  .small_black,
+  .xsmall_light,
+  .individual_font,
+  .percent {
+    font-size: 7px;
+    line-height: 9px;
+  }
+
+  .xsmall {
+    font-size: 5px;
+    line-height: 6px;
+  }
+
+  a.forClick,
+  button.forClick {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
