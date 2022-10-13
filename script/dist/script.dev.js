@@ -29,13 +29,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     speed: 1000,
     easing: 'ease',
-    draggable: false,
-    responsive: [{
-      breakpoint: 1720,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
+    draggable: false
   });
   $('.slider_size').slick({
     dots: true,
@@ -48,13 +42,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     speed: 1000,
     easing: 'ease',
-    draggable: false,
-    responsive: [{
-      breakpoint: 1720,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
+    draggable: false
   });
 }); // Function for Material Cost
 
@@ -108,7 +96,6 @@ function coalTable() {
   }
 
   peopleCount();
-  console.log(totalCountPeople);
   newCost(coalPrice, totalCountPeople, arrCoalCost);
   percentCost(coalPrice);
 }
@@ -122,7 +109,6 @@ function oilTable() {
   }
 
   peopleCount();
-  console.log(totalCountPeople);
   newCost(oilPrice, totalCountPeople, arrOilCost);
   percentCost(oilPrice);
 } // Function for reading a count people. 
@@ -173,8 +159,6 @@ function newCost(tablePrice, count, arrCost) {
       }
     }
   }
-
-  console.log(arrCost);
 
   for (var j = 0; j < NewCost.length; j++) {
     var _cost = NewCost[j].querySelector('.cost');

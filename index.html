@@ -1,705 +1,851 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style/roots.css">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./media/laptop.css">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/logotype3.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style/roots.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./media/laptop.css" />
+    <link rel="stylesheet" href="./media/netbook.css" />
+    <link rel="stylesheet" href="./media/tablet.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./images/logotype3.ico"
+    />
     <title>LuniArt</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-        <!-- Site Head -->
-        <p class="normal_sub">Творці Ваших незабутніх вражень</p>
-        <h1 class="xlarge">Luni Art</h1>
+      <!-- Site Head -->
+      <p class="normal_sub">Творці Ваших незабутніх вражень</p>
+      <h1 class="xlarge">Luni Art</h1>
 
-        <!-- Our Achivments -->
-        <div class="achivments">
-            <div class="cell">
-                <img src="./images/achivment_left.png" alt="">
-                <p class="normal"> <b>Професійні художники </b> </p>
-                <p class="normal_sub"> Команда з самих найкращих<br>
-                    художників України!</p>
-            </div>
-            <div class="cell">
-                <img src="./images/achivment_middle.png" alt="">
-                <p class="normal"> <b>Картини з відео</b> </p>
-                <p class="normal_sub"> Ми автори ідеї з<br>
-                    відеонаписання картин </p>
-            </div>
-            <div class="cell">
-                <img src="./images/achivment_right.png" alt="">
-                <p class="normal"> <b>Допомагаємо армії</b> </p>
-                <p class="normal_sub"> Частину коштів надсилаємо<br>
-                    в офіційний фонд ЗСУ</p>
-            </div>
+      <!-- Our Achivments -->
+      <div class="achivments flex-row">
+        <div class="cell">
+          <img src="./images/webp/achivment_left.webp" alt="" />
+          <p class="normal"><b>Професійні художники </b></p>
+          <p class="normal_sub">
+            Команда з самих найкращих<br />
+            художників України!
+          </p>
         </div>
-        <!-- Photo With Painting -->
-        <div class="header-photo">
-            <div class="order">
-                <img src="./images/webp/header.webp" alt="">
-                <div class="header-order-link">
-                    <a class="forClick" href="#about_us">Детальніше</a>
-                </div>
-            </div>
+        <div class="cell">
+          <img src="./images/webp/achivment_middle.webp" alt="" />
+          <p class="normal"><b>Картини з відео</b></p>
+          <p class="normal_sub">
+            Ми автори ідеї з<br />
+            відеонаписання картин
+          </p>
         </div>
-        <!-- Top-Left Card -->
-        <div class="pseudo pseudoTopLeft"><img src="./images/webp/pseudoTopLeft.webp" alt=""></div>
-        <!-- Top-Left Orange Card -->
-        <div class="pseudo pseudoTopLeftCenter"><img src="./images/pseudoTopLeftCenter.png" alt=""></div>
-        <!-- Top-Rigth Card -->
-        <div class="pseudo pseudoRightTop"><img src="./images/pseudoRightTop.png" alt=""></div>
-        <!-- Bottom-Right Orange Card -->
-        <div class="pseudo pseudoRightBottom"><img src="./images/pseudoRightBottom.png" alt=""></div>
-        <!-- Blue Circle -->
-        <div class="pseudo pseudoRadiusBlue"></div>
-        <!-- White Circle -->
-        <div class="pseudo pseudoRadiusWhite"></div>
+        <div class="cell">
+          <img src="./images/webp/achivment_right.webp" alt="" />
+          <p class="normal"><b>Допомагаємо армії</b></p>
+          <p class="normal_sub">
+            Частину коштів надсилаємо<br />
+            в офіційний фонд ЗСУ
+          </p>
+        </div>
+      </div>
+      <!-- Photo With Painting -->
+      <div class="header-photo">
+        <div class="order">
+          <img src="./images/webp/header.webp" alt="" />
+          <div class="header-order-link">
+            <a class="forClick" href="#about_us">Детальніше</a>
+          </div>
+        </div>
+      </div>
+      <!-- Top-Left Card -->
+      <div class="pseudo pseudoTopLeft">
+        <img src="./images/webp/pseudoTopLeft.webp" alt="" />
+      </div>
+      <!-- Top-Left Orange Card -->
+      <div class="pseudo pseudoTopLeftCenter">
+        <img src="./images/webp/pseudoTopLeftCenter.webp" alt="" />
+      </div>
+      <!-- Top-Rigth Card -->
+      <div class="pseudo pseudoRightTop">
+        <img src="./images/webp/pseudoRightTop.webp" alt="" />
+      </div>
+      <!-- Bottom-Right Orange Card -->
+      <div class="pseudo pseudoRightBottom">
+        <img src="./images/webp/pseudoRightBottom.webp" alt="" />
+      </div>
+      <!-- Blue Circle -->
+      <div class="pseudo pseudoRadiusBlue"></div>
+      <!-- White Circle -->
+      <div class="pseudo pseudoRadiusWhite"></div>
     </header>
 
     <main>
-        <!-- Wrapper -->
-        <div class="wrapper">
+      <!-- Section About Us -->
+      <section id="about_us" class="about_us">
+        <div class="container">
+          <!-- About Us Head -->
+          <div class="about_us_text">
+            <h2 class="large">Ми - Українська студія Luniart</h2>
+            <p class="middle">
+              Створюємо картини вже більше двох років та<br />маємо сотні
+              щасливих клієнтів та блогерів
+            </p>
+          </div>
 
-            <!-- Section About Us -->
-            <section id="about_us" class="about_us">
-                <div class="container">
-                    <!-- About Us Head -->
-                    <div class="about_us_text">
-                        <h2 class="large">Ми - Українська студія Luniart</h2>
-                        <p class="middle">Створюємо картини вже більше двох років та<br>маємо сотні щасливих клієнтів та
-                            блогерів</p>
-                    </div>
-
-                    <!-- Section With Links To Video With Gifts -->
-                    <div class="report">
-                        <div class="report_cell">
-                            <div class="report_cell_image">
-                                <img src="./images/webp/about-left.webp" alt="">
-                                <div class="video-link">
-                                    <a href="#" target="_blank"></a>
-                                </div>
-                            </div>
-                            <div class="report_cell_text">
-                                <p class="normal"><b>Lesfleuresss</b><br><b>389к</b>підписників в TikTok</p>
-                                <p class="normal_sub">Зробили портрет Українському<br>блогеру </p>
-                            </div>
-                        </div>
-
-                        <div class="report_cell">
-                            <div class="report_cell_image">
-                                <img src="./images/webp/about-middle.webp" alt="">
-                                <div class="video-link">
-                                    <a href="#" target="_blank"></a>
-                                </div>
-                            </div>
-                            <div class="report_cell_text">
-                                <p class="normal"><b>Цінуємо кожного клієнта</b></p>
-                                <p class="normal_sub">Даруємо незабутні емоції<br>до картини!</p>
-                            </div>
-                        </div>
-
-                        <div class="report_cell">
-                            <div class="report_cell_image">
-                                <img src="./images/webp/about-right.webp" alt="">
-                                <div class="video-link">
-                                    <a href="#" target="_blank"></a>
-                                </div>
-                            </div>
-                            <div class="report_cell_text">
-                                <p class="normal"><b>Антон Скуратов</b><br><b>130к</b> підписників в instagram</p>
-                                <p class="normal_sub">Зробили приємно Українському<br>блогеру-волонтеру</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Section With Links To Video With Gifts End -->
+          <!-- Section With Links To Video With Gifts -->
+          <div class="report flex-row">
+            <div class="report_cell">
+              <div class="report_cell_image">
+                <img src="./images/webp/about-left.webp" alt="" />
+                <div class="video-link">
+                  <a href="#" target="_blank"></a>
                 </div>
-            </section>
-            <!-- Section About Us End -->
+              </div>
+              <div class="report_cell_text flex-column">
+                <p class="normal">
+                  <b>Lesfleuresss</b><br /><b>389к</b>підписників в TikTok
+                </p>
+                <p class="normal_sub">
+                  Зробили портрет Українському<br />блогеру
+                </p>
+              </div>
+            </div>
 
-            <!-- Pink Section With Order -->
-            <section class="order_now">
-                <!-- Image and text -->
-                <div class="order_now_section order_now_section_left">
-                    <img src="./images/gift.png" alt="">
-                    <div class="order_now_text">
-                        <h2 class="large">ЗАМОВЛЯЙТЕ ВЖЕ ЗАРАЗ!</h2>
-                        <p class="small-order">Та отримайте секретний подарунок!</p>
-                    </div>
+            <div class="report_cell">
+              <div class="report_cell_image">
+                <img src="./images/webp/about-middle.webp" alt="" />
+                <div class="video-link">
+                  <a href="#" target="_blank"></a>
                 </div>
-                <!-- Button Order -->
-                <div class="order_now_section order_now_right">
-                    <button class="forClick pink order_button">Хочу картину</button>
+              </div>
+              <div class="report_cell_text flex-column">
+                <p class="normal"><b>Цінуємо кожного клієнта</b></p>
+                <p class="normal_sub">
+                  Даруємо незабутні емоції<br />до картини!
+                </p>
+              </div>
+            </div>
+
+            <div class="report_cell">
+              <div class="report_cell_image">
+                <img src="./images/webp/about-right.webp" alt="" />
+                <div class="video-link">
+                  <a href="#" target="_blank"></a>
                 </div>
-            </section>
-            <!-- End Pink Section With Order -->
-
-            <!-- Section Comparison ( Photo And Paint ) -->
-
-            <section class="comparison">
-
-                <div id="image-comparison" class="image_comparison">
-                    <div class="image-comparison_before">
-                        <img src="./images/webp/ilon_paintingNew.webp" alt="">
-                    </div>
-                    <img src="./images/webp/ilon_colorNew.webp" alt="">
-                    <button class="image-comparison_slider"></button>
-                </div>
-
-                <div class="text-comparison text-comparison-coal">
-                    <img src="./images/comparison.png" alt="">
-                    <h3 class="large">Швидкість</h3>
-                    <p class="middle">Кожне Ваше замовлення виконують професійні художники з роками практики за
-                        плечами.<br><br>
-                        Ми гарантуємо якість побудовану на досвіді.</p>
-                    <button class="forClick order_button">Хочу вугілля</button>
-                </div>
-
-                <div id="image-comparison_down" class="image_comparison">
-                    <div class="image-comparison_before">
-                        <img src="./images/webp/family_painting.webp" alt="">
-                    </div>
-                    <img src="./images/webp/family_color.webp" alt="">
-                    <button class="image-comparison_slider"></button>
-                </div>
-
-                <div class="text-comparison text-comparison-oil">
-                    <img src="./images/comparison.png" alt="">
-                    <h3 class="large">Якість</h3>
-                    <p class="middle">Кожне Ваше замовлення виконують професійні художники з роками практики за
-                        плечами.<br><br>
-                        Ми гарантуємо якість побудовану на досвіді.</p>
-                    <button class="forClick order_button">Хочу олію</button>
-                </div>
-
-            </section>
-
-            <!-- Obligations -->
-            <section class="obligations">
-                <div class="container">
-
-                    <!-- Obligations "Head" -->
-                    <div class="obligations-text">
-                        <h2 class="large">Наші зобов’язання перед вами</h2>
-                        <p class="middle">Luniart - це не про прості замовлення і їх виконання. Це клієнти, які бажають
-                            отримати мистецький витвір і отримують. Підхід до кожної картини як і клієнта
-                            індивідуальний, художник не менш зацікавлений в якості результату роботи чим клієнт, тому
-                            картини завжди якісні, детальні і найголовніше - відповідають побажанням замовника.</p>
-                    </div>
-
-                    <!-- Obligations "Table" -->
-                    <div class="achivments">
-                        <div class="cell">
-                            <img src="./images/webp/obligations_first.webp" alt="">
-                            <p class="middle"><b>100%</b> Pучний <br> розпис</p>
-                        </div>
-
-                        <div class="cell">
-                            <img src="./images/webp/obligations_second.webp" alt="">
-                            <p class="middle">Вносимо правки</p>
-                        </div>
-
-                        <div class="cell">
-                            <img src="./images/webp/obligations_third.webp" alt="">
-                            <p class="middle">Гарантія виконання, або ми повернемо вам кошти</p>
-                        </div>
-
-                        <div class="cell">
-                            <img src="./images/webp/obligations_fourth.webp" alt="">
-                            <p class="middle">Конфіденційність</p>
-                        </div>
-
-                        <div class="cell">
-                            <img src="./images/webp/obligations_fifth.webp" alt="">
-                            <p class="middle">Доставка за <br>наш рахунок</p>
-                        </div>
-                    </div>
-                    <!-- Obligations Table End -->
-
-                </div>
-            </section>
-            <!-- Obligations End -->
-
-            <!-- Section Gift -->
-            <section class="gift">
-                <div class="container">
-
-                    <!-- Section With Gift Text. Gift "Head" -->
-                    <div class="gift-text">
-                        <div class="pencil">
-                            <img src="./images/webp/tassel.webp" alt="">
-                            <h2 class="large">Залишається тільки подарувати!</h2>
-                        </div>
-                        <p class="middle">Ми професійно створимо<br>картину та якісно підготуємо ії оформлення</p>
-                    </div>
-
-                    <!-- Gift Main - Sliders -->
-                    <!-- Slider with photos ( feedback ) -->
-                    <div class="slider_photo">
-                        <div class="slider_photo_item">
-                            <img src="./images/webp/slider_photo_image_first.webp" alt="">
-                            <div class="slider_photo_item_text">
-                                <p class="normal">Подарунок друзям</p>
-                                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
-                            </div>
-                        </div>
-                        <div class="slider_photo_item">
-                            <img src="./images/webp/slider_photo_image_second.webp" alt="">
-                            <div class="slider_photo_item_text">
-                                <p class="normal">Цінуйте особливі моменти</p>
-                                <p class="normal_sub">Об’єднайте родину</p>
-                            </div>
-                        </div>
-                        <div class="slider_photo_item">
-                            <img src="./images/webp/slider_photo_image_third.webp" alt="">
-                            <div class="slider_photo_item_text">
-                                <p class="normal">Подарунок друзям</p>
-                                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
-                            </div>
-                        </div>
-                        <div class="slider_photo_item">
-                            <img src="./images/webp/slider_photo_image_third.webp" alt="">
-                            <div class="slider_photo_item_text">
-                                <p class="normal">Подарунок друзям</p>
-                                <p class="normal_sub">Об’єднайте родину</p>
-                            </div>
-                        </div>
-                        <div class="slider_photo_item">
-                            <img src="./images/webp/slider_photo_image_second.webp" alt="">
-                            <div class="slider_photo_item_text">
-                                <p class="normal">Подарунок друзям</p>
-                                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
-                            </div>
-                        </div>
-                        <div class="slider_photo_item">
-                            <img src="./images/webp/slider_photo_image_first.webp" alt="">
-                            <div class="slider_photo_item_text">
-                                <p class="normal">Цінуйте особливі моменти</p>
-                                <p class="normal_sub">Об’єднайте родину</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-button">
-                        <button class="forClick sliderButton order_button">Здивувати близьких</button>
-                    </div>
-
-                    <!-- Slider with photos ( feedback ) END -->
-
-                    <!-- Slider with sizes -->
-
-                    <div class="slider_size">
-                        <div class="slider_size_item">
-                            <div class="slider_size_item_text">
-                                <h3 class="large">A5</h3>
-                                <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button order_button">Замовити ></button>
-                            </div>
-                            <img src="./images/webp/slider_size_image.webp" alt="">
-                        </div>
-                        <div class="slider_size_item">
-                            <div class="slider_size_item_text">
-                                <h3 class="large">A4</h3>
-                                <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button order_button">Замовити ></button>
-                            </div>
-                            <img src="./images/webp/slider_size_image.webp" alt="">
-                        </div>
-                        <div class="slider_size_item">
-                            <div class="slider_size_item_text">
-                                <h3 class="large">A3</h3>
-                                <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button order_button">Замовити ></button>
-                            </div>
-                            <img src="./images/webp/slider_size_image.webp" alt="">
-                        </div>
-                        <div class="slider_size_item">
-                            <div class="slider_size_item_text">
-                                <h3 class="large">A2</h3>
-                                <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button order_button">Замовити ></button>
-                            </div>
-                            <img src="./images/webp/slider_size_image.webp" alt="">
-                        </div>
-                        <div class="slider_size_item">
-                            <div class="slider_size_item_text">
-                                <h3 class="large">A1</h3>
-                                <p class="normal_sub">Мегаціна.<br>Суперякість</p>
-                                <button class="slider-order-button order_button">Замовити ></button>
-                            </div>
-                            <img src="./images/webp/slider_size_image.webp" alt="">
-                        </div>
-
-                    </div>
-                    <!-- Slider with sizes END -->
-
-                    <div class="video-process">
-                        <h2 class="large">Відео-процес</h2>
-                        <p class="middle">Зафіксуємо момент створення<br>вашої картини!</p>
-                    </div>
-
-                    <!-- Slider with videos -->
-
-                    <div class="slider_video">
-                        <div class="slider_video_item">
-                            <img src="./images/webp/slider_video_first.webp" alt="">
-                            <div class="slider_video_item_text">
-                                <p class="normal">Приємна згадка</p>
-                                <p class="normal_sub">Об’єднайте родину на<br>одному полотні</p>
-                            </div>
-                        </div>
-                        <div class="slider_video_item">
-                            <img src="./images/webp/slider_video_second.webp" alt="">
-                            <div class="slider_video_item_text">
-                                <p class="normal">Зафільмуйте кохання</p>
-                                <p class="normal_sub">Додайте фарб у ваші<br>стосунки</p>
-                            </div>
-                        </div>
-                        <div class="slider_video_item">
-                            <img src="./images/webp/slider_video_third.webp" alt="">
-                            <div class="slider_video_item_text">
-                                <p class="normal">Подарунок друзям</p>
-                                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
-                            </div>
-                        </div>
-                        <div class="slider_video_item">
-                            <img src="./images/webp/slider_video_third.webp" alt="">
-                            <div class="slider_video_item_text">
-                                <p class="normal">Подарунок друзям</p>
-                                <p class="normal_sub">Об’єднайте родину</p>
-                            </div>
-                        </div>
-                        <div class="slider_video_item">
-                            <img src="./images/webp/slider_video_second.webp" alt="">
-                            <div class="slider_video_item_text">
-                                <p class="normal">Подарунок друзям</p>
-                                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
-                            </div>
-                        </div>
-                        <div class="slider_video_item">
-                            <img src="./images/webp/slider_video_first.webp" alt="">
-                            <div class="slider_video_item_text">
-                                <p class="normal">Цінуйте особливі моменти</p>
-                                <p class="normal_sub">Об’єднайте родину</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider-button">
-                        <button class="forClick sliderButton order_button">Хочу з відео</button>
-                    </div>
-                    <!-- Slider with videos END -->
-
-                    <!-- SLider End -->
-                </div>
-            </section>
-            <!-- Section Gift End -->
-
-            <!-- Constructor Section -->
-
-            <section id="order">
-                <!-- Constructor Section -->
-                <div class="order_head">
-                    <h2 class="large">Дізнайтесь ціну</h2>
-                    <p class="middle">Зручний конструктор завдяки якому ви дізнаєтесь ціну всього в 3 кроки</p>
-                </div>
-
-                <div class="constructor-section">
-                    <!-- Cards With Material -->
-                    <div class="cards">
-                        <div class="card coal">
-                            <img src="./images/webp/coal.webp" alt="">
-                            <input class="card-material" type="radio" name="material" id="coal" value="coal">
-                            <label class="card-material-label coal-label popular_material" for="coal"></label>
-                            <p>Вугілля</p>
-                        </div>
-                        <div class="card oil">
-                            <img src="./images/webp/oil.webp" alt="">
-                            <input class="card-material" type="radio" name="material" id="oil" value="oil">
-                            <label class="card-material-label oil-label" for="oil"></label>
-                            <p>Олія</p>
-                        </div>
-                    </div>
-                    <!-- The main context in form -->
-                    <div class="choose-section">
-
-                        <!-- Count people -->
-                        <div class="choose-flex people_choose">
-                            <p class="people normal_order">2.Кількість людей :</p>
-                            <div class="humans-count">
-                                <div class="humans-count-items">
-                                    <input id="humans-count-8" type="radio" value="8" class="humans-count-item"
-                                        name="humans-count" data-count="8">
-                                    <label for="humans-count-8" class="humans-count-label"></label>
-
-                                    <input id="humans-count-7" type="radio" value="7" class="humans-count-item"
-                                        name="humans-count" data-count="7">
-                                    <label for="humans-count-7" class="humans-count-label"></label>
-
-                                    <input id="humans-count-6" type="radio" value="6" class="humans-count-item"
-                                        name="humans-count" data-count="6">
-                                    <label for="humans-count-6" class="humans-count-label"></label>
-
-                                    <input id="humans-count-5" type="radio" value="5" class="humans-count-item"
-                                        name="humans-count" data-count="5">
-                                    <label for="humans-count-5" class="humans-count-label"></label>
-
-                                    <input id="humans-count-4" type="radio" value="4" class="humans-count-item"
-                                        name="humans-count" data-count="4">
-                                    <label for="humans-count-4" class="humans-count-label"></label>
-
-                                    <input id="humans-count-3" type="radio" value="3" class="humans-count-item"
-                                        name="humans-count" data-count="3">
-                                    <label for="humans-count-3" class="humans-count-label"></label>
-
-                                    <input id="humans-count-2" type="radio" value="2" class="humans-count-item"
-                                        name="humans-count" data-count="2">
-                                    <label for="humans-count-2" class="humans-count-label"></label>
-
-                                    <input id="humans-count-1" type="radio" value="1" class="humans-count-item"
-                                        name="humans-count" data-count="1" checked>
-                                    <label for="humans-count-1" class="humans-count-label"></label>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Count people -->
-
-                        <!-- Section with size choose -->
-                        <p class="normal_order">3. Розмір</p>
-                        <div class="choose-grid choose-grid_coal ">
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-5</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">1200</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent"></p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-4</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">1800</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent"></p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-3</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">2800</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent"></p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-2</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">3600</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent"></p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-1</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">4500</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent"></p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose order_button">
-                                <div class="individual_size">
-                                    <h3 class="individual_font">Індивідуальний</h3>
-                                </div>
-                                <div class="individual_size">
-                                    <p class="individual_font">розмір</p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-
-                        </div>
-
-                        <div class="choose-grid choose-grid_oil">
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-5</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">1600</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent">0₴</p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-4</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">2200</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent">0₴</p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-3</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">3200</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent">0₴</p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-2</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">4000</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent">0₴</p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose">
-                                <div class="size_choose_item">
-                                    <h3 class="small_black">А-1</h3>
-                                    <div class="format-cost">
-                                        <p class="cost xsmall_light">5500</p>
-                                        <div class="hrn xsmall_light">₴</div>
-                                    </div>
-                                </div>
-                                <div class="size_choose_item">
-                                    <h3 class="xsmall">20% до сплати:</h3>
-                                    <p class="percent">0₴</p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                            <div class="size_choose order_button">
-                                <div class="individual_size">
-                                    <h3 class="individual_font">Індивідуальний </h3>
-                                </div>
-                                <div class="individual_size">
-                                    <p class="individual_font">розмір</p>
-                                </div>
-                                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
-                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
-                            </div>
-
-                        </div>
-
-
-                        <!-- Section With Size Choose -->
-                    </div>
-                    <!-- The Main Context In Form End -->
-                </div>
-            </section>
-
-            <section class="createPainting">
-                <div class="create-text">
-                    <h3 class="large">Створимо картину за вашим фото</h3>
-                    <p class="normal">Повністю продукт ручної праці, також оформимо картину в сучасному стилі</p>
-                </div>
-                <button class="order_button forClick pink">Отримати консультацію</button>
-            </section>
-
+              </div>
+              <div class="report_cell_text flex-column">
+                <p class="normal">
+                  <b>Антон Скуратов</b><br /><b>130к</b> підписників в instagram
+                </p>
+                <p class="normal_sub">
+                  Зробили приємно Українському<br />блогеру-волонтеру
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Section With Links To Video With Gifts End -->
         </div>
-        <!-- Wrapper End -->
+      </section>
+      <!-- Section About Us End -->
 
+      <!-- Pink Section With Order -->
+      <section class="order_now flex">
+        <!-- Image and text -->
+        <div class="order_now_section flex-row order_now_section_left">
+          <img src="./images/webp/gift.webp" alt="" />
+          <div class="order_now_text">
+            <h2 class="large">ЗАМОВЛЯЙТЕ ВЖЕ ЗАРАЗ!</h2>
+            <p class="small-order">Та отримайте секретний подарунок!</p>
+          </div>
+        </div>
+        <!-- Button Order -->
+        <div class="order_now_section flex-row order_now_right">
+          <button class="forClick pink order_button">Хочу картину</button>
+        </div>
+      </section>
+      <!-- End Pink Section With Order -->
+
+      <!-- Section Comparison ( Photo And Paint ) -->
+
+      <section class="comparison">
+        <div id="image-comparison" class="image_comparison">
+          <div class="image-comparison_before">
+            <img src="./images/webp/ilon_paintingNew.webp" alt="" />
+          </div>
+          <img src="./images/webp/ilon_colorNew.webp" alt="" />
+          <button class="image-comparison_slider"></button>
+        </div>
+
+        <div class="text-comparison flex-column text-comparison-coal">
+          <img src="./images/webp/comparison.webp" alt="" />
+          <h3 class="large">Швидкість</h3>
+          <p class="middle">
+            Кожне Ваше замовлення виконують професійні художники з роками
+            практики за плечами.<br /><br />
+            Ми гарантуємо якість побудовану на досвіді.
+          </p>
+          <button class="forClick order_button">Хочу вугілля</button>
+        </div>
+
+        <div id="image-comparison_down" class="image_comparison">
+          <div class="image-comparison_before">
+            <img src="./images/webp/family_painting.webp" alt="" />
+          </div>
+          <img src="./images/webp/family_color.webp" alt="" />
+          <button class="image-comparison_slider"></button>
+        </div>
+
+        <div class="text-comparison flex-column text-comparison-oil">
+          <img src="./images/webp/comparison.webp" alt="" />
+          <h3 class="large">Якість</h3>
+          <p class="middle">
+            Кожне Ваше замовлення виконують професійні художники з роками
+            практики за плечами.<br /><br />
+            Ми гарантуємо якість побудовану на досвіді.
+          </p>
+          <button class="forClick order_button">Хочу олію</button>
+        </div>
+      </section>
+
+      <!-- Obligations -->
+      <section class="obligations">
+        <div class="container">
+          <!-- Obligations "Head" -->
+          <div class="obligations-text">
+            <h2 class="large">Наші зобов’язання перед вами</h2>
+            <p class="middle">
+              Luniart - це не про прості замовлення і їх виконання. Це клієнти,
+              які бажають отримати мистецький витвір і отримують. Підхід до
+              кожної картини як і клієнта індивідуальний, художник не менш
+              зацікавлений в якості результату роботи чим клієнт, тому картини
+              завжди якісні, детальні і найголовніше - відповідають побажанням
+              замовника.
+            </p>
+          </div>
+
+          <!-- Obligations "Table" -->
+          <div class="achivments flex-row">
+            <div class="cell">
+              <img src="./images/webp/obligations_first.webp" alt="" />
+              <p class="middle">
+                <b>100%</b> Pучний <br />
+                розпис
+              </p>
+            </div>
+
+            <div class="cell">
+              <img src="./images/webp/obligations_second.webp" alt="" />
+              <p class="middle">Вносимо правки</p>
+            </div>
+
+            <div class="cell">
+              <img src="./images/webp/obligations_third.webp" alt="" />
+              <p class="middle">
+                Гарантія виконання, або ми повернемо вам кошти
+              </p>
+            </div>
+
+            <div class="cell">
+              <img src="./images/webp/obligations_fourth.webp" alt="" />
+              <p class="middle">Конфіденційність</p>
+            </div>
+
+            <div class="cell">
+              <img src="./images/webp/obligations_fifth.webp" alt="" />
+              <p class="middle">Доставка за <br />наш рахунок</p>
+            </div>
+          </div>
+          <!-- Obligations Table End -->
+        </div>
+      </section>
+      <!-- Obligations End -->
+
+      <!-- Section Gift -->
+      <section class="gift flex-column">
+        <div class="container">
+          <!-- Section With Gift Text. Gift "Head" -->
+          <div class="gift-text">
+            <div class="pencil flex">
+              <img src="./images/webp/tassel.webp" alt="" />
+              <h2 class="large">Залишається тільки подарувати!</h2>
+            </div>
+            <p class="middle">
+              Ми професійно створимо<br />картину та якісно підготуємо ії
+              оформлення
+            </p>
+          </div>
+
+          <!-- Gift Main - Sliders -->
+          <!-- Slider with photos ( feedback ) -->
+          <div class="slider_photo">
+            <div class="slider_photo_item">
+              <img src="./images/webp/slider_photo_image_first.webp" alt="" />
+              <div class="slider_photo_item_text">
+                <p class="normal">Подарунок друзям</p>
+                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
+              </div>
+            </div>
+            <div class="slider_photo_item">
+              <img src="./images/webp/slider_photo_image_second.webp" alt="" />
+              <div class="slider_photo_item_text">
+                <p class="normal">Цінуйте особливі моменти</p>
+                <p class="normal_sub">Об’єднайте родину</p>
+              </div>
+            </div>
+            <div class="slider_photo_item">
+              <img src="./images/webp/slider_photo_image_third.webp" alt="" />
+              <div class="slider_photo_item_text">
+                <p class="normal">Подарунок друзям</p>
+                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
+              </div>
+            </div>
+            <div class="slider_photo_item">
+              <img src="./images/webp/slider_photo_image_third.webp" alt="" />
+              <div class="slider_photo_item_text">
+                <p class="normal">Подарунок друзям</p>
+                <p class="normal_sub">Об’єднайте родину</p>
+              </div>
+            </div>
+            <div class="slider_photo_item">
+              <img src="./images/webp/slider_photo_image_second.webp" alt="" />
+              <div class="slider_photo_item_text">
+                <p class="normal">Подарунок друзям</p>
+                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
+              </div>
+            </div>
+            <div class="slider_photo_item">
+              <img src="./images/webp/slider_photo_image_first.webp" alt="" />
+              <div class="slider_photo_item_text">
+                <p class="normal">Цінуйте особливі моменти</p>
+                <p class="normal_sub">Об’єднайте родину</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-button">
+            <button class="forClick sliderButton order_button">
+              Здивувати близьких
+            </button>
+          </div>
+
+          <!-- Slider with photos ( feedback ) END -->
+
+          <!-- Slider with sizes -->
+
+          <div class="slider_size">
+            <div class="slider_size_item">
+              <div class="slider_size_item_text">
+                <h3 class="large">A5</h3>
+                <p class="normal_sub">Мегаціна.<br />Суперякість</p>
+                <button class="slider-order-button order_button">
+                  Замовити >
+                </button>
+              </div>
+              <img src="./images/webp/slider_size_image.webp" alt="" />
+            </div>
+            <div class="slider_size_item">
+              <div class="slider_size_item_text">
+                <h3 class="large">A4</h3>
+                <p class="normal_sub">Мегаціна.<br />Суперякість</p>
+                <button class="slider-order-button order_button">
+                  Замовити >
+                </button>
+              </div>
+              <img src="./images/webp/slider_size_image.webp" alt="" />
+            </div>
+            <div class="slider_size_item">
+              <div class="slider_size_item_text">
+                <h3 class="large">A3</h3>
+                <p class="normal_sub">Мегаціна.<br />Суперякість</p>
+                <button class="slider-order-button order_button">
+                  Замовити >
+                </button>
+              </div>
+              <img src="./images/webp/slider_size_image.webp" alt="" />
+            </div>
+            <div class="slider_size_item">
+              <div class="slider_size_item_text">
+                <h3 class="large">A2</h3>
+                <p class="normal_sub">Мегаціна.<br />Суперякість</p>
+                <button class="slider-order-button order_button">
+                  Замовити >
+                </button>
+              </div>
+              <img src="./images/webp/slider_size_image.webp" alt="" />
+            </div>
+            <div class="slider_size_item">
+              <div class="slider_size_item_text">
+                <h3 class="large">A1</h3>
+                <p class="normal_sub">Мегаціна.<br />Суперякість</p>
+                <button class="slider-order-button order_button">
+                  Замовити >
+                </button>
+              </div>
+              <img src="./images/webp/slider_size_image.webp" alt="" />
+            </div>
+          </div>
+          <!-- Slider with sizes END -->
+
+          <div class="video-process">
+            <h2 class="large">Відео-процес</h2>
+            <p class="middle">
+              Зафіксуємо момент створення<br />вашої картини!
+            </p>
+          </div>
+
+          <!-- Slider with videos -->
+
+          <div class="slider_video">
+            <div class="slider_video_item">
+              <img src="./images/webp/slider_video_first.webp" alt="" />
+              <div class="slider_video_item_text">
+                <p class="normal">Приємна згадка</p>
+                <p class="normal_sub">
+                  Об’єднайте родину на<br />одному полотні
+                </p>
+              </div>
+            </div>
+            <div class="slider_video_item">
+              <img src="./images/webp/slider_video_second.webp" alt="" />
+              <div class="slider_video_item_text">
+                <p class="normal">Зафільмуйте кохання</p>
+                <p class="normal_sub">Додайте фарб у ваші<br />стосунки</p>
+              </div>
+            </div>
+            <div class="slider_video_item">
+              <img src="./images/webp/slider_video_third.webp" alt="" />
+              <div class="slider_video_item_text">
+                <p class="normal">Подарунок друзям</p>
+                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
+              </div>
+            </div>
+            <div class="slider_video_item">
+              <img src="./images/webp/slider_video_third.webp" alt="" />
+              <div class="slider_video_item_text">
+                <p class="normal">Подарунок друзям</p>
+                <p class="normal_sub">Об’єднайте родину</p>
+              </div>
+            </div>
+            <div class="slider_video_item">
+              <img src="./images/webp/slider_video_second.webp" alt="" />
+              <div class="slider_video_item_text">
+                <p class="normal">Подарунок друзям</p>
+                <p class="normal_sub">Даруємо незабутні емоції до картини!</p>
+              </div>
+            </div>
+            <div class="slider_video_item">
+              <img src="./images/webp/slider_video_first.webp" alt="" />
+              <div class="slider_video_item_text">
+                <p class="normal">Цінуйте особливі моменти</p>
+                <p class="normal_sub">Об’єднайте родину</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-button">
+            <button class="forClick sliderButton order_button">
+              Хочу з відео
+            </button>
+          </div>
+          <!-- Slider with videos END -->
+
+          <!-- SLider End -->
+        </div>
+      </section>
+      <!-- Section Gift End -->
+
+      <!-- Constructor Section -->
+
+      <section id="order" class="flex-column">
+        <!-- Constructor Section -->
+        <div class="order_head flex-column">
+          <h2 class="large">Дізнайтесь ціну</h2>
+          <p class="middle">
+            Зручний конструктор завдяки якому ви дізнаєтесь ціну всього в 3
+            кроки
+          </p>
+        </div>
+
+        <div class="constructor-section">
+          <!-- Cards With Material -->
+          <div class="cards flex">
+            <div class="card coal">
+              <img src="./images/webp/coal.webp" alt="" />
+              <input
+                class="card-material"
+                type="radio"
+                name="material"
+                id="coal"
+                value="coal"
+              />
+              <label
+                class="card-material-label coal-label popular_material"
+                for="coal"
+              ></label>
+              <p>Вугілля</p>
+            </div>
+            <div class="card oil">
+              <img src="./images/webp/oil.webp" alt="" />
+              <input
+                class="card-material"
+                type="radio"
+                name="material"
+                id="oil"
+                value="oil"
+              />
+              <label class="card-material-label oil-label" for="oil"></label>
+              <p>Олія</p>
+            </div>
+          </div>
+          <!-- The main context in form -->
+          <div class="choose-section">
+            <!-- Count people -->
+            <div class="choose-flex flex people_choose">
+              <p class="people normal_order">2.Кількість людей :</p>
+              <div class="humans-count">
+                <div class="humans-count-items">
+                  <input
+                    id="humans-count-8"
+                    type="radio"
+                    value="8"
+                    class="humans-count-item"
+                    name="humans-count"
+                    data-count="8"
+                  />
+                  <label
+                    for="humans-count-8"
+                    class="humans-count-label"
+                  ></label>
+
+                  <input
+                    id="humans-count-7"
+                    type="radio"
+                    value="7"
+                    class="humans-count-item"
+                    name="humans-count"
+                    data-count="7"
+                  />
+                  <label
+                    for="humans-count-7"
+                    class="humans-count-label"
+                  ></label>
+
+                  <input
+                    id="humans-count-6"
+                    type="radio"
+                    value="6"
+                    class="humans-count-item"
+                    name="humans-count"
+                    data-count="6"
+                  />
+                  <label
+                    for="humans-count-6"
+                    class="humans-count-label"
+                  ></label>
+
+                  <input
+                    id="humans-count-5"
+                    type="radio"
+                    value="5"
+                    class="humans-count-item"
+                    name="humans-count"
+                    data-count="5"
+                  />
+                  <label
+                    for="humans-count-5"
+                    class="humans-count-label"
+                  ></label>
+
+                  <input
+                    id="humans-count-4"
+                    type="radio"
+                    value="4"
+                    class="humans-count-item"
+                    name="humans-count"
+                    data-count="4"
+                  />
+                  <label
+                    for="humans-count-4"
+                    class="humans-count-label"
+                  ></label>
+
+                  <input
+                    id="humans-count-3"
+                    type="radio"
+                    value="3"
+                    class="humans-count-item"
+                    name="humans-count"
+                    data-count="3"
+                  />
+                  <label
+                    for="humans-count-3"
+                    class="humans-count-label"
+                  ></label>
+
+                  <input
+                    id="humans-count-2"
+                    type="radio"
+                    value="2"
+                    class="humans-count-item"
+                    name="humans-count"
+                    data-count="2"
+                  />
+                  <label
+                    for="humans-count-2"
+                    class="humans-count-label"
+                  ></label>
+
+                  <input
+                    id="humans-count-1"
+                    type="radio"
+                    value="1"
+                    class="humans-count-item"
+                    name="humans-count"
+                    data-count="1"
+                    checked
+                  />
+                  <label
+                    for="humans-count-1"
+                    class="humans-count-label"
+                  ></label>
+                </div>
+              </div>
+            </div>
+            <!-- Count people -->
+
+            <!-- Section with size choose -->
+            <p class="normal_order">3. Розмір</p>
+            <div class="choose-grid choose-grid_coal">
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-5</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">1200</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent"></p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-4</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">1800</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent"></p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-3</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">2800</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent"></p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-2</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">3600</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent"></p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-1</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">4500</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent"></p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose order_button">
+                <div class="individual_size">
+                  <h3 class="individual_font">Індивідуальний</h3>
+                </div>
+                <div class="individual_size">
+                  <p class="individual_font">розмір</p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+            </div>
+
+            <div class="choose-grid choose-grid_oil">
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-5</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">1600</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent">0₴</p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-4</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">2200</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent">0₴</p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-3</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">3200</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent">0₴</p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-2</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">4000</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent">0₴</p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose">
+                <div class="size_choose_item">
+                  <h3 class="small_black">А-1</h3>
+                  <div class="format-cost">
+                    <p class="cost xsmall_light">5500</p>
+                    <div class="hrn xsmall_light">₴</div>
+                  </div>
+                </div>
+                <div class="size_choose_item">
+                  <h3 class="xsmall">20% до сплати:</h3>
+                  <p class="percent">0₴</p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+
+              <div class="size_choose order_button">
+                <div class="individual_size">
+                  <h3 class="individual_font">Індивідуальний</h3>
+                </div>
+                <div class="individual_size">
+                  <p class="individual_font">розмір</p>
+                </div>
+                <!-- <button class="info" type="button"><img src="./images/icon.png" alt=""><img
+                                            class="info_image" src="./images/sliderImageOne.png" alt=""></button> -->
+              </div>
+            </div>
+
+            <!-- Section With Size Choose -->
+          </div>
+          <!-- The Main Context In Form End -->
+        </div>
+      </section>
+
+      <section class="createPainting flex-row">
+        <div class="create-text">
+          <h3 class="large">Створимо картину за вашим фото</h3>
+          <p class="normal">
+            Повністю продукт ручної праці, також оформимо картину в сучасному
+            стилі
+          </p>
+        </div>
+        <button class="order_button forClick pink">
+          Отримати консультацію
+        </button>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-info">
-                <!-- Left Part Of Footer -->
-                <p class="sub">© 2022 LuniArt.ua</p>
-                <!-- Links For Social -->
-                <div class="links">
-                    <div class="number">
-                        <p class="sub">Працюємо 24/7 по всій Україні</p>
-                    </div>
-                    <a href="https://instagram.com/luniartst?igshid=YmMyMTA2M2Y=" target="_blank"><img
-                            src="./images/instagram.png" alt=""></a>
-                    <a href="https://web.telegram.org/k/#@DySHaKing" target="_blank"><img src="./images/telegram.png"
-                            alt=""></a>
-                </div>
+      <div class="container">
+        <div class="footer-info flex-row">
+          <!-- Left Part Of Footer -->
+          <p class="normal_sub">© 2022 LuniArt.ua</p>
+          <!-- Links For Social -->
+          <div class="links flex-row">
+            <div class="number">
+              <p class="normal_sub">Працюємо 24/7 по всій Україні</p>
             </div>
+            <a
+              href="https://instagram.com/luniartst?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              ><img src="./images/webp/instagram.webp" alt=""
+            /></a>
+            <a href="https://web.telegram.org/k/#@DySHaKing" target="_blank"
+              ><img src="./images/webp/telegram.webp" alt=""
+            /></a>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Footer End -->
@@ -707,42 +853,71 @@
     <!-- Get Consult Menu -->
 
     <div class="consult">
-        <div class="consult-info">
-            <h2>Безкоштовна консультація</h2>
-            <img src="./images/consult.png" alt="" class="consult_image">
-            <form id="consult_form">
-                <div class="userInfo">
-                    <input class="userInfo-input" type="text" name="name" id="name" data-length="1"
-                        pattern="[A-Za-zА-Яа-яЇїЁё]{1,}" required>
-                    <label class="userInfo-label" for="name">Ваше Ім’я</label>
-                </div>
+      <div class="consult-info flex-column">
+        <h2>Безкоштовна консультація</h2>
+        <img src="./images/webp/consult.webp" alt="" class="consult_image" />
+        <form id="consult_form">
+          <div class="userInfo">
+            <input
+              class="userInfo-input"
+              type="text"
+              name="name"
+              id="name"
+              data-length="1"
+              pattern="[A-Za-zА-Яа-яЇїЁё]{1,}"
+              required
+            />
+            <label class="userInfo-label" for="name">Ваше Ім’я</label>
+          </div>
 
-                <div class="userInfo">
-                    <input class="userInfo-input" type="tel" name="phone" id="phone" pattern="\+[0-9]{12}"
-                        maxlength="13" data-length="13"
-                        onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЇїЁёІі]/g,'');" required>
-                    <label class="userInfo-label" for="phone">Номер телефону</label>
-                    <p class="example">Приклад +380123456789</p>
-                </div>
+          <div class="userInfo">
+            <input
+              class="userInfo-input"
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="\+[0-9]{12}"
+              maxlength="13"
+              data-length="13"
+              onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЇїЁёІі]/g,'');"
+              required
+            />
+            <label class="userInfo-label" for="phone">Номер телефону</label>
+            <p class="example">Приклад +380123456789</p>
+          </div>
 
-                <h4 class="contact">Як з вами зв’язатися?</h4>
+          <h4 class="contact">Як з вами зв’язатися?</h4>
 
-                <div class="massangers">
-                    <div class="massanger_images">
-                        <img class="massangers_image" src="./images/webp/whatsappActive.webp" alt="">
-                    </div>
-                    <div class="massanger_images">
-                        <img class="massangers_image" src="./images/webp/telegramActive.webp" alt="">
-                    </div>
-                    <div class="massanger_images">
-                        <img class="massangers_image" src="./images/webp/viberActive.webp" alt="">
-                    </div>
-                </div>
+          <div class="massangers">
+            <div class="massanger_images">
+              <img
+                class="massangers_image"
+                src="./images/webp/whatsappActive.webp"
+                alt=""
+              />
+            </div>
+            <div class="massanger_images">
+              <img
+                class="massangers_image"
+                src="./images/webp/telegramActive.webp"
+                alt=""
+              />
+            </div>
+            <div class="massanger_images">
+              <img
+                class="massangers_image"
+                src="./images/webp/viberActive.webp"
+                alt=""
+              />
+            </div>
+          </div>
 
-                <button type="submit" class="submit large">Хочу картину</button>
-                <button class="close" type="button"><img src="./images/close.png" alt=""></button>
-            </form>
-        </div>
+          <button type="submit" class="submit large">Хочу картину</button>
+          <button class="close" type="button">
+            <img src="./images/webp/close.webp" alt="" />
+          </button>
+        </form>
+      </div>
     </div>
 
     <!-- Menu End -->
@@ -750,6 +925,5 @@
     <script src="./libruary/jQuery.js"></script>
     <script src="./script/slick.min.js"></script>
     <script src="./script/script.js"></script>
-</body>
-
+  </body>
 </html>

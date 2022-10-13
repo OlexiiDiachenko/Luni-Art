@@ -111,7 +111,6 @@ function coalTable(){
     }
     peopleCount();
     
-    console.log(totalCountPeople);
     newCost(coalPrice , totalCountPeople , arrCoalCost )
     percentCost(coalPrice);
 
@@ -124,7 +123,6 @@ function oilTable(){
         coalPrice.classList.remove('active_material');
     }
     peopleCount();
-    console.log(totalCountPeople);
     newCost(oilPrice , totalCountPeople , arrOilCost)
     percentCost(oilPrice);
 }
@@ -178,7 +176,6 @@ function newCost(tablePrice , count , arrCost ) {
             }
         }
     }
-    console.log(arrCost);
  
     for ( let j = 0 ; j < NewCost.length ; j++ ){
         let cost = NewCost[j].querySelector('.cost');

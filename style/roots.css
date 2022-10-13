@@ -1,8 +1,8 @@
 :root {
-    --sub-textcolor: #646464;
-    --second-textcolor: #313131;
-    --green-color: #4DAA6C;
-    --orange-color: #FEAA43;
+  --sub-textcolor: #646464;
+  --second-textcolor: #313131;
+  --green-color: #4daa6c;
+  --orange-color: #feaa43;
 }
 
 h1,
@@ -11,211 +11,327 @@ h3,
 h4,
 p,
 label {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .xlarge {
-    font-weight: 400;
-    font-size: 170px;
-    line-height: 227px;
-    color: #262626;
+  font-weight: 400;
+  font-size: 170px;
+  line-height: 227px;
+  color: #262626;
 }
 
 .large {
-    font-size: 40px;
-    line-height: 53px;
-    color: var(--second-textcolor);
-}
-
-.large_order {
-    display: inline-block;
-    width: max-content;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 53px;
-    padding: 8px 25px;
-    border-radius: 35px;
-    color: #FFFFFF;
-    background-color: #4DAA6C;
+  font-size: 40px;
+  line-height: 53px;
+  color: var(--second-textcolor);
 }
 
 .middle {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-    color: var(--sub-textcolor);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--sub-textcolor);
 }
 
 .normal {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--second-textcolor);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--second-textcolor);
 }
 
 .normal_sub {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--sub-textcolor);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--sub-textcolor);
 }
 
 .normal_order {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    color: var(--green-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--green-color);
 }
 
 .small_black {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: #000000;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
 }
 
 .xsmall_light {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #8F8F8F;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8f8f8f;
 }
 
 .percent {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: var(--green-color);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--green-color);
 }
 
 .xsmall {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 17px;
-    color: #000000;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  color: #000000;
 }
 
 .individual_font {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    color: #1d1d1d;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1d1d1d;
 }
 
 .individual_font:hover {
-    cursor: grab;
+  cursor: grab;
 }
 
 .individual_font:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 /* Links */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Buttons */
 
 button {
-    font-family: 'Playfair Display';
-    border: none;
-}
-
-button:hover {
-    cursor: grab;
+  font-family: "Playfair Display";
+  border: none;
+  outline: none;
+  cursor: grab;
 }
 
 button:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 a.forClick,
 button.forClick {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 53px;
-    color: #FFFFFF;
-    background-color: #FF2257;
-    border-radius: 36px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  color: #ffffff;
+  background-color: #ff2257;
+  border-radius: 36px;
 }
 
 button.forClick.pink {
-    background-color: #FFFFFF;
-    color: #FF2257;
+  background-color: #ffffff;
+  color: #ff2257;
 }
 
 button.forClick.sliderButton {
-    padding: 8px 15px;
+  padding: 8px 15px;
 }
 
+/* Display */
 
-@media (min-width: 1451px) and (max-width: 1600px) {
-    .xlarge {
-        font-size: 135px;
-        line-height: 180px;
-    }
+.flex {
+  display: flex;
+}
 
-    .large {
-        font-size: 30px;
-        line-height: 40px;
-    }
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-    .large_order {
-        font-size: 30px;
-        line-height: 43px;
-        padding: 5px 18px;
-    }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    .middle {
-        font-size: 25px;
-        line-height: 33px;
-    }
+/* Media queries */
 
-    .normal_sub {
-        font-size: 15px;
-        line-height: 20px;
-    }
+@media (min-width: 1451px) and (max-width: 1720px) {
+  .xlarge {
+    font-size: 135px;
+    line-height: 180px;
+  }
 
-    .normal_order {
-        font-size: 15px;
-        line-height: 20px;
-    }
+  .large {
+    font-size: 30px;
+    line-height: 40px;
+  }
 
-    .small_black {
-        font-size: 15px;
-        line-height: 17px;
-    }
+  .middle {
+    font-size: 25px;
+    line-height: 33px;
+  }
 
-    .xsmall_light {
-        font-size: 14px;
-        line-height: 16px;
-    }
+  .normal_sub {
+    font-size: 15px;
+    line-height: 20px;
+  }
 
-    .percent {
-        font-size: 16px;
-        line-height: 18px;
-    }
+  .normal_order {
+    font-size: 15px;
+    line-height: 20px;
+  }
 
-    .xsmall {
-        font-size: 12px;
-        line-height: 13px;
-    }
+  .small_black {
+    font-size: 15px;
+    line-height: 17px;
+  }
 
-    .individual_font {
-        font-size: 15px;
-        line-height: 18px;
-    }
+  .xsmall_light {
+    font-size: 14px;
+    line-height: 16px;
+  }
 
-    a.forClick,
-    button.forClick {
-        font-size: 30px;
-        line-height: 40px;
-    }
+  .percent {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .xsmall {
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .individual_font {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  a.forClick,
+  button.forClick {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1450px) {
+  .xlarge {
+    font-size: 100px;
+    line-height: 150px;
+  }
+
+  .large {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .middle {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .normal_sub {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .normal_order {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .small_black {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .xsmall_light {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .percent {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .xsmall {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .individual_font {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  a.forClick,
+  button.forClick {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1059px) {
+  .xlarge {
+    font-size: 90px;
+    line-height: 120px;
+  }
+
+  .large {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .middle {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .normal {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .normal_sub {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .normal_order {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .small_black,
+  .xsmall_light,
+  .individual_font {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .percent {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .xsmall {
+    font-size: 7px;
+    line-height: 8px;
+  }
+
+  a.forClick,
+  button.forClick {
+    font-size: 20px;
+    line-height: 27px;
+  }
 }

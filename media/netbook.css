@@ -1,88 +1,102 @@
-@media (min-width: 1451px) and (max-width: 1720px) {
+@media (min-width: 1060px) and (max-width: 1450px) {
   .media {
     display: block;
   }
 
   header.header {
-    padding: 50px 250px 0px;
+    padding: 130px 140px 0px;
+  }
+
+  .achivments {
+    gap: 100px;
   }
 
   .header-photo img {
-    height: 500px;
+    height: 400px;
   }
 
   .pseudoTopLeft img {
-    height: 680px;
+    height: 600px;
   }
 
   .pseudoTopLeftCenter {
-    top: 160px;
-    left: 250px;
+    top: 70px;
+    left: 200px;
   }
 
   .pseudoTopLeftCenter img {
-    height: 150px;
+    height: 140px;
   }
 
   .pseudoRightTop img {
-    height: 500px;
+    height: 550px;
   }
 
   .pseudoRightBottom {
-    right: 95px;
+    right: 70px;
+  }
+
+  .pseudoRightBottom {
+    height: 70px;
+  }
+
+  .pseudoRadiusWhite {
+    height: 200px;
+    width: 200px;
+    bottom: 70px;
   }
 
   .pseudoRadiusBlue {
     height: 250px;
     width: 250px;
-    top: 120px;
-    right: 0px;
+    top: 70px;
+    right: -15px;
   }
 
   /* Main */
 
   main::before {
-    top: 60px;
-    width: 60px;
-    transform: rotate(90deg) translateY(-30px);
+    top: 50px;
+    width: 50px;
+    transform: rotate(90deg) translateY(-25px);
   }
 
   .wrapper {
-    padding-top: 110px;
+    padding-top: 90px;
   }
 
   .container {
-    padding-right: 170px;
-    padding-left: 170px;
+    padding-right: 120px;
+    padding-left: 120px;
   }
 
   /* About us */
 
   .report {
-    gap: 55px;
+    gap: 40px;
   }
 
   .report_cell {
-    padding-top: 45px;
+    padding-top: 30px;
     max-width: max-content;
   }
 
-  .video-link {
-    bottom: -35px;
-  }
-
   .report_cell_image img {
-    max-width: 350px;
+    max-width: 300px;
   }
 
   .report_cell_image a {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .video-link {
+    bottom: -30px;
   }
 
   .report_cell_text {
-    margin-top: 40px;
-    height: 100px;
+    margin-top: 50px;
+    height: 80px;
   }
 
   /* Order Now */
@@ -90,6 +104,10 @@
   .order_now {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .order_now img {
+    width: 80px;
   }
 
   .order_now_right .forClick {
@@ -100,11 +118,11 @@
   /* Comparison */
 
   .comparison {
-    row-gap: 60px;
-    column-gap: 50px;
-    padding-top: 70px;
-    padding-right: 150px;
-    padding-left: 150px;
+    row-gap: 40px;
+    column-gap: 30px;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-left: 120px;
   }
 
   .comparison .image_comparison {
@@ -118,30 +136,39 @@
     padding-top: 18px;
     padding-bottom: 32px;
   }
+
   .obligations .achivments {
     gap: 35px;
+    min-height: max-content;
+    align-items: center;
   }
 
   .obligations .cell {
-    max-width: 260px;
+    height: 100%;
     min-width: 0px;
+    max-width: 220px;
   }
 
   .obligations .cell img {
     min-height: 0px;
-    max-height: 89px;
-  }
-
-  .obligations .cell .middle {
-    font-weight: 400;
-  }
-
-  .obligations .cell .middle::first-letter,
-  .obligations .cell p b {
-    font-weight: 700;
+    max-height: 75px;
   }
 
   /* Gift */
+
+  .pencil {
+    align-items: flex-end;
+  }
+
+  .pencil img {
+    width: 40px;
+  }
+
+  .gift h2.large {
+    width: 500px;
+    border-bottom: 2px solid black;
+    height: 40px;
+  }
 
   .slider_photo_item {
     max-height: 500px;
@@ -215,8 +242,17 @@
     padding-top: 50px;
   }
 
+  /* Cards */
+
   .cards {
-    gap: 50px;
+    gap: 35px;
+  }
+
+  /* Grid section with choose format */
+
+  .choose-grid {
+    column-gap: 18px;
+    row-gap: 25px;
   }
 
   .people {
@@ -231,10 +267,7 @@
   /* createPainting */
 
   .createPainting {
-    padding: 35px 200px 40px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff2257;
+    padding: 35px 80px 40px;
   }
 
   .createPainting p {
@@ -244,13 +277,20 @@
 
   /* Footer */
 
-  p.sub {
-    font-size: 17px;
-    line-height: 20px;
-  }
-
-  .links a:nth-child(2) {
+  footer .links a:nth-child(2) {
     margin-right: 8px;
     margin-left: 15px;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1130px) {
+  .createPainting {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .createPainting button {
+    font-size: 26px;
+    line-height: 35px;
   }
 }
