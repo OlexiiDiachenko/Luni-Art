@@ -18,8 +18,11 @@ $(document).ready(function () {
         let slider = $(this);
 
         let doc = $(document).on("mousemove", (e) => {
-          let offset = e.pageX - comparison.position().left;
+          let offset = e.target.pageX - comparison.position().left;
           let width = comparison.width();
+
+          console.log(offset);
+          // console.log(width);
 
           if (offset < 0) offset = 0;
           if (offset > width) offset = width;
@@ -29,6 +32,31 @@ $(document).ready(function () {
         });
 
         doc.on("mouseup", () => doc.off("mousemove"));
+      })
+
+      .on("touchstart", function (e) {
+        let slider = $(this);
+
+        let doc = $(document).on("touchmove", (e) => {
+          let touches = e.changedTouches;
+          let offset = touches[0].pageX - comparison.position().left;
+          let width = comparison.width();
+
+          console.log(touches[0].pageX);
+
+          if (offset < 0) offset = 0;
+          if (offset > width) offset = width;
+
+          slider.css("left", offset + "px");
+          before.css("width", offset + "px");
+          // slider
+          //   .prev()
+          //   .prev()
+          //   .css("width", offset + "px");
+        });
+
+        doc.on("touchcancel", () => doc.off("touchmove"));
+        return;
       });
   }
 
@@ -296,29 +324,29 @@ function massangerChoose() {
   }
 }
 
-let imageComparison = document.querySelector("#image-comparison");
-let imageComparisonDown = document.querySelector("#image-comparison_down");
-let buttonComparison = document.querySelectorAll(".image-comparison_slider");
+// let imageComparison = document.querySelector("#image-comparison");
+// let imageComparisonDown = document.querySelector("#image-comparison_down");
+// let buttonComparison = document.querySelectorAll(".image-comparison_slider");
 
-buttonComparison.forEach((button) => {
-  button.addEventListener("touchmove", (evt) => {
-    let touches = evt.changedTouches;
-    let newLeft = getComputedStyle(imageComparison.parentElement).paddingLeft;
-    let width = parseFloat(getComputedStyle(imageComparison).width);
-    let offset = touches[0].clientX - parseFloat(newLeft);
-    if (offset >= width) {
-      offset = width;
-    }
-    if (offset < 0) offset = 0;
-    button.style.left = `${offset}px`;
-    button.addEventListener("touchend", () => {
-      let changeImage = button.parentElement.querySelector(
-        ".image-comparison_before img"
-      );
-      let width = parseFloat(getComputedStyle(imageComparison).width);
-      let newWidth = width - parseFloat(getComputedStyle(changeImage).width);
-      changeImage.style.width = ` ${newWidth}px`;
-      console.log(width);
-    });
-  });
-});
+// buttonComparison.forEach((button) => {
+//   button.addEventListener("touchmove", (evt) => {
+//     let touches = evt.changedTouches;
+//     let newLeft = getComputedStyle(imageComparison.parentElement).paddingLeft;
+//     let width = parseFloat(getComputedStyle(imageComparison).width);
+//     let offset = touches[0].clientX - parseFloat(newLeft);
+//     if (offset >= width) {
+//       offset = width;
+//     }
+//     if (offset < 0) offset = 0;
+//     button.style.left = `${offset}px`;
+//     button.addEventListener("touchend", () => {
+//       let changeImage = button.parentElement.querySelector(
+//         ".image-comparison_before"
+//       );
+//       let width = parseFloat(getComputedStyle(imageComparison).width);
+//       let newWidth = width - parseFloat(getComputedStyle(changeImage).width);
+//       changeImage.style.width = ` ${newWidth}px`;
+//       console.log(width);
+//     });
+//   });
+// });
