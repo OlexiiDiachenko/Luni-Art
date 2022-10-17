@@ -4,7 +4,7 @@
   }
 
   header.header {
-    padding: 130px 140px 0px;
+    padding: 50px 140px 0px;
   }
 
   .achivments {
@@ -125,9 +125,16 @@
     padding-left: 120px;
   }
 
-  .comparison .image_comparison {
-    max-width: 800px;
-    max-height: 612px;
+  /* Comparisons images */
+  /* .comparison-images {
+    max-height: 400px;
+    min-width: 300px;
+    max-width: 100%;
+    object-fit: fill;
+  } */
+
+  .comparison-images img {
+    object-fit: cover;
   }
 
   /* Obligations */

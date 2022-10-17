@@ -107,7 +107,8 @@
     padding-left: 150px;
   }
 
-  .comparison .image_comparison {
+  /* Comparisons images */
+  .comparison-images {
     max-width: 800px;
     max-height: 612px;
   }

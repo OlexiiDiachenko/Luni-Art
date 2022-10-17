@@ -273,64 +273,65 @@ section.about_us {
 /* Comparison global section */
 .comparison {
   display: grid;
+  column-gap: 75px;
   row-gap: 60px;
-  column-gap: 80px;
   grid-template-columns: 2.5fr 1fr;
   padding: 90px 250px 70px;
+  box-sizing: border-box;
 }
 
 /* Comparisons images */
-.comparison img {
-  max-width: 100%;
-}
-
-/* Block with comparison function */
-.image-comparison {
+.comparison-images {
   position: relative;
-  display: inline-block;
-  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-width: 950px;
   max-height: 735px;
+  overflow: hidden;
 }
 
-.image-comparison img {
-  object-fit: contain;
-}
-
+/* Block with painting image */
 .image-comparison_before {
-  position: absolute;
+  max-width: 100%;
   width: 50%;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.image-comparison_slider {
+/* Comparison button */
+.comparison-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background-color: #fff;
+  width: 4px;
   padding: 0;
+}
+
+/* Comparison button circle */
+.comparison-button::before {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 2px;
-  height: 100%;
-  cursor: col-resize;
-}
-
-.image-comparison_slider:active {
-  cursor: col-resize;
-}
-
-.image-comparison_slider::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 15px);
-  left: -15px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.image-comparison_slider:hover::before,
-.image-comparison_slider:focus::before {
+/* Hover effects */
+
+.comparison-button:hover,
+.comparison-button:hover.comparison-button::before {
   background-color: #ccc;
+  cursor: col-resize;
 }
 
 /* Right column - text-column */

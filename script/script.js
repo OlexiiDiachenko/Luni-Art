@@ -1,68 +1,4 @@
 $(document).ready(function () {
-  function imageComparison(selector) {
-    let comparison = $(selector).addClass("image-comparison");
-
-    let images = comparison
-      .find("img")
-      .addClass("image-comparison_image")
-      .css("max-width", comparison.width());
-
-    let before = comparison
-      .find(".image-comparison_before")
-      .append(images.eq(0));
-
-    comparison
-      .find(".image-comparison_slider")
-      .on("dragstart", () => false)
-      .on("mousedown", function (e) {
-        let slider = $(this);
-
-        let doc = $(document).on("mousemove", (e) => {
-          let offset = e.target.pageX - comparison.position().left;
-          let width = comparison.width();
-
-          console.log(offset);
-          // console.log(width);
-
-          if (offset < 0) offset = 0;
-          if (offset > width) offset = width;
-
-          slider.css("left", offset + "px");
-          before.css("width", offset + "px");
-        });
-
-        doc.on("mouseup", () => doc.off("mousemove"));
-      })
-
-      .on("touchstart", function (e) {
-        let slider = $(this);
-
-        let doc = $(document).on("touchmove", (e) => {
-          let touches = e.changedTouches;
-          let offset = touches[0].pageX - comparison.position().left;
-          let width = comparison.width();
-
-          console.log(touches[0].pageX);
-
-          if (offset < 0) offset = 0;
-          if (offset > width) offset = width;
-
-          slider.css("left", offset + "px");
-          before.css("width", offset + "px");
-          // slider
-          //   .prev()
-          //   .prev()
-          //   .css("width", offset + "px");
-        });
-
-        doc.on("touchcancel", () => doc.off("touchmove"));
-        return;
-      });
-  }
-
-  imageComparison("#image-comparison");
-  imageComparison("#image-comparison_down");
-
   $(".slider_photo").slick({
     slidesToShow: 3,
     speed: 1000,
@@ -86,6 +22,41 @@ $(document).ready(function () {
   });
 });
 
+// Function Comparison
+
+let comparisonWrappers = document.querySelectorAll(".comparison-images"),
+  comparisonButtons = document.querySelectorAll(".comparison-button");
+
+comparisonButtons.forEach((button) => {
+  button.addEventListener("mousedown", mouseComparison);
+  button.addEventListener("touchstart", mouseComparison);
+});
+
+function mouseComparison() {
+  this.parentElement.addEventListener("mousemove", mouseComparisonMove);
+  this.parentElement.addEventListener("touchmove", mouseComparisonMove);
+  document.addEventListener("mouseup", removeComparison);
+  document.addEventListener("touchcancel", removeComparison);
+}
+
+function mouseComparisonMove(event) {
+  let comparisonBefore = this.querySelector(".image-comparison_before");
+  let button = this.querySelector(".comparison-button");
+  let left = event.pageX - this.offsetLeft;
+  let width = this.clientWidth;
+  if (left < 0) left = 0;
+  if (left > width) left = width;
+  button.style.left = `${left}px`;
+  comparisonBefore.style.width = `${left}px`;
+}
+
+function removeComparison() {
+  comparisonWrappers.forEach((comparisonWrapper) => {
+    comparisonWrapper.removeEventListener("mousemove", mouseComparisonMove);
+    comparisonWrapper.removeEventListener("touchmove", mouseComparisonMove);
+  });
+}
+
 // Function for Material Cost
 
 let coal = document.querySelector(".coal input");
@@ -101,6 +72,7 @@ let arrCoalCost = [];
 let arrOilCost = [];
 
 coalPrice.classList.add("active_material");
+// coal.checked = true;
 percentCost(coalPrice);
 
 if (!coal.checked) {
