@@ -11,8 +11,8 @@
     gap: 95px;
   }
 
-  .header-photo img {
-    height: 400px;
+  .header-photo {
+    padding-bottom: 60px;
   }
 
   .pseudoTopLeft img {

@@ -11,8 +11,8 @@
     height: 500px;
   }
 
-  .pseudoTopLeft img {
-    height: 680px;
+  .pseudoTopLeft {
+    padding-bottom: 110px;
   }
 
   .pseudoTopLeftCenter {
@@ -111,6 +111,14 @@
   .comparison-images {
     max-width: 800px;
     max-height: 612px;
+  }
+
+  /* Right column - text-column */
+
+  .text-comparison button {
+    max-width: 260px;
+    max-height: 61px;
+    margin-top: 40px;
   }
 
   /* Obligations */

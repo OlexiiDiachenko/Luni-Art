@@ -4,6 +4,15 @@ $(document).ready(function () {
     speed: 1000,
     easing: "ease",
     draggable: false,
+    responsive: [
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          speed: 700,
+        },
+      },
+    ],
   });
 
   $(".slider_size").slick({
@@ -12,6 +21,15 @@ $(document).ready(function () {
     speed: 1000,
     easing: "ease",
     draggable: false,
+    responsive: [
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          speed: 700,
+        },
+      },
+    ],
   });
 
   $(".slider_video").slick({
@@ -19,6 +37,15 @@ $(document).ready(function () {
     speed: 1000,
     easing: "ease",
     draggable: false,
+    responsive: [
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          speed: 700,
+        },
+      },
+    ],
   });
 });
 
@@ -72,20 +99,12 @@ let arrCoalCost = [];
 let arrOilCost = [];
 
 coalPrice.classList.add("active_material");
-// coal.checked = true;
+coal.checked = true;
 percentCost(coalPrice);
 
-if (!coal.checked) {
-  coalLabel.addEventListener("click", coalTable);
-} else {
-  percentCost(coalPrice);
-}
-
-if (!oil.checked) {
-  oilLabel.addEventListener("click", oilTable);
-} else {
-  percentCost(oilPrice);
-}
+coalLabel.addEventListener("click", coalTable);
+oilLabel.addEventListener("click", oilTable);
+percentCost(coalPrice);
 
 for (let i = 0; i < peopleChoose.length; i++) {
   peopleChoose[i].addEventListener("click", newCount);

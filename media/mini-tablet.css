@@ -1,8 +1,4 @@
 @media (min-width: 550px) and (max-width: 768px) {
-  .media {
-    display: block;
-  }
-
   header.header {
     padding: 80px 50px 0px;
   }
@@ -15,8 +11,8 @@
     height: 340px;
   }
 
-  .pseudoTopLeft img {
-    height: 440px;
+  .pseudoTopLeft {
+    padding-bottom: 45px;
   }
 
   .pseudoTopLeftCenter {

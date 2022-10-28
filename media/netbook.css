@@ -15,8 +15,8 @@
     height: 400px;
   }
 
-  .pseudoTopLeft img {
-    height: 600px;
+  .pseudoTopLeft {
+    padding-bottom: 80px;
   }
 
   .pseudoTopLeftCenter {
@@ -126,15 +126,9 @@
   }
 
   /* Comparisons images */
-  /* .comparison-images {
+  .comparison-images {
     max-height: 400px;
-    min-width: 300px;
-    max-width: 100%;
-    object-fit: fill;
-  } */
-
-  .comparison-images img {
-    object-fit: cover;
+    max-width: 515px;
   }
 
   /* Obligations */
