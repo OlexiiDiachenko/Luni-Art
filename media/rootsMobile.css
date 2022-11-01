@@ -1,0 +1,207 @@
+:root {
+  --sub-textcolor: #646464;
+  --second-textcolor: #313131;
+  --green-color: #4daa6c;
+  --orange-color: #feaa43;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+label {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.xlarge {
+  font-weight: 400;
+  font-size: 170px;
+  line-height: 227px;
+  color: #262626;
+}
+
+.large {
+  font-size: 40px;
+  line-height: 53px;
+  color: var(--second-textcolor);
+}
+
+.middle {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--sub-textcolor);
+}
+
+.normal {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--second-textcolor);
+}
+
+.normal_sub {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--sub-textcolor);
+}
+
+.normal_order {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--green-color);
+}
+
+.small_black {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.xsmall_light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8f8f8f;
+}
+
+.percent {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--green-color);
+}
+
+.xsmall {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.individual_font {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+
+.individual_font:hover {
+  cursor: grab;
+}
+
+.individual_font:active {
+  cursor: grabbing;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+
+button {
+  font-family: "Playfair Display";
+  border: none;
+  outline: none;
+  cursor: grab;
+}
+
+button:active {
+  cursor: grabbing;
+}
+
+a.forClick,
+button.forClick {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  color: #ffffff;
+  background-color: #ff2257;
+  border-radius: 36px;
+}
+
+button.forClick.pink {
+  background-color: #ffffff;
+  color: #ff2257;
+}
+
+button.forClick.sliderButton {
+  padding: 8px 15px;
+}
+
+/* Display */
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.xlarge {
+  font-size: 65px;
+  line-height: 87px;
+}
+
+.large {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.middle {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.normal {
+  font-weight: 700;
+}
+
+.normal_sub {
+  font-weight: 400;
+}
+
+.normal,
+.normal_sub,
+.normal_order,
+.small_black,
+.xsmall_light,
+.individual_font,
+.percent {
+  font-size: 7px;
+  line-height: 9px;
+}
+
+.xsmall {
+  font-size: 5px;
+  line-height: 6px;
+}
+
+a.forClick,
+button.forClick {
+  font-size: 15px;
+  line-height: 20px;
+}

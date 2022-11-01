@@ -1,0 +1,359 @@
+body {
+  width: 480px;
+  position: relative;
+  margin: auto;
+}
+
+.screen {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+.mobile * {
+  text-align: center;
+}
+
+header.header {
+  padding: 50px 0 0;
+}
+
+.for_slider_320 {
+  box-sizing: content-box;
+  max-width: 320px;
+  width: 100%;
+}
+
+.for_slider_320 img {
+  max-width: 320px;
+  width: 100%;
+}
+
+.header .for_slider_320 {
+  padding-left: 81px;
+  position: relative;
+  z-index: 2;
+}
+
+.video_slider {
+  box-sizing: content-box;
+  max-width: 270px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.t-f img {
+  width: 24.6px;
+  height: 24.6px;
+}
+
+.t-s img {
+  width: 26.5px;
+  height: 26.5px;
+}
+
+.tw img {
+  width: 20px;
+  height: 24px;
+}
+/* Sliders General */
+
+.slick-slider {
+  padding: 0;
+}
+
+.slick-arrow {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.slick-list img {
+  width: 100%;
+}
+
+.slick-dots {
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+}
+
+.slick-dots li + li {
+  margin-left: 5px;
+}
+
+/* Header Slider */
+
+.slider_photo_item {
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+  margin-top: 34px;
+  margin-right: 0;
+}
+
+/* Pseudo Elements */
+
+.pseudoTopLeftCenter {
+  top: 50px;
+  left: -50px;
+  transform: rotate(-60deg);
+}
+
+.pseudoTopLeftCenter img {
+  height: 94px;
+}
+
+.pseudoRightTop img {
+  height: 330px;
+}
+
+.pseudoRadiusBlue {
+  height: 130px;
+  width: 130px;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-65px);
+}
+
+/* Main */
+
+main {
+  padding-top: 70px;
+}
+
+main::before {
+  top: 25px;
+  width: 28px;
+  transform: rotate(90deg) translateY(-14px);
+}
+
+/* About us */
+
+.about_us {
+  height: 100vh;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.about_us_header {
+  margin-bottom: 65px;
+}
+
+.about_us img:last-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-height: 425px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Order Now Section */
+
+.order_now_section {
+  padding-top: 35px;
+  padding-bottom: 17px;
+}
+
+/* Slider With Sizes */
+
+.slider_size_item {
+  padding-top: 30px;
+  min-height: 320px;
+  min-width: 320px;
+  max-width: 320px;
+  max-height: 320px;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+}
+
+.slider_size_item img {
+  max-width: 350px;
+}
+
+.slider_size_item img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  min-height: 320px;
+  min-width: 320px;
+}
+
+.slick-arrow {
+  display: none;
+}
+
+/* Obligations Mobile */
+
+.obligations {
+  padding-top: 10px;
+}
+
+.obligations .achivments {
+  gap: 5px;
+}
+
+.obligations .cell {
+  min-width: 0px;
+}
+
+.obligations .cell img {
+  min-height: 0px;
+}
+
+.obligations .large {
+  margin-bottom: 20px;
+}
+.achivments {
+  gap: 5px;
+}
+
+/* Video Process */
+
+.video-process {
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+
+.slider_video_item {
+  margin-right: 0px;
+  width: 270px;
+}
+
+.slider_video_item img {
+}
+
+/* Achivments */
+
+.achivments_mobile {
+  padding: 25px 50px 10px;
+}
+
+.achivment_header img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Comparison */
+
+.comparison {
+  box-sizing: border-box;
+  padding: 15px 48px 45px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 33px;
+}
+
+.comparison-images {
+  width: 100%;
+}
+
+.comparison-images img {
+  max-width: 384px;
+  max-height: 295px;
+  align-self: center;
+}
+
+.comparison-images button:last-child {
+  margin-top: 30px;
+}
+
+/* Create Painting Section */
+
+.createPainting {
+  justify-content: space-between;
+  padding: 13px 52px;
+}
+
+.create-text {
+  text-align: left;
+}
+
+.createPainting h3 {
+  margin-bottom: 0;
+}
+
+/* Constructor Section */
+
+#order {
+  padding: 43px 33px 13px;
+}
+
+.constructor-section {
+  padding-top: 27px;
+}
+
+/* Cards */
+
+.cards {
+  gap: 35px;
+  justify-content: center;
+}
+
+.cards .card {
+  max-width: 190px;
+  max-height: 130px;
+}
+
+/* Card status popular */
+.card-material-label.popular_material:after {
+  display: none;
+}
+
+/* Grid section with choose format */
+
+.choose-grid {
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+.people {
+  margin-right: 20px;
+}
+
+.humans-count::before {
+  content: url("../images/webp/greyManMini.webp")
+    url("../images/webp/greyManMini.webp")
+    url("../images/webp/greyManMini.webp")
+    url("../images/webp/greyManMini.webp")
+    url("../images/webp/greyManMini.webp")
+    url("../images/webp/greyManMini.webp")
+    url("../images/webp/greyManMini.webp")
+    url("../images/webp/greyManMini.webp");
+  display: block;
+  height: 40px;
+}
+
+.humans-count-label::before {
+  content: url("../images/webp/greyManMini.webp");
+}
+
+.humans-count-item:checked,
+.humans-count-item:checked ~ .humans-count-label {
+  content: url("../images/webp/greenManMini.webp");
+}
+
+.humans-count-label:hover,
+.humans-count-label:hover ~ .humans-count-label,
+.humans-count-label:checked ~ .humans-count-label:hover {
+  content: url("../images/webp/greenManMini.webp");
+}
+
+.size_choose {
+  max-width: 105px;
+  max-height: 35px;
+  padding: 5px 5px 4px;
+  border-radius: 7px;
+}

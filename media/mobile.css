@@ -12,13 +12,24 @@
   }
 
   header.header {
-    padding: 50px 0px 0px 81px;
+    padding: 50px 0 0;
   }
 
   .for_slider_320 {
     box-sizing: content-box;
     max-width: 320px;
     width: 100%;
+  }
+
+  .for_slider_320 img {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .header .for_slider_320 {
+    padding-left: 81px;
+    position: relative;
+    z-index: 2;
   }
 
   .video_slider {
