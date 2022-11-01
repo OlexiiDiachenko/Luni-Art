@@ -525,3 +525,63 @@ a.ellipse {
     width: 220px;
   }
 }
+@media (max-width: 520px) {
+  .xlarge {
+    font-size: 65px;
+    line-height: 87px;
+  }
+
+  .large {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .middle,
+  .normal,
+  .normal_sub,
+  .normal_white,
+  .normal_order {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .small_black,
+  .individual_font {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .xsmall_light {
+    font-size: 9px;
+    line-height: 10px;
+  }
+
+  .percent {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .xsmall {
+    font-size: 7px;
+    line-height: 8px;
+  }
+
+  button.size-button {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .ellipse {
+    font-size: 15px;
+    line-height: 20px;
+    height: 30px;
+  }
+
+  .comparison-button-order {
+    max-width: 125px;
+  }
+
+  .get-consult {
+    width: 130px;
+  }
+}
