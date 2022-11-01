@@ -775,7 +775,7 @@ main::before {
   padding: 8px;
   border-radius: 13px;
   box-sizing: border-box;
-  min-width: 195px;
+  width: 100%;
   border: 1px solid #b0b0b0;
   max-height: 66px;
   height: 100%;
