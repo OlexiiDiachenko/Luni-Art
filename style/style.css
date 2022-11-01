@@ -548,7 +548,7 @@ main::before {
 }
 
 /* Активная точка */
-.slider_size .slick-dots li.slick-active button {
+.slick-dots li.slick-active button {
   background-color: #ff2257;
 }
 

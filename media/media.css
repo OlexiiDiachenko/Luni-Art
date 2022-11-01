@@ -1801,4 +1801,509 @@
   .mobile {
     display: block;
   }
+
+  /* Header */
+
+  /* Header Text Block */
+  .header-text {
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+
+  /* Images Header Slider */
+  .images-slider {
+    margin-bottom: 30px;
+  }
+
+  /* Sliders General Settings */
+
+  /* Arrows */
+  .slick-arrow,
+  .slider_size .slick-arrow {
+    width: 0;
+    height: 0;
+    font-size: 0;
+  }
+
+  /* Точки (булиты) */
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .slick-dots li {
+    list-style: none;
+    margin-left: 5px;
+  }
+
+  .slick-dots li:first-child {
+    margin-left: 0;
+  }
+
+  /* Элемент точки */
+  .slick-dots li button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+  }
+
+  /* Siiders Items (Items Max Width) */
+  .slider_photo_item {
+    max-width: 320px;
+  }
+
+  .slider_video_item {
+    max-width: 270px;
+  }
+
+  .slider_size_item img {
+    max-width: 320px;
+  }
+
+  /* Distance Between 2 Items */
+
+  .slider_photo_item + .slider_photo_item,
+  .slider_video_item + .slider_video_item,
+  .slider_size_item + .slider_size_item {
+    margin-left: 0px;
+  }
+
+  /* Photos Slider */
+  .slider_photo {
+    margin-bottom: 10px;
+  }
+
+  /* Text Settings */
+  .slider_item_text {
+    margin-top: 40px;
+  }
+
+  /* Button Under The Slider With Photos */
+
+  .slider_photo_button {
+    max-width: 210px;
+  }
+
+  /* Appreciate Block */
+
+  .appreciate img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Cell Settings */
+  .cell img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Choose Language Block */
+
+  .languages {
+    top: 24px;
+    right: 21px;
+    width: 70px;
+    height: 36px;
+    column-gap: 9px;
+    padding-left: 7px;
+    padding-right: 4px;
+  }
+
+  .languages a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .languages a.selected-language {
+    padding: 3px;
+  }
+
+  /* Pseudo Eleemnts ( Figures ) */
+
+  .left-top-orange {
+    width: 87px;
+    height: 94px;
+    transform: rotate(60deg);
+    top: 64px;
+    left: -20px;
+  }
+  .right-top-white {
+    max-width: 319px;
+    width: 100%;
+    max-height: 340px;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  .right-top-blue {
+    width: 130px;
+    height: 130px;
+    bottom: 300px;
+    right: -100px;
+  }
+
+  /* Main */
+
+  main.main {
+    padding-top: 70px;
+  }
+
+  main::before {
+    top: 24px;
+    height: 27px;
+  }
+
+  /* About Us */
+
+  .about_us {
+    padding-bottom: 0px;
+  }
+
+  /* Section With Photo */
+
+  .about_us .photo_from_header {
+    position: relative;
+    height: max-content;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  /* Cell On Photo */
+
+  .about_us .photo_from_header .cell {
+    position: absolute;
+    top: 53px;
+    left: 50px;
+    transform: translateX(-50%);
+  }
+
+  /* Photo Settings */
+
+  .about_us .photo_from_header img:last-child {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Luniart Text */
+
+  .order_now-bottom {
+    margin-top: 45px;
+    margin-bottom: 15px;
+  }
+
+  /* Slider With Sizes  */
+  /* Slider Size Text Settings */
+
+  .slider_size_item_text {
+    top: 30px;
+  }
+
+  /* Obligations */
+
+  .obligations {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+  }
+
+  /* Obligations Table */
+  .obligations-table {
+    gap: 5px;
+  }
+
+  /* Image Block Settings */
+  .image {
+    height: 27px;
+    margin-bottom: 3px;
+  }
+
+  /* Slider With Videos Achivments */
+
+  .achivments_mobile {
+    background-color: #fbfbfb;
+    padding-top: 24px;
+    padding-bottom: 8px;
+  }
+
+  /* Comparison */
+  .comparison {
+    margin-top: 14px;
+    padding-bottom: 25px;
+  }
+  .comparison-section {
+    flex-direction: column-reverse;
+  }
+
+  .parents-comparison-section {
+    row-gap: 40px;
+  }
+
+  .pair-comparison-section {
+    row-gap: 40px;
+  }
+
+  .pair-comparison-section button.mobile {
+    margin-top: 20px;
+  }
+
+  .dog-comparison {
+    row-gap: 60px;
+  }
+
+  /* Order */
+
+  /* Order Section Caption */
+
+  .order-caption {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: transparent;
+  }
+
+  .order-caption .large {
+    margin-bottom: 5px;
+  }
+
+  /* Order Section Constructor ( Cards , Peoples etc ) */
+
+  .order-constructor {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+
+  /* Cards With Material */
+
+  .cards-material {
+    column-gap: 35px;
+  }
+
+  .card,
+  .card img {
+    max-width: 190px;
+    max-height: 130px;
+  }
+
+  /* Top Right Popular */
+
+  .card-coal::after {
+    content: "";
+    padding: 0;
+  }
+
+  /* Popular Material Border */
+
+  .card-coal .card-label {
+    border: none;
+    box-shadow: 0px 0px 5px var(--lightgreen-color);
+  }
+
+  /* Selected Material */
+
+  .card-input:checked ~ label {
+    border: 3px solid #4ca96c;
+  }
+
+  /* Text Sub Cards */
+
+  .card-sub {
+    bottom: 7px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* Count Peoples */
+
+  .constructor-wrapper {
+    padding-left: 50px;
+  }
+
+  .peoples {
+    column-gap: 20px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+  }
+
+  /* More Peoples Button */
+  .more-peoples::after {
+    font-size: 15px;
+  }
+
+  /* Table Cost Size */
+
+  .size-tabel {
+    padding-top: 15px;
+  }
+
+  /* Tabel Wrapper Create A Table */
+
+  .size-cost-block {
+    grid-template-columns: repeat(3, 105px);
+    column-gap: 8px;
+    row-gap: 10px;
+  }
+
+  /* Table Cell */
+
+  .tabel-size-cell {
+    padding: 5px 5px 4px;
+    border-radius: 7px;
+    max-height: 35px;
+  }
+
+  /* Top Part Cell */
+
+  .top-part-cell {
+    padding: 2px 4px;
+  }
+
+  /* Bottom Part Cell */
+
+  .tabel-size-cell .flex-end {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  /* Cell Popular Size */
+
+  .cell-popular-size {
+    position: relative;
+  }
+
+  .cell-popular-size::after {
+    content: "";
+    padding: 0;
+  }
+
+  /* Get Consult Mobile Section */
+
+  .get-consult-mobile {
+    padding: 10px 15px;
+    column-gap: 40px;
+  }
+
+  .get-consult-mobile-text * {
+    color: #fff;
+  }
+
+  /* Section Order Now */
+  .order_now-bottom {
+    padding-bottom: 40px;
+  }
+
+  /* Order Now Button */
+  .order_now-bottom button {
+    margin-top: 14px;
+  }
+
+  /* Footer */
+
+  footer.footer {
+    padding: 8px 36px 12px;
+  }
+
+  .footer .links {
+    column-gap: 10px;
+  }
+
+  .links .links-items {
+    column-gap: 2px;
+  }
+
+  .links .links-items img {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* Consult */
+
+  /* Our Menu */
+  .consult-info {
+    max-height: 260px;
+    max-width: 200px;
+    padding: 8px 34px 16px;
+    border-radius: 16px;
+  }
+
+  /* Palit Image */
+  .consult_image {
+    max-height: 29px;
+    max-width: 29px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+
+  /* Forms Text Inputs */
+  .userInfo {
+    margin-bottom: 10px;
+  }
+
+  /* Inputs And Lables*/
+  .userInfo-input,
+  .userInfo-label {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  /* Little Animation. Up Lable */
+  .userInfo-input:focus + .userInfo-label,
+  .userInfo-input:valid + .userInfo-label {
+    transform: translateY(-10px) scale(0.8);
+  }
+
+  .userInfo::after {
+    font-size: 10px;
+  }
+
+  /* Example */
+  .userInfo p {
+    font-size: 10px;
+    line-height: 13px;
+    bottom: -13px;
+  }
+
+  /* How To Connect */
+
+  .contact {
+    margin-top: 25px;
+  }
+
+  /* Massangers Block */
+  .massangers {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    column-gap: 23px;
+  }
+
+  /* Messangers Icons */
+  .massangers img {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* Button Submit */
+  .submit {
+    max-width: 122px;
+    max-height: 25px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* Button Close Menu */
+  .close {
+    top: 10px;
+    right: 10px;
+  }
+
+  /* Close Image X */
+  .close img {
+    height: 8px;
+    width: 8px;
+  }
 }
