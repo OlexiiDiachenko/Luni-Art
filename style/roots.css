@@ -224,6 +224,13 @@ a.ellipse {
   width: 550px;
 }
 
+@media (min-width: 1700px) and (max-height: 1050px) {
+  .xlarge {
+    font-size: 150px;
+    line-height: 170px;
+  }
+}
+
 @media (max-width: 1600px) {
   .xlarge {
     font-size: 140px;
@@ -297,6 +304,14 @@ a.ellipse {
     width: 550px;
   }
 }
+
+@media (max-width: 1450px) {
+  .xlarge {
+    font-size: 120px;
+    line-height: 130px;
+  }
+}
+
 @media (max-width: 1180px) {
   .xlarge {
     font-size: 90px;

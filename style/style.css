@@ -29,12 +29,12 @@ header.header {
   box-sizing: border-box;
   height: 100vh;
   position: relative;
-  background-color: #d9d9d9;
+  background-color: #f5f3f4;
   overflow-x: hidden;
 }
 
 .header-text {
-  padding-top: 196px;
+  padding-top: 170px;
   position: relative;
   z-index: 2;
 }
@@ -55,7 +55,7 @@ header .achivments {
 }
 
 .header-photo img {
-  width: 960px;
+  max-width: 960px;
   width: 100%;
 }
 
