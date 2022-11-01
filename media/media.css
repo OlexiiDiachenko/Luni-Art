@@ -566,47 +566,456 @@
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1350px) {
   /* Header */
 
   .header-text {
-    padding-top: 40px;
-  }
-
-  header .achivments {
-    column-gap: 140px;
+    padding-top: 30px;
   }
 
   .header-photo img {
-    max-width: 600px;
+    max-width: 500px;
   }
 
   .header-photo .link {
-    bottom: 20px;
+    bottom: 15px;
   }
 
   .languages {
-    width: 70px;
-    height: 36px;
-    top: 62px;
-    right: 190px;
-    padding-left: 7px;
-    padding-right: 4px;
+    top: 40px;
+    right: 140px;
   }
 
-  .languages a {
-    font-size: 16px;
-    line-height: 21px;
+  /* Pseudo Eleemnts ( Figures ) */
+
+  .left-top-white {
+    padding-bottom: 60px;
   }
 
-  .languages a.selected-language {
-    padding: 2px;
+  .left-top-orange {
+    top: 60px;
+    left: 180px;
+    width: 130px;
+    height: 140px;
+  }
+
+  .right-top-blue {
+    height: 170px;
+    width: 170px;
+  }
+
+  .right-bottom-orange {
+    right: 100px;
+    bottom: 130px;
+    width: 45px;
+    height: 55px;
+  }
+
+  .right-bottm-white {
+    height: 180px;
+    width: 180px;
+    bottom: 60px;
+  }
+
+  /* Main Section */
+
+  /* About Us */
+
+  .about_us-achivments {
+    gap: 50px;
+  }
+
+  .about_us-achivments img {
+    max-width: 315px;
+  }
+
+  .about_us-achivments-cell {
+    row-gap: 20px;
+  }
+
+  /* Order Now Section */
+
+  .order_now {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .order_now-text {
+    column-gap: 35px;
+  }
+
+  .order_now-text img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .order_now-button button {
+    max-width: 300px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  /* Comparison */
+
+  /* Comparison global section */
+  .comparison {
+    margin-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .comparison-section {
+    column-gap: 60px;
+  }
+
+  /* Right column - text-column */
+
+  .text-comparison {
+    max-width: 250px;
+  }
+
+  .text-comparison img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .text-comparison button {
+    max-width: 220px;
+    max-height: 50px;
+  }
+
+  /* Obligations */
+
+  /* Image Block Settings */
+  .image {
+    height: 70px;
+  }
+
+  /* Carousels */
+
+  .carousels {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  /* Carousels Header */
+
+  .tassel img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .tassel::before {
+    width: 35px;
+  }
+
+  /* Carousels Header Sub */
+  .carousels-header-sub {
+    margin-bottom: 35px;
   }
 
   /* Sliders Wrapper */
+
   .slider-wrapper {
     padding-left: 110px;
     padding-right: 110px;
+  }
+
+  /* Слайдер */
+  .slick-slider {
+    padding: 0 50px;
+  }
+
+  /* Стрелка */
+  .slick-arrow {
+    top: 150px;
+  }
+
+  /* Images Carousel */
+
+  .images-slider {
+    margin-bottom: 100px;
+  }
+
+  /* Distance From Item To Item */
+  .slider_photo_item + .slider_photo_item {
+    margin-left: 20px;
+  }
+
+  /* Slider Photo Button */
+
+  .slider_photo_button {
+    max-width: 300px;
+  }
+
+  /* Slider With Sizes */
+
+  .sizes-slider {
+    margin-bottom: 80px;
+  }
+
+  /* Slider Size Item Settings */
+
+  .slider_size_item_text {
+    top: 20px;
+  }
+
+  /* Стрелка */
+  .slider_size .slick-arrow {
+    top: 225px;
+  }
+
+  /* Slider With Videos */
+
+  .video-process .middle {
+    margin-bottom: 50px;
+  }
+
+  .video-slider {
+    margin-bottom: 55px;
+  }
+
+  .slider_video_item + .slider_video_item {
+    margin-left: 25px;
+  }
+
+  .slider_video_button {
+    max-width: 235px;
+    width: 100%;
+  }
+
+  /* Order */
+
+  /* Order Section Caption */
+
+  .order-caption {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  /* Order Section Constructor ( Cards , Peoples etc ) */
+
+  .order-constructor {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+
+  /* Cards With Material */
+
+  .cards-material {
+    column-gap: 75px;
+  }
+
+  .card,
+  .card img {
+    max-width: 400px;
+    width: 100%;
+    max-height: 266px;
+    height: 100%;
+  }
+
+  /* Top Right Popular */
+
+  .card-coal::after {
+    font-size: 11px;
+    line-height: 15px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+  }
+
+  /* Text Sub Cards */
+
+  .card-sub {
+    bottom: 10px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  /* Count Peoples */
+
+  .constructor-wrapper {
+    padding-left: 350px;
+  }
+
+  .peoples {
+    column-gap: 30px;
+    margin-top: 55px;
+  }
+
+  /* Peoples Buttons */
+  .peoples button img {
+    width: 30px;
+    height: 62px;
+  }
+
+  /* More Peoples Button */
+  .more-peoples::after {
+    font-size: 21px;
+  }
+
+  /* Table Cost Size */
+
+  .size-cost-block {
+    column-gap: 15px;
+    row-gap: 25px;
+    grid-template-columns: repeat(3, 162px);
+  }
+
+  /* Table Cell */
+
+  .tabel-size-cell {
+    padding: 6px 8px 6px;
+    min-width: 162px;
+    max-width: 162px;
+    max-height: 55px;
+  }
+
+  /* Top Part Cell */
+
+  .top-part-cell {
+    padding: 2px;
+  }
+
+  /* Bottom Part Cell */
+
+  .tabel-size-cell .flex-end {
+    margin-top: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  /* Cell Popular Size */
+
+  .cell-popular-size::after {
+    font-size: 9px;
+    line-height: 10px;
+  }
+
+  /* Create Paintig Section */
+
+  .createPainting {
+    column-gap: 85px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  /* Section Comparison Dog */
+
+  .dog-comparison {
+    margin-top: 60px;
+    column-gap: 36px;
+  }
+
+  .dog-comparison .text-comparison img {
+    width: 103px;
+    height: 103px;
+  }
+
+  /* Slider Sizes Bottom */
+
+  .sizes-slider-bottom {
+    margin-bottom: 50px;
+  }
+
+  /* Section Order Now Bottom */
+
+  .order_now-bottom {
+    margin-bottom: 50px;
+  }
+
+  /* Footer */
+
+  footer.footer {
+    padding: 16px 195px 16px;
+  }
+
+  .footer .links {
+    column-gap: 16px;
+  }
+
+  /* Consult */
+
+  /* Our Menu */
+  .consult-info {
+    max-height: 370px;
+    max-width: 280px;
+    padding: 11px 40px 20px;
+    border-radius: 28px;
+  }
+
+  /* Palit Image */
+  .consult_image {
+    max-height: 40px;
+    max-width: 40px;
+    margin-top: 13px;
+  }
+
+  /* Forms Text Inputs */
+  .userInfo {
+    margin-bottom: 17px;
+  }
+
+  /* Inputs Lables */
+  .userInfo-label,
+  .userInfo-input {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  /* Little Animation. Up Lable */
+  .userInfo-input:focus + .userInfo-label,
+  .userInfo-input:valid + .userInfo-label {
+    transform: translateY(-20px) scale(0.8);
+  }
+
+  .userInfo::after {
+    font-size: 20px;
+  }
+
+  /* Example */
+  .userInfo p {
+    position: absolute;
+    width: 100%;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  /* How To Connect */
+
+  .contact {
+    margin-top: 30px;
+  }
+
+  /* Massangers Block */
+  .massangers {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    column-gap: 32px;
+  }
+
+  /* Messangers Icons */
+  .massangers img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Button Submit */
+  .submit {
+    max-width: 170px;
+    max-height: 35px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  /* Button Close Menu */
+  .close {
+    top: 14px;
+    right: 14px;
+  }
+
+  /* Close Image X */
+  .close img {
+    height: 11px;
+    width: 11px;
   }
 }
 
@@ -1493,6 +1902,11 @@
     padding: 0px 90px;
   }
 
+  .footer .links img {
+    width: 17px;
+    height: 17px;
+  }
+
   /* Consult */
 
   /* Our Menu */
@@ -1557,5 +1971,15 @@
     max-height: 17px;
     font-size: 10px;
     line-height: 13px;
+  }
+}
+
+/* Mobile Version */
+@media (max-width: 520px) {
+  .screen {
+    display: none;
+  }
+  .mobile {
+    display: block;
   }
 }

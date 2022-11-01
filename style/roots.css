@@ -247,11 +247,7 @@ a.ellipse {
     line-height: 27px;
   }
 
-  .normal_sub {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
+  .normal_sub,
   .normal_order {
     font-size: 15px;
     line-height: 20px;
@@ -309,6 +305,76 @@ a.ellipse {
   .xlarge {
     font-size: 120px;
     line-height: 130px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .xlarge {
+    font-size: 100px;
+    line-height: 120px;
+  }
+
+  .large {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .middle {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .normal_sub,
+  .normal_order {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .small_black {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .xsmall_light {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .percent {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .xsmall {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .individual_font {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  /* Buttons And Labels Hover Effects */
+
+  button.size-button {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .ellipse {
+    font-size: 25px;
+    line-height: 35px;
+    max-height: 55px;
+  }
+
+  a.ellipse {
+    max-height: 55px;
+    padding: 7px 10px;
+  }
+
+  .get-consult {
+    width: 350px;
   }
 }
 
