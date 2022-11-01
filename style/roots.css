@@ -2,7 +2,9 @@
   --sub-textcolor: #646464;
   --second-textcolor: #313131;
   --green-color: #4daa6c;
+  --lightgreen-color: #4ca96c;
   --orange-color: #feaa43;
+  --pink-regular: #ff2257;
 }
 
 h1,
@@ -49,6 +51,13 @@ label {
   color: var(--sub-textcolor);
 }
 
+.normal_white {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #fff;
+}
+
 .normal_order {
   font-weight: 700;
   font-size: 20px;
@@ -67,8 +76,8 @@ label {
 .xsmall_light {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 15px;
+  line-height: 18px;
   color: #8f8f8f;
 }
 
@@ -103,49 +112,17 @@ label {
   cursor: grabbing;
 }
 
+.center_align {
+  text-align: center;
+}
+
 /* Links */
 
 a {
   text-decoration: none;
 }
 
-/* Buttons */
-
-button {
-  font-family: "Playfair Display";
-  border: none;
-  outline: none;
-  cursor: grab;
-}
-
-button:active {
-  cursor: grabbing;
-}
-
-a.forClick,
-button.forClick {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 53px;
-  color: #ffffff;
-  background-color: #ff2257;
-  border-radius: 36px;
-}
-
-button.forClick.pink {
-  background-color: #ffffff;
-  color: #ff2257;
-}
-
-button.forClick.sliderButton {
-  padding: 8px 15px;
-}
-
-/* Display */
-
-.flex {
-  display: flex;
-}
+/* Displaies */
 
 .flex-row {
   display: flex;
@@ -161,12 +138,96 @@ button.forClick.sliderButton {
   align-items: center;
 }
 
-/* Media queries */
+.flex-center {
+  display: flex;
+  align-items: center;
+}
 
-@media (min-width: 1451px) and (max-width: 1720px) {
+.flex-end {
+  align-items: flex-end;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Buttons And Labels Hover Effects */
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: grab;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+button:active {
+  cursor: grabbing;
+}
+
+label {
+  cursor: pointer;
+}
+
+button.size-button {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--pink-regular);
+}
+
+.ellipse {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+  border-radius: 36.5px;
+  height: 73px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+a.ellipse {
+  box-shadow: 0 0 4px rgba(141, 107, 20, 0.75);
+  color: #fff;
+  background-color: var(--pink-regular);
+  padding: 10px 20px;
+}
+
+.ellipse.white-button {
+  color: var(--pink-regular);
+  background-color: #fff;
+}
+
+.ellipse.pink-button {
+  background-color: var(--pink-regular);
+  color: #fff;
+}
+
+.comparison-button-order {
+  max-width: 312px;
+  width: 100%;
+}
+
+.get-consult {
+  width: 550px;
+}
+
+@media (max-width: 1600px) {
   .xlarge {
-    font-size: 135px;
-    line-height: 180px;
+    font-size: 140px;
+    line-height: 160px;
   }
 
   .large {
@@ -175,8 +236,8 @@ button.forClick.sliderButton {
   }
 
   .middle {
-    font-size: 25px;
-    line-height: 33px;
+    font-size: 20px;
+    line-height: 27px;
   }
 
   .normal_sub {
@@ -210,79 +271,36 @@ button.forClick.sliderButton {
   }
 
   .individual_font {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 16px;
   }
 
-  a.forClick,
-  button.forClick {
+  /* Buttons And Labels Hover Effects */
+
+  button.size-button {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .ellipse {
     font-size: 30px;
     line-height: 40px;
+    max-height: 61px;
+  }
+
+  a.ellipse {
+    max-height: 55px;
+    padding: 7px 10px;
+  }
+
+  .get-consult {
+    width: 550px;
   }
 }
-
-@media (min-width: 1060px) and (max-width: 1450px) {
-  .xlarge {
-    font-size: 100px;
-    line-height: 150px;
-  }
-
-  .large {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  .middle {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .normal_sub {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .normal_order {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .small_black {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .xsmall_light {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .percent {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .xsmall {
-    font-size: 13px;
-    line-height: 18px;
-  }
-
-  .individual_font {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  a.forClick,
-  button.forClick {
-    font-size: 30px;
-    line-height: 35px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1059px) {
+@media (max-width: 1180px) {
   .xlarge {
     font-size: 90px;
-    line-height: 120px;
+    line-height: 110px;
   }
 
   .large {
@@ -296,13 +314,16 @@ button.forClick.sliderButton {
   }
 
   .normal {
-    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .normal_sub {
     font-size: 10px;
     line-height: 13px;
   }
 
-  .normal_sub {
-    font-weight: 400;
+  .normal_white {
     font-size: 10px;
     line-height: 13px;
   }
@@ -312,16 +333,19 @@ button.forClick.sliderButton {
     line-height: 13px;
   }
 
-  .small_black,
-  .xsmall_light,
-  .individual_font {
+  .small_black {
     font-size: 10px;
     line-height: 11px;
   }
 
+  .xsmall_light {
+    font-size: 9px;
+    line-height: 10px;
+  }
+
   .percent {
     font-size: 12px;
-    line-height: 14px;
+    line-height: 13px;
   }
 
   .xsmall {
@@ -329,17 +353,38 @@ button.forClick.sliderButton {
     line-height: 8px;
   }
 
-  a.forClick,
-  button.forClick {
+  .individual_font {
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  /* Buttons And Labels Hover Effects */
+
+  button.size-button {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .ellipse {
     font-size: 20px;
     line-height: 27px;
+    max-height: 39px;
+  }
+
+  a.ellipse {
+    max-height: 35px;
+    padding: 4px 10px;
+  }
+
+  .get-consult {
+    width: 300px;
   }
 }
 
-@media (min-width: 550px) and (max-width: 768px) {
+@media (max-width: 800px) {
   .xlarge {
-    font-size: 65px;
-    line-height: 87px;
+    font-size: 60px;
+    line-height: 75px;
   }
 
   .large {
@@ -352,23 +397,24 @@ button.forClick.sliderButton {
     line-height: 13px;
   }
 
-  .normal {
-    font-weight: 700;
-  }
-
-  .normal_sub {
-    font-weight: 400;
-  }
-
   .normal,
+  .normal_white {
+    font-size: 8px;
+    line-height: 11px;
+  }
+
   .normal_sub,
-  .normal_order,
-  .small_black,
-  .xsmall_light,
-  .individual_font,
-  .percent {
+  .normal_order {
     font-size: 7px;
     line-height: 9px;
+  }
+
+  .small_black,
+  .xsmall_light,
+  .percent,
+  .individual_font {
+    font-size: 7px;
+    line-height: 8px;
   }
 
   .xsmall {
@@ -376,56 +422,25 @@ button.forClick.sliderButton {
     line-height: 6px;
   }
 
-  a.forClick,
-  button.forClick {
-    font-size: 15px;
-    line-height: 20px;
-  }
-}
+  /* Buttons And Labels Hover Effects */
 
-@media (max-width: 549px) {
-  .xlarge {
-    font-size: 65px;
-    line-height: 87px;
-  }
-
-  .large {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .middle {
-    font-size: 10px;
-    line-height: 13px;
-  }
-
-  .normal {
-    font-weight: 700;
-  }
-
-  .normal_sub {
-    font-weight: 400;
-  }
-
-  .normal,
-  .normal_sub,
-  .normal_order,
-  .small_black,
-  .xsmall_light,
-  .individual_font,
-  .percent {
+  button.size-button {
     font-size: 7px;
     line-height: 9px;
   }
 
-  .xsmall {
-    font-size: 5px;
-    line-height: 6px;
-  }
-
-  a.forClick,
-  button.forClick {
+  .ellipse {
     font-size: 15px;
     line-height: 20px;
+    max-height: 30px;
+  }
+
+  a.ellipse {
+    max-height: 27px;
+    padding: 3px 10px;
+  }
+
+  .get-consult {
+    width: 220px;
   }
 }

@@ -84,151 +84,30 @@ function removeComparison() {
   });
 }
 
-// Function for Material Cost
+// Comparison End
 
-let coal = document.querySelector(".coal input");
-let coalLabel = document.querySelector(".coal label");
-let coalPrice = document.querySelector(".choose-grid_coal");
-let oil = document.querySelector(".oil input");
-let oilLabel = document.querySelector(".oil label");
-let oilPrice = document.querySelector(".choose-grid_oil");
-let people = document.querySelectorAll(".humans-count-item");
-let peopleChoose = document.querySelectorAll(".humans-count-label");
-let totalCountPeople = 1;
-let arrCoalCost = [];
-let arrOilCost = [];
+// Cost Table Open
 
-coalPrice.classList.add("active_material");
-coal.checked = true;
-percentCost(coalPrice);
+let materials = document.querySelectorAll(".card-label");
 
-coalLabel.addEventListener("click", coalTable);
-oilLabel.addEventListener("click", oilTable);
-percentCost(coalPrice);
+materials.forEach((material) => {
+  material.addEventListener("click", tabelCost);
+});
 
-for (let i = 0; i < peopleChoose.length; i++) {
-  peopleChoose[i].addEventListener("click", newCount);
-}
-
-function newCount() {
-  let countPeople = this.previousElementSibling.getAttribute("data-count");
-  if (coal.checked) {
-    newCost(coalPrice, countPeople, arrCoalCost);
-  }
-
-  if (oil.checked) {
-    newCost(oilPrice, countPeople, arrOilCost);
+function tabelCost() {
+  let input = this.previousElementSibling;
+  if (input.checked) {
+    return;
+  } else {
+    let thisId = this.getAttribute("for");
+    let activeBlock = document.querySelector(".size-cost-block.active");
+    activeBlock.classList.remove("active");
+    let newActiveBlock = document.querySelector(`.${thisId}-tabel`);
+    newActiveBlock.classList.add("active");
   }
 }
 
-function coalTable() {
-  coalPrice.classList.add("active_material");
-  if (oilPrice.classList.contains("active_material")) {
-    oilPrice.classList.remove("active_material");
-  }
-  peopleCount();
-
-  newCost(coalPrice, totalCountPeople, arrCoalCost);
-  percentCost(coalPrice);
-}
-
-function oilTable() {
-  coal.removeAttribute("checked");
-  oilPrice.classList.add("active_material");
-  if (coalPrice.classList.contains("active_material")) {
-    coalPrice.classList.remove("active_material");
-  }
-  peopleCount();
-  newCost(oilPrice, totalCountPeople, arrOilCost);
-  percentCost(oilPrice);
-}
-
-// Function for reading a count people.
-function peopleCount() {
-  // Array with a peoples ( green peoples on website. ) Our radioinputs
-
-  for (i = 0; i < people.length; i++) {
-    // If we found a people, who has checked status, we need get his Number, our data-count
-
-    if (people[i].checked) {
-      totalCountPeople = people[i].getAttribute("data-count");
-
-      // Else , we checked next
-    } else {
-      continue;
-    }
-  }
-}
-
-function percentCost(materialPercent) {
-  let size = materialPercent.querySelectorAll(".size_choose");
-  for (let i = 0; i < size.length; i++) {
-    let cost = size[i].querySelector(".cost");
-    let percent = size[i].querySelector(".percent");
-    if (percent == null) {
-      continue;
-    } else {
-      percent.innerHTML = parseInt(cost.innerHTML) * 0.2 + "₴";
-    }
-  }
-}
-
-function newCost(tablePrice, count, arrCost) {
-  let NewCost = tablePrice.querySelectorAll(".size_choose");
-  for (let i = 0; i < NewCost.length; i++) {
-    let a = NewCost[i];
-    let cost = a.querySelector(".cost");
-    if (cost == null) {
-      continue;
-    } else {
-      arrCost.push(parseInt(cost.innerHTML));
-      if (arrCost.length > 5) {
-        arrCost.pop();
-      }
-    }
-  }
-
-  for (let j = 0; j < NewCost.length; j++) {
-    let cost = NewCost[j].querySelector(".cost");
-    if (j == 0) {
-      if (count > 2) {
-        NewCost[j].classList.add("unactive");
-        cost.innerHTML = cost.innerHTML;
-      } else {
-        if (NewCost[j].classList.contains("unactive")) {
-          NewCost[j].classList.remove("unactive");
-        }
-        cost.innerHTML = arrCost[j] + (count - 1) * 150;
-      }
-    } else if (j == 1) {
-      if (count > 4) {
-        NewCost[j].classList.add("unactive");
-        cost.innerHTML = cost.innerHTML;
-      } else {
-        if (NewCost[j].classList.contains("unactive")) {
-          NewCost[j].classList.remove("unactive");
-        }
-        cost.innerHTML = arrCost[j] + (count - 1) * 200;
-      }
-    } else if (j == 2) {
-      if (count > 6) {
-        NewCost[j].classList.add("unactive");
-        cost.innerHTML = cost.innerHTML;
-      } else {
-        if (NewCost[j].classList.contains("unactive")) {
-          NewCost[j].classList.remove("unactive");
-        }
-        cost.innerHTML = arrCost[j] + (count - 1) * 300;
-      }
-    } else if (j == 3) {
-      cost.innerHTML = arrCost[j] + (count - 1) * 400;
-    } else if (j == 4) {
-      cost.innerHTML = arrCost[j] + (count - 1) * 500;
-    }
-  }
-  let activeMaterial = document.querySelector(".active_material");
-  percentCost(activeMaterial);
-}
+// Cost Table Open End
 
 // Order Section on/off ( Last form )
 
