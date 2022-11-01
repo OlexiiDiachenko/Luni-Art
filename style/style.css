@@ -559,38 +559,26 @@ main::before {
 
 /* Slider Size Text Settings */
 
-.slider_size_item {
-  box-sizing: border-box;
-  text-align: center;
-  background-color: #fbfbfd;
-  margin-left: 33px;
-  position: relative;
-  min-height: 660px;
-  min-width: 660px;
-  padding-top: 49px;
-}
-
 .slider_size_item_text {
-  position: relative;
-  z-index: 2;
-}
-
-.slider_size_item img {
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 0;
-  bottom: 0;
   left: 0;
-  z-index: 1;
-  min-height: 660px;
-  min-width: 660px;
+  z-index: 2;
 }
 
 /* SLider Size Images ettings */
 
-.slider_size .slick-arrow {
-  top: 330px;
+.slider_size_item img {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 660px;
+  width: 100%;
 }
+
+/* Slider With Videos */
 
 .video-process .middle {
   margin-top: 10px;
