@@ -2176,7 +2176,7 @@
   /* Tabel Wrapper Create A Table */
 
   .size-cost-block {
-    grid-template-columns: repeat(3, 105px);
+    grid-template-columns: repeat(2, 120px);
     column-gap: 8px;
     row-gap: 10px;
   }
