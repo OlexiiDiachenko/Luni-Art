@@ -2093,6 +2093,10 @@
     flex-direction: column-reverse;
   }
 
+  .comparison-images {
+    max-width: 100%;
+  }
+
   .parents-comparison-section {
     background-color: #fff;
     padding-top: 0;
