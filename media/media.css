@@ -1802,6 +1802,12 @@
     display: block;
   }
 
+  header,
+  main {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   /* Header */
 
   /* Header Text Block */
@@ -1857,15 +1863,12 @@
     border-radius: 50%;
   }
 
-  /* Siiders Items (Items Max Width) */
+  /* Siiders Items (Items Max Width) and Ограничивающая Оболочка */
+  .slick-list,
   .slider_photo_item,
+  .slider_video_item,
   .slider_size_item img {
-    max-width: 320px;
-    width: 100%;
-  }
-
-  .slider_video_item {
-    max-width: 270px;
+    max-width: 390px;
     width: 100%;
   }
 
@@ -1893,17 +1896,20 @@
     max-width: 210px;
   }
 
-  /* Appreciate Block */
+  /* Button Want A Paint */
 
-  .appreciate img {
-    width: 25px;
-    height: 25px;
+  .order_now-button {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
   }
 
-  /* Cell Settings */
-  .cell img {
-    width: 25px;
-    height: 25px;
+  .order_now-button button {
+    max-width: 240px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 29px;
   }
 
   /* Choose Language Block */
@@ -1932,10 +1938,14 @@
   .left-top-orange {
     width: 87px;
     height: 94px;
-    transform: rotate(60deg);
     top: 64px;
     left: -20px;
   }
+
+  .left-top-orange img {
+    transform: rotate(-60deg);
+  }
+
   .right-top-white {
     max-width: 319px;
     width: 100%;
@@ -1981,7 +1991,7 @@
   .about_us .photo_from_header .cell {
     position: absolute;
     top: 53px;
-    left: 50px;
+    left: 50%;
     transform: translateX(-50%);
   }
 

@@ -47,6 +47,11 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".slider_mobile").slick({
+    slidesToShow: 1,
+    speed: 700,
+    easing: "ease",
+  });
 });
 
 // Function Comparison
