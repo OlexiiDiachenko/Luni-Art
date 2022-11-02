@@ -531,15 +531,15 @@ a.ellipse {
     line-height: 87px;
   }
 
-  .large {
-    font-size: 15px;
-    line-height: 20px;
+  .normal_white,
+  .normal,
+  .large,
+  .normal_sub,
+  .middle {
+    font-size: 22px;
+    line-height: 29px;
   }
 
-  .middle,
-  .normal,
-  .normal_sub,
-  .normal_white,
   .normal_order {
     font-size: 10px;
     line-height: 13px;
@@ -567,21 +567,22 @@ a.ellipse {
   }
 
   button.size-button {
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 22px;
+    line-height: 29px;
   }
 
   .ellipse {
-    font-size: 15px;
-    line-height: 20px;
-    height: 30px;
+    font-size: 22px;
+    line-height: 29px;
+    height: 42px;
   }
 
   .comparison-button-order {
-    max-width: 125px;
+    max-width: 150px;
   }
 
   .get-consult {
-    width: 130px;
+    max-width: 190px;
+    width: 100%;
   }
 }

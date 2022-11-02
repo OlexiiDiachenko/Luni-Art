@@ -1803,7 +1803,19 @@
   }
 
   header,
-  main {
+  .about_us,
+  .luniart_text,
+  .sizes-slider,
+  .obligations,
+  .video-process,
+  .video-slider,
+  .slider-button,
+  .achivments_mobile,
+  .comparison,
+  .order,
+  .get-consult-mobile,
+  .video-slider,
+  .order_now-bottom {
     padding-right: 10px;
     padding-left: 10px;
   }
@@ -1836,9 +1848,8 @@
   /* Slider settings */
 
   .slick-slider {
-    padding-right: 10px;
-    padding-left: 10px;
     margin: 0 auto;
+    padding: 0;
   }
 
   /* Arrows */
@@ -1878,7 +1889,7 @@
 
   /* Text Settings */
   .slider_item_text {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   /* Button Under The Slider With Photos */
@@ -1894,6 +1905,7 @@
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
+    margin-top: 50px;
     margin-bottom: 17px;
   }
 
@@ -1988,8 +2000,8 @@
   .about_us .photo_from_header {
     position: relative;
     height: max-content;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 50px;
   }
 
   /* Cell On Photo */
@@ -2011,15 +2023,25 @@
   /* Luniart Text */
 
   .order_now-bottom {
-    margin-top: 45px;
-    margin-bottom: 0;
+    margin-top: 50px;
+    margin-bottom: 60px;
   }
 
   /* Slider With Sizes  */
   /* Slider Size Text Settings */
 
+  .sizes-slider h3 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .sizes-slider .normal_sub {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
   .slider_size_item_text {
-    top: 30px;
+    top: 10px;
   }
 
   /* Obligations */
@@ -2027,7 +2049,7 @@
   .obligations {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   /* Obligations Table */
@@ -2041,12 +2063,25 @@
     margin-bottom: 3px;
   }
 
+  /* Video Process Text */
+
+  .video-process .middle {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
   /* Slider With Videos Achivments */
 
   .achivments_mobile {
     background-color: #fbfbfb;
-    padding-top: 24px;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  /* Video SLider With Our Achivments */
+  .video-slider-achivment {
+    margin-top: 40px;
   }
 
   /* Comparison */
@@ -2059,11 +2094,24 @@
   }
 
   .parents-comparison-section {
-    row-gap: 40px;
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin-bottom: 0;
   }
 
-  .pair-comparison-section {
-    row-gap: 40px;
+  /* Text Under The Comparison */
+
+  .text-comparison {
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+
+  /* Button Get Order */
+
+  .parents-comparison-section .ellipse,
+  .pair-comparison-section .ellipse {
+    margin-top: 30px;
   }
 
   .pair-comparison-section button.mobile {
@@ -2100,7 +2148,7 @@
   /* Cards With Material */
 
   .cards-material {
-    column-gap: 35px;
+    column-gap: 10px;
   }
 
   .card,
@@ -2145,13 +2193,8 @@
 
   .peoples {
     column-gap: 20px;
-    margin-top: 45px;
-    margin-bottom: 10px;
-  }
-
-  /* More Peoples Button */
-  .more-peoples::after {
-    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
   }
 
   /* Table Cost Size */
@@ -2203,8 +2246,11 @@
   /* Get Consult Mobile Section */
 
   .get-consult-mobile {
-    padding: 10px 15px;
-    column-gap: 40px;
+    display: flex;
+    padding: 7px 15px;
+    row-gap: 20px;
+    background-color: var(--pink-regular);
+    margin-bottom: 40px;
   }
 
   .get-consult-mobile-text * {
@@ -2213,7 +2259,12 @@
 
   /* Section Order Now */
   .order_now-bottom {
-    padding-bottom: 40px;
+    padding-bottom: 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   /* Order Now Button */
