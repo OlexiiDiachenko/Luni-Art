@@ -1810,6 +1810,10 @@
 
   /* Header */
 
+  header {
+    padding-bottom: 40px;
+  }
+
   /* Header Text Block */
   .header-text {
     padding-top: 30px;
@@ -1910,6 +1914,7 @@
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
+    margin-bottom: 17px;
   }
 
   .order_now-button button {

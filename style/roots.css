@@ -527,8 +527,8 @@ a.ellipse {
 }
 @media (max-width: 520px) {
   .xlarge {
-    font-size: 65px;
-    line-height: 87px;
+    font-size: 55px;
+    line-height: 70px;
   }
 
   .large {
