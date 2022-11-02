@@ -1807,10 +1807,16 @@
   /* Header Text Block */
   .header-text {
     padding-top: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 35px;
   }
 
   /* Images Header Slider */
+
+  .header .images-slider {
+    position: relative;
+    z-index: 4;
+  }
+
   .images-slider {
     margin-bottom: 30px;
   }
@@ -1852,16 +1858,15 @@
   }
 
   /* Siiders Items (Items Max Width) */
-  .slider_photo_item {
+  .slider_photo_item,
+  .slider_size_item img {
     max-width: 320px;
+    width: 100%;
   }
 
   .slider_video_item {
     max-width: 270px;
-  }
-
-  .slider_size_item img {
-    max-width: 320px;
+    width: 100%;
   }
 
   /* Distance Between 2 Items */
