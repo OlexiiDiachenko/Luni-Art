@@ -1829,6 +1829,13 @@
 
   /* Sliders General Settings */
 
+  /* Slider settings */
+
+  .slick-slider {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   /* Arrows */
   .slick-arrow,
   .slider_size .slick-arrow {
@@ -1910,6 +1917,13 @@
     width: 100%;
     font-size: 22px;
     line-height: 29px;
+    max-height: 50px;
+    height: 50px;
+  }
+
+  .cell img {
+    width: 25px;
+    height: 25px;
   }
 
   /* Choose Language Block */
