@@ -1838,6 +1838,7 @@
   .slick-slider {
     padding-right: 10px;
     padding-left: 10px;
+    margin: 0 auto;
   }
 
   /* Arrows */
@@ -1850,28 +1851,7 @@
 
   /* Точки (булиты) */
   .slick-dots {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0;
-  }
-
-  .slick-dots li {
-    list-style: none;
-    margin-left: 5px;
-  }
-
-  .slick-dots li:first-child {
-    margin-left: 0;
-  }
-
-  /* Элемент точки */
-  .slick-dots li button {
-    font-size: 0;
-    width: 8px;
-    height: 8px;
-    background-color: #d9d9d9;
-    border-radius: 50%;
+    display: none;
   }
 
   /* Siiders Items (Items Max Width) and Ограничивающая Оболочка */
@@ -1972,11 +1952,14 @@
     height: 100%;
     padding-bottom: 0;
   }
-  .right-top-blue {
+  .right-top-blue-mobile {
     width: 130px;
     height: 130px;
-    bottom: 300px;
+    top: 60%;
     right: -100px;
+    background-color: #172853;
+    border-radius: 50%;
+    z-index: 5;
   }
 
   /* Main */
@@ -1994,6 +1977,10 @@
 
   .about_us {
     padding-bottom: 0px;
+  }
+
+  .cv {
+    max-width: 376px;
   }
 
   /* Section With Photo */
@@ -2025,7 +2012,7 @@
 
   .order_now-bottom {
     margin-top: 45px;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
 
   /* Slider With Sizes  */
