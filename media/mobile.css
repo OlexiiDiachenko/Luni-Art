@@ -353,7 +353,12 @@
   }
 
   .comparison-images {
-    max-width: 100%;
+    max-width: 460px;
+    width: 100%;
+  }
+
+  .comparison-images img {
+    min-width: 0;
   }
 
   .parents-comparison-section {
