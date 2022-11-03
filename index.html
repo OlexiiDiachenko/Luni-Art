@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./style/style.css" />
     <!-- Media Queries -->
     <link rel="stylesheet" href="./media/media.css" />
+    <!-- Mobile Queries -->
+    <link rel="stylesheet" href="./media/mobile.css" />
     <!-- Icon -->
     <link
       rel="shortcut icon"
@@ -159,7 +161,7 @@
           <div class="cell flex-column center_align">
             <img src="./images/achivment_right.webp" alt="" />
             <p class="normal_sub">
-              <strong>Допомагаємо армії</strong>
+              <strong>Допомагаємо ЗСУ</strong>
             </p>
           </div>
           <!-- Photo -->
@@ -339,7 +341,7 @@
           <b>Наші зобов’язання перед вами:</b>
         </h3>
         <!-- Obligations Table -->
-        <div class="obligations-table flex-row flex-wrap center_align">
+        <div class="obligations-table flex-column">
           <!-- Obligations Cell 1 -->
           <div class="cell center_align">
             <div class="image">
@@ -1074,8 +1076,28 @@
 
         <!-- Order Counstructor -->
         <div class="order-constructor">
+          <!-- Tabs Of Material -->
+          <div class="cards-material flex-row mobile center_align">
+            <!-- Coal Tab -->
+            <div class="tab-coal">
+              <input
+                class="card-input"
+                type="radio"
+                name="material"
+                id="coal"
+                checked
+              />
+              <label class="tab-label" for="coal">Вугілля</label>
+            </div>
+            <!-- Oil Tab -->
+            <div class="tab-oil">
+              <input class="card-input" type="radio" name="material" id="oil" />
+              <label class="tab-label" for="oil">Олія</label>
+            </div>
+          </div>
+
           <!-- Cards With Material -->
-          <div class="cards-material flex-row">
+          <div class="cards-material flex-row screen">
             <!-- Card Coal -->
             <div class="card card-coal">
               <!-- Image -->
@@ -1650,7 +1672,7 @@
       <!-- Slider With Sizes End -->
 
       <!-- Section Order Now -->
-      <section class="order_now-bottom center_align">
+      <section class="order_now-bottom center_align bottom">
         <h2 class="middle"><strong>ЗАМОВЛЯЙТЕ ВЖЕ ЗАРАЗ!</strong></h2>
         <p class="normal">Та отримайте подарунок!</p>
         <button

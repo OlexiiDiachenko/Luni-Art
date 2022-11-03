@@ -94,8 +94,13 @@ function removeComparison() {
 // Cost Table Open
 
 let materials = document.querySelectorAll(".card-label");
+let tabs = document.querySelectorAll(".tab-label");
 
 materials.forEach((material) => {
+  material.addEventListener("click", tabelCost);
+});
+
+tabs.forEach((material) => {
   material.addEventListener("click", tabelCost);
 });
 

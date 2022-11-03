@@ -536,8 +536,8 @@ a.ellipse {
   .large,
   .normal_sub,
   .middle {
-    font-size: 22px;
-    line-height: 29px;
+    font-size: 18px;
+    line-height: 25px;
   }
 
   .normal_order {
@@ -567,13 +567,13 @@ a.ellipse {
   }
 
   button.size-button {
-    font-size: 22px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .ellipse {
-    font-size: 22px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 24px;
     height: 42px;
   }
 
@@ -583,6 +583,5 @@ a.ellipse {
 
   .get-consult {
     max-width: 190px;
-    width: 100%;
   }
 }
