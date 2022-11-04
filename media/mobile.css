@@ -27,7 +27,7 @@
 
   /* Header */
 
-  header {
+  header.header {
     padding-bottom: 40px;
     height: fit-content;
   }
