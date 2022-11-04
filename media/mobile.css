@@ -622,3 +622,29 @@
     width: 8px;
   }
 }
+
+/* Mobile Version Horizontal */
+@media (max-height: 480px) {
+  .left-top-orange,
+  .left-top-orange {
+    height: 50px;
+    width: 40px;
+  }
+  .right-top-blue {
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    left: 40%;
+  }
+  .right-bottom-orange,
+  .right-bottom-orange img {
+    height: 50px;
+    width: 40px;
+  }
+  .right-bottm-white {
+    width: 100px;
+    height: 100px;
+    top: 60%;
+    right: 40%;
+  }
+}
