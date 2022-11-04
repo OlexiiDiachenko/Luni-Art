@@ -61,31 +61,50 @@ let comparisonWrappers = document.querySelectorAll(".comparison-images"),
 
 comparisonButtons.forEach((button) => {
   button.addEventListener("mousedown", mouseComparison);
-  button.addEventListener("touchstart", mouseComparison);
+  button.addEventListener("touchstart", touchComparison);
 });
 
 function mouseComparison() {
   this.parentElement.addEventListener("mousemove", mouseComparisonMove);
-  this.parentElement.addEventListener("touchmove", mouseComparisonMove);
   document.addEventListener("mouseup", removeComparison);
+}
+
+function touchComparison() {
+  this.parentElement.addEventListener("touchmove", touchComparisonMove);
   document.addEventListener("touchcancel", removeComparison);
 }
 
+// Comparison For Mouse
 function mouseComparisonMove(event) {
-  let comparisonBefore = this.querySelector(".image-comparison_before");
-  let button = this.querySelector(".comparison-button");
-  let left = event.pageX - this.offsetLeft;
-  let width = this.clientWidth;
+  let comparisonBefore = this.querySelector(".image-comparison_before"), // Get Block With Painting
+    button = this.querySelector(".comparison-button"), // Get Our Circle Button
+    left = event.pageX - this.offsetLeft, // Calculate This Position Left
+    width = this.clientWidth; // Get True Width Our Parent Block
   if (left < 0) left = 0;
   if (left > width) left = width;
   button.style.left = `${left}px`;
   comparisonBefore.style.width = `${left}px`;
 }
 
+// Comparison For Touch
+function touchComparisonMove(event) {
+  let comparisonBefore = this.querySelector(".image-comparison_before"), // Get Block With Painting
+    button = this.querySelector(".comparison-button"), // Get Our Circle Button
+    touches = event.changedTouches, // Get All Touches
+    touch = touches[0], // Get Out First Touch On Button
+    left = touch.pageX - this.offsetLeft, // Calculate This Position Left
+    width = this.clientWidth; // Get True Width Our Parent Block
+  if (left < 0) left = 0;
+  if (left > width) left = width;
+  button.style.left = `${left}px`;
+  comparisonBefore.style.width = `${left}px`;
+  console.log(left);
+}
+
 function removeComparison() {
   comparisonWrappers.forEach((comparisonWrapper) => {
     comparisonWrapper.removeEventListener("mousemove", mouseComparisonMove);
-    comparisonWrapper.removeEventListener("touchmove", mouseComparisonMove);
+    comparisonWrapper.removeEventListener("touchmove", touchComparisonMove);
   });
 }
 
@@ -203,30 +222,3 @@ function massangerChoose() {
     this.classList.remove("unactive_massanger");
   }
 }
-
-// let imageComparison = document.querySelector("#image-comparison");
-// let imageComparisonDown = document.querySelector("#image-comparison_down");
-// let buttonComparison = document.querySelectorAll(".image-comparison_slider");
-
-// buttonComparison.forEach((button) => {
-//   button.addEventListener("touchmove", (evt) => {
-//     let touches = evt.changedTouches;
-//     let newLeft = getComputedStyle(imageComparison.parentElement).paddingLeft;
-//     let width = parseFloat(getComputedStyle(imageComparison).width);
-//     let offset = touches[0].clientX - parseFloat(newLeft);
-//     if (offset >= width) {
-//       offset = width;
-//     }
-//     if (offset < 0) offset = 0;
-//     button.style.left = `${offset}px`;
-//     button.addEventListener("touchend", () => {
-//       let changeImage = button.parentElement.querySelector(
-//         ".image-comparison_before"
-//       );
-//       let width = parseFloat(getComputedStyle(imageComparison).width);
-//       let newWidth = width - parseFloat(getComputedStyle(changeImage).width);
-//       changeImage.style.width = ` ${newWidth}px`;
-//       console.log(width);
-//     });
-//   });
-// });
