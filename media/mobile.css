@@ -29,6 +29,7 @@
 
   header {
     padding-bottom: 40px;
+    height: fit-content;
   }
 
   /* Header Text Block */
