@@ -98,7 +98,6 @@ function touchComparisonMove(event) {
   if (left > width) left = width;
   button.style.left = `${left}px`;
   comparisonBefore.style.width = `${left}px`;
-  console.log(left);
 }
 
 function removeComparison() {
