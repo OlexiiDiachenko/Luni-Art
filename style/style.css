@@ -281,6 +281,11 @@ main::before {
 /* Comparisons images */
 .comparison-images {
   position: relative;
+  max-width: min-content;
+}
+
+.comparison-images img:first-child {
+  max-width: 100%;
 }
 
 .comparison-images img {
