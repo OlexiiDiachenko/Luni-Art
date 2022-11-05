@@ -120,7 +120,7 @@ materials.forEach((material) => {
 });
 
 tabs.forEach((material) => {
-  material.addEventListener("click", tabelCost);
+  material.addEventListener("click", mobileTabelCost);
 });
 
 function tabelCost() {
@@ -128,8 +128,21 @@ function tabelCost() {
   if (input.checked) {
     return;
   } else {
-    let thisId = this.getAttribute("for");
-    let activeBlock = document.querySelector(".size-cost-block.active");
+    let thisId = this.getAttribute("for"),
+      activeBlock = document.querySelector(".size-cost-block.active");
+    activeBlock.classList.remove("active");
+    let newActiveBlock = document.querySelector(`.${thisId}-tabel`);
+    newActiveBlock.classList.add("active");
+  }
+}
+
+function mobileTabelCost() {
+  let input = this.previousElementSibling;
+  if (input.checked) {
+    return;
+  } else {
+    let thisId = this.getAttribute("data-for"),
+      activeBlock = document.querySelector(".size-cost-block.active");
     activeBlock.classList.remove("active");
     let newActiveBlock = document.querySelector(`.${thisId}-tabel`);
     newActiveBlock.classList.add("active");
