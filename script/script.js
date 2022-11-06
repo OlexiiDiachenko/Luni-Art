@@ -214,24 +214,3 @@ function removeNubmer() {
     this.value = this.value;
   }
 }
-
-// Choose the massanger
-
-let massangersImages = document.querySelectorAll(".massanger_images");
-
-for (let i = 0; i < massangersImages.length; i++) {
-  massangersImages[i].addEventListener("click", massangerChoose);
-}
-
-function massangerChoose() {
-  for (let j = 0; j < massangersImages.length; j++) {
-    if (!massangersImages[j].classList.contains("unactive_massanger")) {
-      massangersImages[j].classList.add("unactive_massanger");
-    } else {
-      continue;
-    }
-  }
-  if (this.classList.contains("unactive_massanger")) {
-    this.classList.remove("unactive_massanger");
-  }
-}

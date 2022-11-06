@@ -13,10 +13,20 @@ app.post("/index", (req, res) => {
     return res.sendStatus(400);
   }
   const message = {
-    to: "forolun@gmail.com",
+    // to: "forolun@gmail.com",
+    to: "elexeeen@gmail.com",
     subject: "Rabotaet",
-    ht: "Congratulations",
+    html: `
+    <h2>Замовлення №1</h2>
+
+    <ol>
+      <li>Ім'я: ${req.body.name}</li>
+      <li>Номер телефону: ${req.body.phone}</li>
+      <li>Тип зв'язку: ${req.body.contact}</li>
+    </ol>
+    `,
   };
+  console.log(req.body);
   mailer(message);
   user = req.body;
   res.redirect("/index");

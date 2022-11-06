@@ -1033,30 +1033,32 @@ footer.footer {
   column-gap: 45px;
 }
 
-/* Messangers Icons */
-.massangers img {
-  width: 45px;
-  height: 45px;
-}
-
-.massangers .massanger_images:hover {
-  cursor: pointer;
-}
-
 .massanger_images {
   position: relative;
 }
 
-/* Unactive Messanger */
-.massanger_images.unactive_massanger::before {
-  content: "";
+/* Input Contact */
+.massanger_images input {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  z-index: 2;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+/* Messangers Icons */
+.massangers label img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* Contact Label For Checked Input */
+
+.massanger_images input:checked ~ label img {
+  box-shadow: 0 0 10px var(--pink-regular);
 }
 
 /* Button Submit */
