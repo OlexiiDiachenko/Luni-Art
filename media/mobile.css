@@ -7,6 +7,10 @@
     display: block;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   header,
   .about_us,
   .luniart_text,
@@ -355,7 +359,8 @@
 
   .comparison-images {
     max-width: 460px;
-    width: 100%;
+    width: max-content;
+    text-align: center;
   }
 
   .comparison-images img {
