@@ -212,16 +212,21 @@ main::before {
   row-gap: 75px;
 }
 
-.cell-video-1 img {
+.about_us-achivments-cell video {
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.cell-video-1 video {
   /* border: 2px solid #00ac69; */
   box-shadow: 0px 0px 4px 2px #00ac69;
 }
 
-.cell-video-2 img {
+.cell-video-2 video {
   box-shadow: 0px 0px 4px 2px #feaa43;
 }
 
-.cell-video-3 img {
+.cell-video-3 video {
   box-shadow: 0px 0px 4px 2px #89d5ff;
 }
 
@@ -607,7 +612,9 @@ main::before {
   margin-left: 30px;
 }
 
-.slider_video_item img {
+.slider_video_item video {
+  object-fit: cover;
+  height: 100%;
   width: 100%;
 }
 
