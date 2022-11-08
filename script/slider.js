@@ -96,7 +96,6 @@ slidersTwo.forEach((slider) => {
     {
       loop: true,
       mode: "free-snap",
-      draggble: false,
       slides: {
         perView: 2,
         spacing: 15,
@@ -112,7 +111,6 @@ slidersThree.forEach((slider) => {
     {
       loop: true,
       mode: "free-snap",
-      draggble: false,
       slides: {
         perView: 3,
         spacing: 25,
@@ -126,7 +124,6 @@ slidersMobile.forEach((slider) => {
   let slider_one_item = new KeenSlider(slider, {
     loop: true,
     mode: "free-snap",
-    draggble: false,
     slides: {
       perView: 1,
     },
