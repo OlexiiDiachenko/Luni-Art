@@ -14,7 +14,6 @@ $(document).ready(function () {
   //     },
   //   ],
   // });
-
   // $(".slider_size").slick({
   //   dots: true,
   //   slidesToShow: 2,
@@ -31,7 +30,6 @@ $(document).ready(function () {
   //     },
   //   ],
   // });
-
   // $(".slider_video").slick({
   //   slidesToShow: 3,
   //   speed: 1000,
@@ -47,11 +45,11 @@ $(document).ready(function () {
   //     },
   //   ],
   // });
-  $(".slider_mobile").slick({
-    slidesToShow: 1,
-    speed: 700,
-    easing: "ease",
-  });
+  // $(".slider_mobile").slick({
+  //   slidesToShow: 1,
+  //   speed: 700,
+  //   easing: "ease",
+  // });
 });
 
 // Function Comparison
