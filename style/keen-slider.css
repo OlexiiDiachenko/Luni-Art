@@ -19,9 +19,3 @@
   width: 100%;
   min-height: 100%;
 }
-.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-reverse] {
-  flex-direction: row-reverse;
-}
-.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-v] {
-  flex-wrap: wrap;
-}
