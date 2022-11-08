@@ -88,6 +88,7 @@ function navigation(slider) {
 
 let slidersTwo = document.querySelectorAll(".slider_size");
 let slidersThree = document.querySelectorAll(".slider_three");
+let slidersMobile = document.querySelectorAll(".slider_mobile");
 
 slidersTwo.forEach((slider) => {
   let slider_two_items = new KeenSlider(
@@ -119,6 +120,17 @@ slidersThree.forEach((slider) => {
     },
     [navigation]
   );
+});
+
+slidersMobile.forEach((slider) => {
+  let slider_one_item = new KeenSlider(slider, {
+    loop: true,
+    mode: "free-snap",
+    draggble: false,
+    slides: {
+      perView: 1,
+    },
+  });
 });
 
 // var slider = new KeenSlider(
