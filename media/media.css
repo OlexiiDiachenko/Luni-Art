@@ -264,23 +264,20 @@
 
   /* Images Carousel */
 
-  .images-slider {
-    margin-bottom: 145px;
-  }
-
   .slider_photo {
     margin-bottom: 27px;
   }
 
   /* Distance From Item To Item */
-  .slider_photo_item + .slider_photo_item {
+  /* .slider_photo_item + .slider_photo_item {
     margin-left: 27px;
-  }
+  } */
 
   /* Slider Photo Button */
 
   .slider_photo_button {
     max-width: 365px;
+    margin-bottom: 145px;
   }
 
   /* Slider With Sizes */
@@ -321,9 +318,9 @@
     margin-bottom: 55px;
   }
 
-  .slider_video_item + .slider_video_item {
+  /* .slider_video_item + .slider_video_item {
     margin-left: 25px;
-  }
+  } */
 
   .slider_video_button {
     max-width: 235px;
@@ -729,14 +726,7 @@
 
   /* Images Carousel */
 
-  .images-slider {
-    margin-bottom: 100px;
-  }
-
   /* Distance From Item To Item */
-  .slider_photo_item + .slider_photo_item {
-    margin-left: 20px;
-  }
 
   /* Slider Photo Button */
 
@@ -762,12 +752,13 @@
     margin-bottom: 45px;
   }
 
-  .slider_video_item + .slider_video_item {
+  /* .slider_video_item + .slider_video_item {
     margin-left: 20px;
-  }
+  } */
 
   .slider_video_button {
     max-width: 215px;
+    margin-bottom: 100px;
   }
 
   /* Order */
@@ -1067,18 +1058,14 @@
 
   /* Images Carousel */
 
-  .images-slider {
-    margin-bottom: 100px;
-  }
-
   .slider_photo {
     margin-bottom: 17px;
   }
 
   /* Distance From Item To Item */
-  .slider_photo_item + .slider_photo_item {
+  /* .slider_photo_item + .slider_photo_item {
     margin-left: 17px;
-  }
+  } */
 
   /* Slider Photo Button */
 
@@ -1118,9 +1105,9 @@
     margin-bottom: 35px;
   }
 
-  .slider_video_item + .slider_video_item {
+  /* .slider_video_item + .slider_video_item {
     margin-left: 15px;
-  }
+  } */
 
   .slider_video_button {
     max-width: 150px;
@@ -1550,23 +1537,20 @@
 
   /* Images Carousel */
 
-  .images-slider {
-    margin-bottom: 50px;
-  }
-
   .slider_photo {
     margin-bottom: 15px;
   }
 
   /* Distance From Item To Item */
-  .slider_photo_item + .slider_photo_item {
+  /* .slider_photo_item + .slider_photo_item {
     margin-left: 13px;
-  }
+  } */
 
   /* Slider Photo Button */
 
   .slider_photo_button {
     max-width: 175px;
+    margin-bottom: 50px;
   }
 
   /* Slider With Sizes */

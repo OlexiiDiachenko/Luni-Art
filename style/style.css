@@ -428,6 +428,7 @@ main::before {
 .slider-wrapper {
   padding-left: 220px;
   padding-right: 220px;
+  box-sizing: border-box;
 }
 
 /* Слайдер */
@@ -477,18 +478,14 @@ main::before {
 
 /* Images Carousel */
 
-.images-slider {
-  margin-bottom: 155px;
-}
-
 .slider_photo {
   margin-bottom: 35px;
 }
 
 /* Distance From Item To Item */
-.slider_photo_item + .slider_photo_item {
+/* .slider_photo_item + .slider_photo_item {
   margin-left: 33px;
-}
+} */
 
 /* Image Settings */
 .slider_photo_item img {
@@ -506,6 +503,7 @@ main::before {
 }
 
 .slider_photo_button {
+  margin-bottom: 155px;
   max-width: 440px;
   width: 100%;
 }
@@ -572,9 +570,9 @@ main::before {
 
 /* Distance Between 2 Items */
 
-.slider_size_item + .slider_size_item {
+/* .slider_size_item {
   margin-left: 25px;
-}
+} */
 
 /* Slider Size Text Settings */
 
@@ -608,9 +606,9 @@ main::before {
   margin-bottom: 65px;
 }
 
-.slider_video_item + .slider_video_item {
+/* .slider_video_item + .slider_video_item {
   margin-left: 30px;
-}
+} */
 
 .slider_video_item video {
   object-fit: cover;

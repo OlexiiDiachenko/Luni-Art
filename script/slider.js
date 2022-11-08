@@ -86,16 +86,51 @@ function navigation(slider) {
   });
 }
 
-var slider = new KeenSlider(
-  "#slider",
-  {
-    loop: true,
-    mode: "free",
-    draggble: false,
-    slides: {
-      perView: 3,
-      spacing: 15,
+let slidersTwo = document.querySelectorAll(".slider_size");
+let slidersThree = document.querySelectorAll(".slider_three");
+
+slidersTwo.forEach((slider) => {
+  let slider_two_items = new KeenSlider(
+    slider,
+    {
+      loop: true,
+      mode: "free-snap",
+      draggble: false,
+      slides: {
+        perView: 2,
+        spacing: 15,
+      },
     },
-  },
-  [navigation]
-);
+    [navigation]
+  );
+});
+
+slidersThree.forEach((slider) => {
+  let slider_three_items = new KeenSlider(
+    slider,
+    {
+      loop: true,
+      mode: "free-snap",
+      draggble: false,
+      slides: {
+        perView: 3,
+        spacing: 25,
+      },
+    },
+    [navigation]
+  );
+});
+
+// var slider = new KeenSlider(
+//   ".slider",
+//   {
+//     loop: true,
+//     mode: "free-snap",
+//     draggble: false,
+//     slides: {
+//       perView: 2,
+//       spacing: 20,
+//     },
+//   },
+//   [navigation]
+// );
