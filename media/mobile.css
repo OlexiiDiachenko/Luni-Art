@@ -57,26 +57,7 @@
 
   /* Slider settings */
 
-  .slick-slider {
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  /* Arrows */
-  .slick-arrow,
-  .slider_size .slick-arrow {
-    width: 0;
-    height: 0;
-    font-size: 0;
-  }
-
-  /* Точки (булиты) */
-  .slick-dots {
-    display: none;
-  }
-
   /* Siiders Items (Items Max Width) and Ограничивающая Оболочка */
-  .slick-list,
   .slider_photo_item,
   .slider_video_item,
   .slider_size_item img {
