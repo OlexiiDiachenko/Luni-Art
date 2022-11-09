@@ -213,8 +213,7 @@ main::before {
 }
 
 .about_us-achivments-cell video {
-  object-fit: cover;
-  max-height: 100%;
+  max-height: 560px;
 }
 
 .cell-video-1 video {
@@ -477,14 +476,9 @@ main::before {
   margin-bottom: 65px;
 }
 
-/* .slider_video_item + .slider_video_item {
-  margin-left: 30px;
-} */
-
 .slider_video_item video {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+  max-width: 420px;
+  max-height: 500px;
 }
 
 .slider_video_button {

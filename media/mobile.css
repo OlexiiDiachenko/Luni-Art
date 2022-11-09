@@ -23,10 +23,14 @@
   .comparison,
   .order,
   .get-consult-mobile,
-  .video-slider,
   .order_now-bottom {
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  video {
+    max-height: 490px !important;
+    width: 100%;
   }
 
   /* Header */

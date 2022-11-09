@@ -127,8 +127,9 @@
     gap: 57px;
   }
 
-  .about_us-achivments img {
+  .about_us-achivments video {
     max-width: 365px;
+    max-height: 460px;
   }
 
   .about_us-achivments-cell {
@@ -286,9 +287,10 @@
     margin-bottom: 55px;
   }
 
-  /* .slider_video_item + .slider_video_item {
-    margin-left: 25px;
-  } */
+  .slider_video_item video {
+    max-width: 350px;
+    max-height: 415px;
+  }
 
   .slider_video_button {
     max-width: 235px;
@@ -587,8 +589,9 @@
     gap: 50px;
   }
 
-  .about_us-achivments img {
+  .about_us-achivments video {
     max-width: 315px;
+    max-height: 420px;
   }
 
   .about_us-achivments-cell {
@@ -710,9 +713,10 @@
     margin-bottom: 45px;
   }
 
-  /* .slider_video_item + .slider_video_item {
-    margin-left: 20px;
-  } */
+  .slider_video_item video {
+    max-width: 250px;
+    max-height: 300px;
+  }
 
   .slider_video_button {
     max-width: 215px;
@@ -881,8 +885,9 @@
     gap: 37px;
   }
 
-  .about_us-achivments img {
+  .about_us-achivments video {
     max-width: 235px;
+    max-height: 300px;
   }
 
   .about_us-achivments-cell {
@@ -1034,6 +1039,11 @@
 
   .video-slider {
     margin-bottom: 35px;
+  }
+
+  .slider_video_item video {
+    max-width: 225px;
+    max-height: 270px;
   }
 
   .slider_video_button {
@@ -1337,8 +1347,9 @@
     gap: 27px;
   }
 
-  .about_us-achivments img {
+  .about_us-achivments video {
     max-width: 175px;
+    max-height: 225px;
   }
 
   .about_us-achivments-cell {
@@ -1479,6 +1490,11 @@
 
   .video-process .middle {
     margin-bottom: 25px;
+  }
+
+  .slider_video_item video {
+    width: 200px;
+    height: 230px;
   }
 
   .video-slider {
