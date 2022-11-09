@@ -1,7 +1,8 @@
 // Function Comparison
 
 let comparisonWrappers = document.querySelectorAll(".comparison-images"),
-  comparisonButtons = document.querySelectorAll(".comparison-button");
+  comparisonButtons = document.querySelectorAll(".comparison-button"),
+  body = document.body;
 
 comparisonButtons.forEach((button) => {
   button.addEventListener("mousedown", mouseComparison);
@@ -43,6 +44,9 @@ function touchComparisonMove(event) {
   if (left > width) left = width;
   button.style.left = `${left}px`;
   comparisonBefore.style.width = `${left}px`;
+  body.onscroll = (e) => {
+    e.preventDefault();
+  };
 }
 
 function removeComparison() {
