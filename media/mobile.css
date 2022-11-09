@@ -3,6 +3,12 @@
   .screen {
     display: none;
   }
+  .screen * {
+    width: 0;
+    height: 0;
+    display: none;
+    font-size: 0;
+  }
   .mobile {
     display: block;
   }
