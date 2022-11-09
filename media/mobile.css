@@ -614,7 +614,11 @@
 }
 
 /* Mobile Version Horizontal */
-@media (max-height: 480px) {
+@media (max-height: 480px) and (orientation: landscape) {
+  .header-photo {
+    display: none;
+  }
+
   .left-top-orange,
   .left-top-orange {
     height: 50px;
