@@ -888,6 +888,7 @@
   [class*="cell-video"] {
     max-width: 235px;
     max-height: 300px;
+    box-sizing: border-box;
   }
 
   .about_us-achivments-cell {
