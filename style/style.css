@@ -212,7 +212,7 @@ main::before {
   row-gap: 75px;
 }
 
-.about_us-achivments-cell video {
+[class*="cell-video"] {
   max-height: 560px;
 }
 

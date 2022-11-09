@@ -28,10 +28,10 @@
     padding-left: 10px;
   }
 
-  video {
+  /* video {
     max-height: 490px !important;
     width: 100%;
-  }
+  } */
 
   /* Header */
 
@@ -67,6 +67,10 @@
   .slider_size_item img {
     max-width: 390px;
     width: 100%;
+  }
+
+  .slider_video_item {
+    max-height: 490px;
   }
 
   /* Distance Between 2 Items */

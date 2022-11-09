@@ -127,7 +127,7 @@
     gap: 57px;
   }
 
-  .about_us-achivments video {
+  [class*="cell-video"] {
     max-width: 365px;
     max-height: 460px;
   }
@@ -287,7 +287,7 @@
     margin-bottom: 55px;
   }
 
-  .slider_video_item video {
+  .slider_video_item {
     max-width: 350px;
     max-height: 415px;
   }
@@ -589,7 +589,7 @@
     gap: 50px;
   }
 
-  .about_us-achivments video {
+  [class*="cell-video"] {
     max-width: 315px;
     max-height: 420px;
   }
@@ -713,7 +713,7 @@
     margin-bottom: 45px;
   }
 
-  .slider_video_item video {
+  .slider_video_item {
     max-width: 250px;
     max-height: 300px;
   }
@@ -885,7 +885,7 @@
     gap: 37px;
   }
 
-  .about_us-achivments video {
+  [class*="cell-video"] {
     max-width: 235px;
     max-height: 300px;
   }
@@ -1041,7 +1041,7 @@
     margin-bottom: 35px;
   }
 
-  .slider_video_item video {
+  .slider_video_item {
     max-width: 225px;
     max-height: 270px;
   }
@@ -1347,7 +1347,7 @@
     gap: 27px;
   }
 
-  .about_us-achivments video {
+  [class*="cell-video"] {
     max-width: 175px;
     max-height: 225px;
   }
@@ -1492,9 +1492,9 @@
     margin-bottom: 25px;
   }
 
-  .slider_video_item video {
-    width: 200px;
-    height: 230px;
+  .slider_video_item {
+    max-width: 200px;
+    max-height: 230px;
   }
 
   .video-slider {
