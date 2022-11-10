@@ -1,10 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const mailer = require("./form-sending/nodemailer");
+const mailer = require("./form-sending/nodemailer.js");
 
 const app = express();
 
-const PORT = 3001;
+// const PORT = "127.0.0.1:5500";
 let user = undefined;
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -39,6 +39,4 @@ app.get("/index", (req, res) => {
   user = undefined;
 });
 
-app.listen(PORT, () =>
-  console.log(`server listening at http://localhost:${PORT}/index`)
-);
+app.listen(PORT, () => console.log(`server listening at http://${PORT}/index`));
