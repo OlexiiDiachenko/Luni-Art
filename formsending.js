@@ -33,7 +33,7 @@ app.post("https://olexiidiachenko.github.io/Luni-Art", (req, res) => {
 });
 app.get("https://olexiidiachenko.github.io/Luni-Art/", (req, res) => {
   if (typeof user !== "object") {
-    return res.sendFile(__dirname + "/index.html");
+    return res.sendFile("https://olexiidiachenko.github.io/Luni-Art/");
   }
   res.send("Регистрация прошла успешно");
   user = undefined;
