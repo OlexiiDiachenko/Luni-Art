@@ -8,7 +8,7 @@ const app = express();
 let user = undefined;
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.post("/index", (req, res) => {
+app.post("https://olexiidiachenko.github.io/Luni-Art", (req, res) => {
   if (!req.body.name || !req.body.phone) {
     return res.sendStatus(400);
   }
@@ -29,9 +29,9 @@ app.post("/index", (req, res) => {
   console.log(req.body);
   mailer(message);
   user = req.body;
-  res.redirect("/index");
+  res.redirect("https://olexiidiachenko.github.io/Luni-Art");
 });
-app.get("/index", (req, res) => {
+app.get("https://olexiidiachenko.github.io/Luni-Art/", (req, res) => {
   if (typeof user !== "object") {
     return res.sendFile(__dirname + "/index.html");
   }
@@ -39,4 +39,4 @@ app.get("/index", (req, res) => {
   user = undefined;
 });
 
-app.listen(PORT, () => console.log(`server listening at http://${PORT}/index`));
+// app.listen(PORT, () => console.log(`server listening at http://${PORT}/index`));
