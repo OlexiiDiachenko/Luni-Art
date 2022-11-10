@@ -44,9 +44,6 @@ function touchComparisonMove(event) {
   if (left > width) left = width;
   button.style.left = `${left}px`;
   comparisonBefore.style.width = `${left}px`;
-  body.onscroll = (e) => {
-    e.preventDefault();
-  };
 }
 
 function removeComparison() {
