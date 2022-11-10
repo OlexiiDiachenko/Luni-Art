@@ -1,14 +1,14 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const mailer = require("./form-sending/nodemailer.js");
+const mailer = require("./form-sending/nodemailer");
 
 const app = express();
 
-// const PORT = "127.0.0.1:5500";
+const PORT = 3001;
 let user = undefined;
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.post("https://olexiidiachenko.github.io/Luni-Art", (req, res) => {
+app.post("/index", (req, res) => {
   if (!req.body.name || !req.body.phone) {
     return res.sendStatus(400);
   }
@@ -29,14 +29,16 @@ app.post("https://olexiidiachenko.github.io/Luni-Art", (req, res) => {
   console.log(req.body);
   mailer(message);
   user = req.body;
-  res.redirect("https://olexiidiachenko.github.io/Luni-Art");
+  res.redirect("/index");
 });
-app.get("https://olexiidiachenko.github.io/Luni-Art/", (req, res) => {
+app.get("/index", (req, res) => {
   if (typeof user !== "object") {
-    return res.sendFile("https://olexiidiachenko.github.io/Luni-Art/");
+    return res.sendFile(__dirname + "/index.html");
   }
   res.send("Регистрация прошла успешно");
   user = undefined;
 });
 
-// app.listen(PORT, () => console.log(`server listening at http://${PORT}/index`));
+app.listen(PORT, () =>
+  console.log(`server listening at http://localhost:${PORT}/index`)
+);
