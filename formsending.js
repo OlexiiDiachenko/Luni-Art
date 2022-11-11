@@ -6,18 +6,19 @@ const app = express();
 
 const PORT = 3001;
 let user = undefined;
+let i = 0;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.post("/index", (req, res) => {
   if (!req.body.name || !req.body.phone) {
     return res.sendStatus(400);
   }
+  i++;
   const message = {
     // to: "forolun@gmail.com",
     to: "elexeeen@gmail.com",
     subject: "Rabotaet",
-    html: `
-    <h2>Замовлення №1</h2>
+    html: `<h2>Замовлення №${i}</h2>
 
     <ol>
       <li>Ім'я: ${req.body.name}</li>
