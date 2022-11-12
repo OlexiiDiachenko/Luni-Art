@@ -15,11 +15,11 @@ function mouseComparison() {
 }
 
 function touchComparison(e) {
-  console.log(pageYOffset);
-  body.style.top = -pageYOffset;
+  console.log(scrollY);
+  body.style.top = -scrollY;
   body.classList.add("noscroll");
   this.addEventListener("touchmove", touchComparisonMove);
-  document.addEventListener("touchcancel", removeComparison);
+  document.addEventListener("touchend", removeComparison);
 }
 
 // Comparison For Mouse

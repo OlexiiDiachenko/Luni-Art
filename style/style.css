@@ -23,6 +23,11 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+.noscroll {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .mobile {
   display: none;
 }
