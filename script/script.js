@@ -54,8 +54,8 @@ function removeComparison() {
   });
   if (body.classList.contains("noscroll")) {
     openBody();
+    document.removeEventListener("touchend", removeComparison);
   }
-  document.removeEventListener("touchend", removeComparison);
 }
 
 const setBody = () => {
