@@ -11,6 +11,11 @@
     overflow-x: hidden;
   }
 
+  .noscroll {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
   header,
   .about_us,
   .luniart_text,

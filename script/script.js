@@ -14,7 +14,10 @@ function mouseComparison() {
   document.addEventListener("mouseup", removeComparison);
 }
 
-function touchComparison() {
+function touchComparison(e) {
+  console.log(pageYOffset);
+  body.style.top = -pageYOffset;
+  body.classList.add("noscroll");
   this.addEventListener("touchmove", touchComparisonMove);
   document.addEventListener("touchcancel", removeComparison);
 }
@@ -51,6 +54,9 @@ function removeComparison() {
     comparisonWrapper.removeEventListener("mousemove", mouseComparisonMove);
     comparisonWrapper.removeEventListener("touchmove", touchComparisonMove);
   });
+  if (body.classList.contains("noscroll")) {
+    body.classList.remove("noscroll");
+  }
 }
 
 // Comparison End
