@@ -15,7 +15,6 @@ app.post("/index", (req, res) => {
   }
   i++;
   const message = {
-    // to: "forolun@gmail.com",
     to: "elexeeen@gmail.com",
     subject: "Rabotaet",
     html: `<h2>Замовлення №${i}</h2>

@@ -14,10 +14,8 @@ function mouseComparison() {
   document.addEventListener("mouseup", removeComparison);
 }
 
-function touchComparison(e) {
-  console.log(scrollY);
-  body.style.top = -scrollY;
-  body.classList.add("noscroll");
+function touchComparison() {
+  setBody();
   this.addEventListener("touchmove", touchComparisonMove);
   document.addEventListener("touchend", removeComparison);
 }
@@ -55,9 +53,19 @@ function removeComparison() {
     comparisonWrapper.removeEventListener("touchmove", touchComparisonMove);
   });
   if (body.classList.contains("noscroll")) {
-    body.classList.remove("noscroll");
+    openBody();
   }
+  document.removeEventListener("touchend", removeComparison);
 }
+
+const setBody = () => {
+  body.style.top = -scrollY;
+  body.classList.add("noscroll");
+};
+
+const openBody = () => {
+  body.classList.remove("noscroll");
+};
 
 // Comparison End
 
@@ -114,12 +122,14 @@ for (let i = 0; i < order.length; i++) {
 
 function showOrder() {
   consult.style.display = "flex";
+  setBody();
 }
 
 close.addEventListener("click", closeOrder);
 
 function closeOrder() {
   consult.style.display = "none";
+  openBody();
 }
 
 // A little validate a form in order menu
