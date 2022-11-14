@@ -85,6 +85,7 @@
 
   .slider_video_button {
     max-width: 150px;
+    margin-bottom: 35px;
   }
 
   /* Text Settings */
@@ -368,7 +369,7 @@
 
   .text-comparison {
     margin-bottom: 10px;
-    max-width: 100%;
+    max-width: 1000px !important;
   }
 
   /* Button Get Order */
@@ -384,6 +385,10 @@
 
   .dog-comparison {
     row-gap: 60px;
+  }
+
+  .dog-comparison .text-comparison {
+    margin-bottom: 30px;
   }
 
   /* Order */
@@ -513,7 +518,12 @@
   /* Footer */
 
   footer.footer {
-    padding: 8px 36px 12px;
+    padding: 8px 10px 12px;
+  }
+
+  footer.footer .normal {
+    font-size: 14px;
+    line-height: 16px;
   }
 
   .footer .links {
