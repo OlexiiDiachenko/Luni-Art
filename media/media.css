@@ -1752,3 +1752,9 @@
     line-height: 13px;
   }
 }
+
+@media (min-width: 480px) and (orientation: portrait) {
+  header.header {
+    height: 60vh;
+  }
+}
