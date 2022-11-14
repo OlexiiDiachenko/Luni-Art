@@ -310,13 +310,6 @@ video {
   }
 }
 
-/* @media (max-width: 1450px) {
-  .xlarge {
-    font-size: 120px;
-    line-height: 130px;
-  }
-} */
-
 @media (max-width: 1350px) {
   .xlarge {
     font-size: 100px;

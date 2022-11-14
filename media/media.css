@@ -71,7 +71,7 @@
   }
 
   header .achivments {
-    padding-top: 30px;
+    padding-top: 60px;
     column-gap: 140px;
   }
 
@@ -109,6 +109,11 @@
 
   .left-top-white {
     padding-bottom: 100px;
+  }
+  .left-top-orange {
+    width: 140px;
+    height: 150px;
+    left: 175px;
   }
 
   /* Main Section */
@@ -551,6 +556,14 @@
   .header-photo img {
     max-width: 560px;
   }
+
+  header .achivments {
+    padding-top: 30px;
+  }
+
+  .left-top-orange {
+    left: 155px;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -558,6 +571,10 @@
 
   .header-text {
     padding-top: 30px;
+  }
+
+  .header .achevments {
+    padding-top: 20px;
   }
 
   .header-photo img {
