@@ -1,3 +1,13 @@
+@media (max-width: 1920px) {
+  .header-text {
+    padding-top: 70px;
+  }
+
+  .header-photo img {
+    max-width: 800px;
+  }
+}
+
 @media (min-width: 1920px) and (max-height: 1050px) {
   .header-text {
     padding-top: 70px;
@@ -381,11 +391,6 @@
   .peoples button img {
     width: 30px;
     height: 62px;
-  }
-
-  /* More Peoples Button */
-  .more-peoples::after {
-    font-size: 21px;
   }
 
   /* Table Cost Size */
@@ -810,7 +815,6 @@
 
   /* Peoples Buttons */
   .peoples button img {
-    width: 30px;
     height: 55px;
   }
 
@@ -1150,11 +1154,6 @@
   .peoples button img {
     width: 20px;
     height: 40px;
-  }
-
-  /* More Peoples Button */
-  .more-peoples::after {
-    font-size: 15px;
   }
 
   /* Table Cost Size */
@@ -1609,11 +1608,6 @@
   .peoples button img {
     width: 15px;
     height: 30px;
-  }
-
-  /* More Peoples Button */
-  .more-peoples::after {
-    font-size: 10px;
   }
 
   /* Table Cost Size */
