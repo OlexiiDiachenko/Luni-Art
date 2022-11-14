@@ -219,7 +219,9 @@ main::before {
 }
 
 [class*="cell-video"] {
-  max-height: 560px;
+  max-height: 570px;
+  width: 440px;
+  height: 570px;
 }
 
 .cell-video-1 video {

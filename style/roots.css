@@ -242,8 +242,8 @@ video {
 
 @media (max-width: 1600px) {
   .xlarge {
-    font-size: 140px;
-    line-height: 160px;
+    font-size: 115px;
+    line-height: 120px;
   }
 
   .large {
@@ -310,12 +310,12 @@ video {
   }
 }
 
-@media (max-width: 1450px) {
+/* @media (max-width: 1450px) {
   .xlarge {
     font-size: 120px;
     line-height: 130px;
   }
-}
+} */
 
 @media (max-width: 1350px) {
   .xlarge {

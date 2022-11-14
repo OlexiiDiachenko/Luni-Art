@@ -71,7 +71,12 @@
   }
 
   header .achivments {
+    padding-top: 30px;
     column-gap: 140px;
+  }
+
+  header .achivments img {
+    width: 35px;
   }
 
   .header-photo img {
@@ -540,6 +545,11 @@
   .close img {
     height: 11px;
     width: 11px;
+  }
+}
+@media (max-width: 1440px) {
+  .header-photo img {
+    max-width: 560px;
   }
 }
 
