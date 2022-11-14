@@ -1755,6 +1755,20 @@
 
 @media (min-width: 480px) and (orientation: portrait) {
   header.header {
-    height: 60vh;
+    height: 40vh;
+  }
+
+  .header-text {
+    padding-top: 50px;
+  }
+
+  header .achivments img {
+    width: 25px;
+  }
+}
+
+@media (min-width: 480px) and (orientation: portrait) {
+  .header .header-photo img {
+    max-width: 300px;
   }
 }

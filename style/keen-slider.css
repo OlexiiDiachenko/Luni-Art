@@ -82,3 +82,10 @@
 .arrow--right {
   right: 100px;
 }
+
+@media (max-width: 1200px) {
+  .keen-slider__slide {
+    max-height: 500px !important;
+    height: 100%;
+  }
+}

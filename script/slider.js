@@ -100,6 +100,13 @@ slidersTwo.forEach((slider) => {
         perView: 2,
         spacing: 15,
       },
+      breakpoints: {
+        "(max-width: 1200px)": {
+          slides: {
+            perView: 1,
+          },
+        },
+      },
     },
     [navigation]
   );
@@ -114,6 +121,13 @@ slidersThree.forEach((slider) => {
       slides: {
         perView: 3,
         spacing: 25,
+      },
+      breakpoints: {
+        "(max-width: 1200px)": {
+          slides: {
+            perView: 1,
+          },
+        },
       },
     },
     [navigation]
