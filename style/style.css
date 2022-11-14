@@ -429,6 +429,20 @@ main::before {
   margin-bottom: 115px;
 }
 
+/* Slider Photo */
+
+.slider_photo {
+  margin-bottom: 35px;
+}
+
+/* Slider Photo Button */
+
+.slider_photo_button {
+  max-width: 440px;
+  width: 100%;
+  margin-bottom: 155px;
+}
+
 /* Sliders Wrapper */
 .slider-wrapper {
   padding-left: 220px;
