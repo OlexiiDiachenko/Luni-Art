@@ -1919,13 +1919,13 @@
 
     <div class="consult">
       <div class="consult-info flex-column">
-        <h2 class="middle">Безкоштовна консультація</h2>
         <img
           loading="lazy"
           src="./images/consult.webp"
           alt=""
           class="consult_image"
         />
+        <h2 class="middle">Безкоштовна консультація</h2>
         <form
           id="consult_form"
           method="POST"
@@ -1973,6 +1973,7 @@
                 type="radio"
                 name="contact"
                 id="Phone_number"
+                checked
               />
               <label class="massanger_label" for="Phone_number">
                 <img
@@ -2009,6 +2010,12 @@
                   alt="Viber"
               /></label>
             </div>
+            <input
+              type="text"
+              id="selected-massanger"
+              value="Мобільний телефон"
+              disabled
+            />
           </div>
 
           <button type="submit" class="submit ellipse pink-button middle">

@@ -811,6 +811,7 @@ footer.footer {
 .consult-info h2 {
   color: var(--second-textcolor);
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 /* Palit Image */
@@ -820,7 +821,6 @@ footer.footer {
   max-width: 58px;
   width: 100%;
   margin-top: 18px;
-  margin-bottom: 15px;
 }
 
 /* Forms Text Inputs */
@@ -878,10 +878,10 @@ footer.footer {
 .userInfo p {
   position: absolute;
   width: 100%;
-  font-size: 18px;
-  line-height: 21px;
   bottom: -21px;
   left: 0;
+  font-size: 18px;
+  line-height: 21px;
   color: var(--pink-regular);
 }
 
@@ -901,8 +901,9 @@ footer.footer {
   padding-right: 10px;
   padding-left: 10px;
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   column-gap: 45px;
+  position: relative;
 }
 
 .massanger_images {
@@ -921,7 +922,7 @@ footer.footer {
 }
 
 /* Messangers Icons */
-.massangers label img {
+.massangers img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -931,6 +932,20 @@ footer.footer {
 
 .massanger_images input:checked ~ label img {
   box-shadow: 0 0 10px var(--pink-regular);
+}
+
+/* Selected Messanger */
+
+#selected-massanger {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border-bottom: 1px solid var(--pink-regular);
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--pink-regular);
 }
 
 /* Button Submit */
