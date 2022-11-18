@@ -896,8 +896,8 @@ footer.footer {
   color: var(--second-textcolor);
 }
 
-/* Massangers Block */
-.massangers {
+/* Messengers Block */
+.messengers {
   padding-right: 10px;
   padding-left: 10px;
   margin-top: 15px;
@@ -906,12 +906,12 @@ footer.footer {
   position: relative;
 }
 
-.massanger_images {
+.messenger_images {
   position: relative;
 }
 
 /* Input Contact */
-.massanger_images input {
+.messenger_images input {
   position: absolute;
   top: 0;
   left: 0;
@@ -921,8 +921,8 @@ footer.footer {
   margin: 0;
 }
 
-/* Messangers Icons */
-.massangers img {
+/* Messengers Icons */
+.messengers img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -930,13 +930,13 @@ footer.footer {
 
 /* Contact Label For Checked Input */
 
-.massanger_images input:checked ~ label img {
+.messenger_images input:checked ~ label img {
   box-shadow: 0 0 10px var(--pink-regular);
 }
 
-/* Selected Messanger */
+/* Selected Messenger */
 
-#selected-massanger {
+#selectedMessenger {
   position: absolute;
   bottom: -25px;
   left: 0;
@@ -946,6 +946,8 @@ footer.footer {
   font-size: 18px;
   line-height: 21px;
   color: var(--pink-regular);
+  pointer-events: none;
+  background-color: transparent;
 }
 
 /* Button Submit */

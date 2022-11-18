@@ -14,7 +14,7 @@ app.post("/index", (req, res) => {
     return res.sendStatus(400);
   }
   i++;
-  const message = {
+  const messege = {
     to: "elexeeen@gmail.com",
     subject: "Rabotaet",
     html: `<h2>Замовлення №${i}</h2>
@@ -22,12 +22,12 @@ app.post("/index", (req, res) => {
     <ol>
       <li>Ім'я: ${req.body.name}</li>
       <li>Номер телефону: ${req.body.phone}</li>
-      <li>Тип зв'язку: ${req.body.contact}</li>
+      <li>Тип зв'язку: ${req.body.selectedMessenger}</li>
     </ol>
     `,
   };
   console.log(req.body);
-  mailer(message);
+  mailer(messege);
   user = req.body;
   res.redirect("/index");
 });
