@@ -117,8 +117,9 @@
     height: 50px;
   }
 
-  .cell img {
-    width: 25px !important;
+  .header .cell img,
+  .photo_from_header .cell img {
+    width: 25px;
     height: 25px;
   }
 
