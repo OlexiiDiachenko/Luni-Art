@@ -177,7 +177,7 @@
   }
 
   main::before {
-    top: -27px;
+    top: -73px;
     height: 27px;
     border-right-width: 0.5px;
     border-left-width: 0.5px;
@@ -440,14 +440,20 @@
 
   .get-consult-mobile {
     display: flex;
-    padding: 7px 15px;
-    row-gap: 20px;
+    padding: 10px 10px 22px;
+    row-gap: 10px;
     background-color: var(--pink-regular);
     margin-bottom: 40px;
   }
 
   .get-consult-mobile-text * {
     color: #fff;
+  }
+
+  .get-consult-mobile h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
   }
 
   /* Obligations */
