@@ -16,11 +16,6 @@
   .header-photo img {
     max-width: 850px;
   }
-
-  .languages {
-    top: 65px;
-    right: 200px;
-  }
 }
 
 @media (max-width: 1720px) {
@@ -95,24 +90,6 @@
 
   .header-photo .link {
     bottom: 20px;
-  }
-
-  .languages {
-    width: 70px;
-    height: 36px;
-    top: 62px;
-    right: 190px;
-    padding-left: 7px;
-    padding-right: 4px;
-  }
-
-  .languages a {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .languages a.selected-language {
-    padding: 2px;
   }
 
   /* Pseudo Eleemnts ( Figures ) */
@@ -597,11 +574,6 @@
     bottom: 15px;
   }
 
-  .languages {
-    top: 40px;
-    right: 140px;
-  }
-
   /* Pseudo Eleemnts ( Figures ) */
 
   .left-top-white {
@@ -876,20 +848,6 @@
 
   .header-photo .link {
     bottom: 11px;
-  }
-
-  .languages {
-    width: 45px;
-    height: 23px;
-    top: 25px;
-    right: 100px;
-    padding-left: 5px;
-    padding-right: 3px;
-  }
-
-  .languages a {
-    font-size: 10px;
-    line-height: 13px;
   }
 
   /* Pseudo Eleemnts ( Figures ) */
@@ -1337,19 +1295,6 @@
 
   .header-photo .link {
     bottom: 8px;
-  }
-
-  .languages {
-    width: 36px;
-    height: 18px;
-    top: 30px;
-    right: 90px;
-    padding-right: 2px;
-  }
-
-  .languages a {
-    font-size: 7px;
-    line-height: 9px;
   }
 
   /* Pseudo Eleemnts ( Figures ) */

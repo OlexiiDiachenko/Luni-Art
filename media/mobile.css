@@ -31,13 +31,14 @@
   /* Header */
 
   header.header {
-    padding-bottom: 40px;
+    padding-bottom: 100px;
     height: fit-content;
+    background-color: #ffffff;
   }
 
   /* Header Text Block */
   .header-text {
-    padding-top: 40px;
+    padding-top: 27px;
     padding-bottom: 15px;
   }
 
@@ -84,7 +85,6 @@
   /* Slider Video Button */
 
   .slider_video_button {
-    max-width: 150px;
     margin-bottom: 35px;
   }
 
@@ -109,7 +109,6 @@
   }
 
   .order_now-button button {
-    max-width: 240px;
     width: 100%;
     font-size: 22px;
     line-height: 29px;
@@ -117,8 +116,7 @@
     height: 50px;
   }
 
-  .header .cell img,
-  .photo_from_header .cell img {
+  .header .cell img {
     width: 25px;
     height: 25px;
   }
@@ -140,34 +138,13 @@
     margin-top: 14px;
   }
 
-  /* Choose Language Block */
-
-  .languages {
-    top: 24px;
-    right: 21px;
-    width: 70px;
-    height: 36px;
-    column-gap: 9px;
-    padding-left: 7px;
-    padding-right: 4px;
-  }
-
-  .languages a {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .languages a.selected-language {
-    padding: 3px;
-  }
-
   /* Pseudo Eleemnts ( Figures ) */
 
   .left-top-orange {
     width: 87px;
     height: 94px;
-    top: 44px;
-    left: -20px;
+    top: 90px;
+    left: -40px;
   }
 
   .left-top-orange img {
@@ -197,18 +174,26 @@
   /* Main */
 
   main.main {
-    padding-top: 70px;
+    padding-top: 0px;
   }
 
   main::before {
-    top: 24px;
+    top: -27px;
     height: 27px;
+    border-right-width: 0.5px;
+    border-left-width: 0.5px;
   }
 
   /* About Us */
 
   .about_us {
+    padding-top: 10px;
     padding-bottom: 0px;
+    background-color: #f5f3f4;
+  }
+
+  .about_us-text {
+    margin-bottom: 0;
   }
 
   .cv {
@@ -224,28 +209,12 @@
     margin-bottom: 50px;
   }
 
-  /* Cell On Photo */
-
-  .about_us .photo_from_header .cell {
-    position: absolute;
-    top: 45px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   /* Photo Settings */
 
-  .about_us .photo_from_header img:last-child {
+  .about_us .photo_from_header img {
     max-width: 100%;
     width: 100%;
     height: 100%;
-  }
-
-  /* Luniart Text */
-
-  .order_now-bottom {
-    margin-top: 50px;
-    margin-bottom: 60px;
   }
 
   /* Slider With Sizes  */
@@ -634,30 +603,22 @@
 
 /* Mobile Version Horizontal */
 @media (max-height: 480px) and (orientation: landscape) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text {
+    padding-top: 0px;
+  }
+
   .header-photo {
     display: none;
   }
 
-  .left-top-orange,
-  .left-top-orange img {
-    height: 50px;
-    width: 40px;
-  }
-  .right-top-blue {
-    width: 100px;
-    height: 100px;
-    top: 40%;
-    left: 40%;
-  }
-  .right-bottom-orange,
-  .right-bottom-orange img {
-    height: 50px;
-    width: 40px;
-  }
-  .right-bottm-white {
-    width: 100px;
-    height: 100px;
-    top: 60%;
-    right: 40%;
+  .pseudo {
+    display: none;
   }
 }

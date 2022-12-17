@@ -73,40 +73,6 @@ header .achivments {
   left: 0;
 }
 
-/* Choose Language Block */
-
-.languages {
-  box-sizing: border-box;
-  position: absolute;
-  top: 77px;
-  right: 230px;
-  width: 87px;
-  height: 45px;
-  border-radius: 22.5px;
-  column-gap: 11px;
-  background-color: #172853;
-  z-index: 4;
-  padding-left: 4px;
-  padding-right: 5px;
-}
-
-.languages a {
-  background-color: transparent;
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 27px;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-.languages a.selected-language {
-  padding: 4px;
-  border-radius: 50%;
-  color: #172853;
-  background-color: #feaa43;
-}
-
 /* Pseudo Eleemnts ( Figures ) */
 
 .pseudo {

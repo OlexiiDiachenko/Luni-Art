@@ -527,9 +527,7 @@ video {
 }
 @media (max-width: 520px) {
   .xlarge {
-    /* font-size: 65px;
-    line-height: 87px; */
-    height: 65px;
+    height: 95px;
   }
 
   .normal_white,
@@ -573,16 +571,15 @@ video {
   }
 
   .ellipse {
-    font-size: 20px;
-    line-height: 24px;
-    height: 42px;
-  }
-
-  .comparison-button-order {
-    max-width: 150px;
+    font-size: 25px;
+    line-height: 29px;
+    max-height: 50px !important;
+    max-width: 240px !important;
   }
 
   .get-consult {
-    max-width: 190px;
+    font-size: 22px;
+    max-width: 190px !important;
+    max-height: 35px !important;
   }
 }
