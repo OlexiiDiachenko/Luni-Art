@@ -46,7 +46,7 @@ header.header {
 
 header .achivments {
   padding-top: 60px;
-  column-gap: 175px;
+  column-gap: 190px;
   position: relative;
   z-index: 2;
 }
@@ -398,6 +398,10 @@ main::before {
 
 .slider_photo {
   margin-bottom: 35px;
+}
+
+.slider_photo_item_text {
+  margin-top: 20px;
 }
 
 /* Slider Photo Button */

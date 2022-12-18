@@ -101,6 +101,11 @@ label {
   color: #1d1d1d;
 }
 
+.keen-slider__slide strong,
+.keen-slider__slide b {
+  color: rgba(49, 49, 49, 1);
+}
+
 .individual_font:hover {
   cursor: grab;
 }
@@ -545,24 +550,17 @@ video {
   }
 
   .small_black,
+  .xsmall_light,
+  .percent,
   .individual_font {
-    font-size: 10px;
-    line-height: 11px;
-  }
-
-  .xsmall_light {
-    font-size: 9px;
-    line-height: 10px;
-  }
-
-  .percent {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 15px;
+    line-height: 18px;
   }
 
   .xsmall {
-    font-size: 7px;
-    line-height: 8px;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 10px;
   }
 
   button.size-button {

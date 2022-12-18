@@ -73,7 +73,6 @@ function navigation(slider) {
     updateClasses();
   });
   slider.on("optionsChanged", () => {
-    console.log(2);
     markup(true);
     markup();
     updateClasses();
