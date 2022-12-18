@@ -558,9 +558,9 @@ video {
   }
 
   .xsmall {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 15px;
-    margin-right: 10px;
+    margin-right: 8px;
   }
 
   button.size-button {
