@@ -377,7 +377,7 @@
   /* Selected Material */
 
   .card-input:checked ~ label {
-    text-shadow: 0px 5px 5px rgba(41, 41, 41, 0.9);
+    color: var(--green-color);
   }
 
   /* Table Cost Size */
