@@ -59,11 +59,11 @@
 }
 
 .arrow--left {
-  background-image: url("../images/slide-left.webp");
+  background-image: url("../images/sliders/slide-left.webp");
 }
 
 .arrow--right {
-  background-image: url("../images/slide-right.webp");
+  background-image: url("../images/sliders/slide-right.webp");
 }
 
 .images-slider .arrow {

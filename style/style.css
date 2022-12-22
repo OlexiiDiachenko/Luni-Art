@@ -58,6 +58,7 @@ header .achivments {
   right: 0;
   height: max-content;
   z-index: 1;
+  text-align: center;
 }
 
 .header-photo img {
@@ -244,6 +245,13 @@ main::before {
   column-gap: 88px;
 }
 
+/* Comparison photos */
+
+.comparison-images img {
+  width: 768px;
+  height: 1109px;
+}
+
 /* Parents Comparison Block */
 
 .parents-comparison-section {
@@ -257,14 +265,6 @@ main::before {
 .comparison-images {
   position: relative;
   max-width: min-content;
-}
-
-.comparison-images img:first-child {
-  max-width: 100%;
-}
-
-.comparison-images img {
-  min-width: 100%;
 }
 
 /* Block with painting image */

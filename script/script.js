@@ -127,6 +127,7 @@ function showOrder() {
   setBody();
 }
 
+consult.addEventListener("click", closeOrder);
 close.addEventListener("click", closeOrder);
 
 function closeOrder() {

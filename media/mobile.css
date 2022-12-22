@@ -305,6 +305,8 @@
   .text-comparison {
     margin-bottom: 10px;
     max-width: 520px !important;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   /* Button Get Order */
@@ -356,14 +358,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   /* Tabs */
-
-  /* .tab-coal,
-  .tab-oil {
-    width: 50%;
-  } */
 
   /* Label */
 
@@ -489,8 +487,8 @@
   }
 
   footer.footer .normal {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 22px;
+    line-height: 29px;
   }
 
   .footer .links {
@@ -502,61 +500,58 @@
   }
 
   .links .links-items img {
-    width: 22px;
-    height: 22px;
+    width: 40px;
+    height: 40px;
   }
 
   /* Consult */
 
   /* Our Menu */
   .consult-info {
-    max-height: 290px;
-    max-width: 200px;
-    padding: 8px 34px 16px;
+    max-height: 100%;
+    height: 480px;
+    width: 80vw;
+    max-width: 100%;
+    padding: 30px 34px;
     border-radius: 16px;
   }
 
   /* Palit Image */
   .consult_image {
-    max-height: 29px;
-    max-width: 29px;
-    margin-top: 9px;
-    margin-bottom: 9px;
+    max-height: 70px;
+    max-width: 70px;
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 
   /* Forms Text Inputs */
   .userInfo {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   /* Inputs And Lables*/
   .userInfo-input,
   .userInfo-label {
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 22px;
+    line-height: 29px;
   }
 
   /* Little Animation. Up Lable */
   .userInfo-input:focus + .userInfo-label,
   .userInfo-input:valid + .userInfo-label {
-    transform: translateY(-10px) scale(0.8);
+    transform: translateY(-25px) scale(0.8);
   }
 
   .userInfo::after {
-    font-size: 10px;
-  }
-
-  /* Example */
-  .userInfo p {
-    font-size: 10px;
-    line-height: 13px;
-    bottom: -13px;
+    font-size: 22px;
   }
 
   /* How To Connect */
 
   .contact {
     margin-top: 25px;
+    font-size: 22px;
+    line-height: 29px;
   }
 
   /* Messengers Block */
@@ -564,34 +559,42 @@
     padding-right: 5px;
     padding-left: 5px;
     margin-top: 10px;
-    margin-bottom: 12px;
-    column-gap: 23px;
+    margin-bottom: 45px;
+    column-gap: 40px;
   }
 
   /* Messengers Icons */
   .messengers img {
-    width: 22px;
-    height: 22px;
+    width: 45px;
+    height: 45px;
+  }
+
+  /* Selected Messangers */
+  #selectedMessenger {
+    font-size: 22px;
+    line-height: 29px;
+    bottom: -40px;
   }
 
   /* Button Submit */
   .submit {
-    max-width: 122px;
-    max-height: 25px;
-    font-size: 15px;
-    line-height: 20px;
+    max-width: 230px;
+    max-height: 45px !important;
+    font-size: 22px;
+    line-height: 29px;
+    margin-top: 10px;
   }
 
   /* Button Close Menu */
   .close {
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
   }
 
   /* Close Image X */
   .close img {
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
   }
 }
 
@@ -614,5 +617,19 @@
 
   .pseudo {
     display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .consult-info {
+    height: 80vh;
+    justify-content: flex-start;
+  }
+
+  /* Text Under The Comparison */
+
+  .text-comparison {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
