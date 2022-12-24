@@ -83,6 +83,24 @@
   right: 100px;
 }
 
+.slider_photo_item-image {
+  display: flex;
+  height: 600px;
+  width: 100%;
+}
+
+.slider_mobile .slider_photo_item {
+  display: flex;
+}
+
+.slider_mobile .slider_photo_item img,
+.slider_photo_item-image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
+
 @media (max-width: 1200px) {
   .keen-slider__slide {
     max-height: 500px !important;

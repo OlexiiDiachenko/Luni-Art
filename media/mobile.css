@@ -68,14 +68,6 @@
     max-height: 490px;
   }
 
-  /* Distance Between 2 Items */
-
-  .slider_photo_item + .slider_photo_item,
-  .slider_video_item + .slider_video_item,
-  .slider_size_item + .slider_size_item {
-    margin-left: 0px;
-  }
-
   /* Photos Slider */
   .slider_photo {
     margin-bottom: 10px;
