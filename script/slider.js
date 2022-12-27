@@ -139,6 +139,7 @@ slidersMobile.forEach((slider) => {
     mode: "free-snap",
     slides: {
       perView: 1,
+      spacing: 15,
     },
   });
 });
