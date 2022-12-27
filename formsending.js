@@ -35,7 +35,7 @@ app.get("/index", (req, res) => {
   if (typeof user !== "object") {
     return res.sendFile(__dirname + "/index.html");
   }
-  res.send("Регистрация прошла успешно");
+  res.sendFile(__dirname + "/index.html");
   user = undefined;
 });
 

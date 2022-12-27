@@ -271,7 +271,9 @@
   }
 
   .comparison-images img {
-    min-width: 0;
+    min-width: 0px;
+    width: 378px;
+    height: 529px;
   }
 
   /* Comparison button */
@@ -390,6 +392,8 @@
     padding: 10px 10px 6px;
     border-radius: 7px;
     max-height: 68px;
+    width: 170px;
+    box-sizing: border-box;
   }
 
   /* Top Part Cell */
@@ -623,5 +627,11 @@
   .text-comparison {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media (max-width: 380px) and (max-height: 520px) {
+  .consult-info {
+    height: 95vh;
   }
 }
