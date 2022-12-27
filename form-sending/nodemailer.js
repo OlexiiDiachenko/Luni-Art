@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport(
     },
   },
   {
-    from: "Mailer Test <elexeeen@ukr.net>",
+    from: "Order Mail <luniart@ukr.net>",
   }
 );
 
@@ -22,7 +22,7 @@ transporter.verify((error, success) => {
 });
 const mailer = (message) => {
   transporter.sendMail(message, (err, info) => {
-    if (err) return console.log(err);
+    if (err) return res.sendFile(__dirname + "/index.html");
     console.log("Email sent: ", info);
   });
 };

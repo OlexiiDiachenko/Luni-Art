@@ -15,8 +15,8 @@ app.post("/index", (req, res) => {
   }
   i++;
   const messege = {
-    to: "elexeeen@gmail.com",
-    subject: "Rabotaet",
+    to: "forolun@gmail.com",
+    subject: "Worked",
     html: `<h2>Замовлення №${i}</h2>
 
     <ol>
@@ -35,7 +35,7 @@ app.get("/index", (req, res) => {
   if (typeof user !== "object") {
     return res.sendFile(__dirname + "/index.html");
   }
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/success.html");
   user = undefined;
 });
 
