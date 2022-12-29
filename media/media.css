@@ -1662,72 +1662,59 @@
 
   /* Our Menu */
   .consult-info {
-    max-height: 200px;
-    max-width: 140px;
+    max-height: 340px;
+    max-width: 250px;
     padding: 6px 20px 10px;
     border-radius: 11px;
   }
 
   /* Palit Image */
   .consult_image {
-    max-height: 20px;
-    max-width: 20px;
-    margin-top: 5px;
+    max-height: 50px;
+    max-width: 50px;
   }
 
-  /* Inputs */
+  /* Fonts */
 
+  .consult-info .middle,
+  .consult-info .normal_order,
   .userInfo-label,
-  .userInfo-input {
-    font-size: 8px;
-    line-height: 11px;
+  .userInfo-input,
+  #selectedMessenger {
+    font-size: 18px;
+    line-height: 21px;
   }
 
   /* Little Animation. Up Lable */
   .userInfo-input:focus + .userInfo-label,
   .userInfo-input:valid + .userInfo-label {
-    transform: translateY(-10px) scale(0.8);
+    transform: translateY(-18px) scale(0.7);
   }
 
   .userInfo::after {
-    font-size: 11px;
-  }
-
-  /* Example */
-  .userInfo p {
-    font-size: 6px;
-    line-height: 8px;
-  }
-
-  /* How To Connect */
-
-  .contact {
-    margin-top: 15px;
+    font-size: 18px;
   }
 
   /* messengers Block */
   .messengers {
-    column-gap: 15px;
+    column-gap: 35px;
+    margin-bottom: 40px;
   }
 
   /* Messengers Icons */
   .messengers img {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
   }
 
   #selectedMessenger {
-    font-size: 8px;
-    line-height: 10px;
-    bottom: -10px;
+    bottom: -25px;
   }
 
   /* Button Submit */
   .submit {
-    max-width: 85px;
-    max-height: 17px;
-    font-size: 10px;
-    line-height: 13px;
+    max-width: 125px;
+    max-height: 30px;
   }
 }
 
