@@ -179,7 +179,7 @@ main::before {
 }
 
 .about_us-achivments-cell {
-  row-gap: 75px;
+  row-gap: 50px;
 }
 
 [class*="cell-video"] {
@@ -202,7 +202,7 @@ main::before {
 }
 
 .cell-text {
-  row-gap: 13px;
+  row-gap: 3px;
 }
 
 /* Order Now Section */
@@ -398,10 +398,7 @@ main::before {
 
 .slider_photo {
   margin-bottom: 35px;
-}
-
-.slider_photo_item_text {
-  margin-top: 20px;
+  height: max-content;
 }
 
 /* Slider Photo Button */
@@ -409,6 +406,7 @@ main::before {
 .slider_photo_button {
   max-width: 440px;
   width: 100%;
+  margin-top: 50px;
   margin-bottom: 155px;
 }
 
@@ -943,4 +941,54 @@ footer.footer {
 .close img {
   height: 17px;
   width: 17px;
+}
+
+/* Animations */
+
+.animated {
+  opacity: 0;
+}
+
+.to-right {
+  animation-name: to-right;
+  animation-duration: 1.5s;
+  position: relative;
+  opacity: 1;
+}
+
+@keyframes to-right {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.to-top {
+  animation-name: to-top;
+  animation-duration: 2s;
+  position: relative;
+  opacity: 1;
+}
+
+@keyframes to-top {
+  0% {
+    bottom: -100vh;
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: 0%;
+  }
 }

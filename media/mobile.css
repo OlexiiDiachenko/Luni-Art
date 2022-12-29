@@ -186,6 +186,7 @@
   .about_us-text {
     margin-bottom: 0;
     row-gap: 0px;
+    max-width: 410px;
   }
 
   .cv {
@@ -273,18 +274,22 @@
   .comparison-images img {
     min-width: 0px;
     width: 378px;
+    height: 500px;
+  }
+
+  .comparison-images:nth-child(3) img {
     height: 529px;
   }
 
   /* Comparison button */
   .comparison-button {
-    width: 2px;
+    width: 4px;
   }
 
   /* Comparison button circle */
   .comparison-button::before {
-    width: 17px;
-    height: 17px;
+    width: 30px;
+    height: 30px;
   }
 
   .parents-comparison-section {
@@ -299,8 +304,8 @@
   .text-comparison {
     margin-bottom: 10px;
     max-width: 520px !important;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   /* Button Get Order */

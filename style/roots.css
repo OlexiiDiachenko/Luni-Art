@@ -539,14 +539,10 @@ video {
   .normal,
   .large,
   .normal_sub,
-  .middle {
-    font-size: 18px;
-    line-height: 25px;
-  }
-
+  .middle,
   .normal_order {
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 22px;
+    line-height: 29px;
   }
 
   .small_black,

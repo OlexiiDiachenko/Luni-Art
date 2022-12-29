@@ -1,3 +1,10 @@
+import {
+  mouseComparisonMove,
+  touchComparisonMove,
+} from "./modules/Comparison.js";
+
+import { setBody, openBody } from "./modules/FreezeBody.js";
+import { tabelCost, mobileTabelCost } from "./modules/CostTabs.js";
 // Function Comparison
 
 let comparisonWrappers = document.querySelectorAll(".comparison-images"),
@@ -15,36 +22,9 @@ function mouseComparison() {
 }
 
 function touchComparison() {
-  setBody();
+  setBody(body);
   this.addEventListener("touchmove", touchComparisonMove);
   document.addEventListener("touchend", removeComparison);
-}
-
-// Comparison For Mouse
-function mouseComparisonMove(event) {
-  let comparisonBefore = this.querySelector(".image-comparison_before"), // Get Block With Painting
-    button = this.querySelector(".comparison-button"), // Get Our Circle Button
-    left = event.pageX - this.offsetLeft, // Calculate This Position Left
-    width = this.clientWidth; // Get True Width Our Parent Block
-  if (left < 0) left = 0;
-  if (left > width) left = width;
-  button.style.left = `${left}px`;
-  comparisonBefore.style.width = `${left}px`;
-}
-
-// Comparison For Touch
-function touchComparisonMove(event) {
-  let parent = this.parentElement,
-    comparisonBefore = parent.querySelector(".image-comparison_before"), // Get Block With Painting
-    button = parent.querySelector(".comparison-button"), // Get Our Circle Button
-    touches = event.changedTouches, // Get All Touches
-    touch = touches[0], // Get Out First Touch On Button
-    left = touch.pageX - parent.offsetLeft, // Calculate This Position Left
-    width = parent.clientWidth; // Get True Width Our Parent Block
-  if (left < 0) left = 0;
-  if (left > width) left = width;
-  button.style.left = `${left}px`;
-  comparisonBefore.style.width = `${left}px`;
 }
 
 function removeComparison() {
@@ -53,20 +33,10 @@ function removeComparison() {
     comparisonWrapper.removeEventListener("touchmove", touchComparisonMove);
   });
   if (body.classList.contains("noscroll")) {
-    openBody();
+    openBody(body);
     document.removeEventListener("touchend", removeComparison);
   }
 }
-
-const setBody = () => {
-  body.style.top = -scrollY;
-  body.classList.add("noscroll");
-};
-
-const openBody = () => {
-  body.classList.remove("noscroll");
-};
-
 // Comparison End
 
 // Cost Table Open
@@ -81,32 +51,6 @@ materials.forEach((material) => {
 tabs.forEach((material) => {
   material.addEventListener("click", mobileTabelCost);
 });
-
-function tabelCost() {
-  let input = this.previousElementSibling;
-  if (input.checked) {
-    return;
-  } else {
-    let thisId = this.getAttribute("for"),
-      activeBlock = document.querySelector(".size-cost-block.active");
-    activeBlock.classList.remove("active");
-    let newActiveBlock = document.querySelector(`.${thisId}-tabel`);
-    newActiveBlock.classList.add("active");
-  }
-}
-
-function mobileTabelCost() {
-  let input = this.previousElementSibling;
-  if (input.checked) {
-    return;
-  } else {
-    let thisId = this.getAttribute("data-for"),
-      activeBlock = document.querySelector(".size-cost-block.active");
-    activeBlock.classList.remove("active");
-    let newActiveBlock = document.querySelector(`.${thisId}-tabel`);
-    newActiveBlock.classList.add("active");
-  }
-}
 
 // Cost Table Open End
 
@@ -124,7 +68,7 @@ for (let i = 0; i < order.length; i++) {
 
 function showOrder() {
   consult.style.display = "flex";
-  setBody();
+  setBody(body);
 }
 
 consult.addEventListener("click", closeOrder);
@@ -132,7 +76,7 @@ close.addEventListener("click", closeOrder);
 
 function closeOrder() {
   consult.style.display = "none";
-  openBody();
+  openBody(body);
 }
 
 // A little validate a form in order menu
@@ -191,3 +135,29 @@ function selectMessenger() {
 
   selectedMessenger.value = selectMessenger;
 }
+
+// Animation
+
+let child,
+  screenHeight = window.innerHeight,
+  location = {};
+
+let animatedElements = document.querySelectorAll(".animated");
+
+for (let i = 0; i < animatedElements.length; i++) {
+  child = animatedElements[i];
+  let childLocation = child.getBoundingClientRect().top;
+
+  if (childLocation !== 0) {
+    location[i] = childLocation;
+  }
+}
+
+window.onscroll = () => {
+  for (let number in location) {
+    if (scrollY > location[number] - screenHeight) {
+      let animation = animatedElements[number].getAttribute("data-animation");
+      animatedElements[number].classList.add(animation);
+    }
+  }
+};

@@ -58,8 +58,8 @@
   /* Comparison photos */
 
   .comparison-images img {
-    width: 502px;
-    height: 711px;
+    width: 717px;
+    height: 862px;
   }
 }
 
@@ -88,7 +88,7 @@
   }
 
   header .achivments .cell:nth-child(2) {
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
   header .achivments img {
@@ -141,7 +141,7 @@
   }
 
   .about_us-achivments-cell {
-    row-gap: 40px;
+    row-gap: 25px;
   }
 
   /* Order Now Section */
@@ -630,7 +630,7 @@
   }
 
   .about_us-achivments-cell {
-    row-gap: 20px;
+    row-gap: 15px;
   }
 
   /* Order Now Section */
@@ -922,9 +922,9 @@
     box-sizing: border-box;
   }
 
-  .about_us-achivments-cell {
-    row-gap: 25px;
-  }
+  /* .about_us-achivments-cell {
+    row-gap: 15px;
+  } */
 
   /* Order Now Section */
 
