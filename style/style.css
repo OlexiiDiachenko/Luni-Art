@@ -1000,3 +1000,15 @@ footer.footer {
     bottom: 0%;
   }
 }
+
+.ipadHeader {
+  height: 30vh;
+}
+
+.ipadHeader .achivments .cell:nth-child(2) {
+  padding-left: 0px;
+}
+
+.ipadHeader .header-photo .link {
+  bottom: 40px;
+}

@@ -936,6 +936,7 @@
   .order_now {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 30px;
   }
 
   .order_now-text {
@@ -1133,7 +1134,7 @@
   /* Count Peoples */
 
   .constructor-wrapper {
-    padding-left: 270px;
+    padding-left: 175px;
   }
 
   .peoples {

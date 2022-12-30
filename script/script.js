@@ -143,17 +143,33 @@ function selectMessenger() {
 
 let isiPad = navigator.userAgent.match(/iPad/i);
 
+let header = body.querySelector("header"),
+  animatedElements = document.querySelectorAll(".animated");
 if (isiPad) {
-  let animatedElements = document.querySelectorAll(".animated");
-
   animatedElements.forEach((element) => {
     element.classList.remove("animated");
   });
+  if (
+    screen.orientation.type == "portrait-secondary" ||
+    screen.orientation.type == "portrait-primary"
+  ) {
+    header.classList.add("ipadHeader");
+  }
+  screen.addEventListener("orientationchange", () => {
+    if (
+      screen.orientation.type == "portrait-secondary" ||
+      screen.orientation.type == "portrait-primary"
+    ) {
+      header.classList.add("ipadHeader");
+    } else {
+      if (header.classList.contains("ipadHeader")) {
+        header.classList.remove("ipadHeader");
+      }
+    }
+  });
 } else {
-  let header = body.querySelector("header"),
-    screenHeight = window.innerHeight - 300,
-    location = {},
-    animatedElements = document.querySelectorAll(".animated");
+  let screenHeight = window.innerHeight - 300,
+    location = {};
 
   const orientationType = () => {
     return header.clientHeight >= window.innerHeight;
