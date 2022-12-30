@@ -266,6 +266,7 @@
   /* Comparison */
   .comparison {
     padding-bottom: 25px;
+    margin-top: 0px;
   }
 
   .comparison-section {
@@ -301,14 +302,14 @@
   .parents-comparison-section {
     background-color: #fff;
     padding-top: 0;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     margin-bottom: 0;
   }
 
   /* Text Under The Comparison */
 
   .text-comparison {
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 10px;
     max-width: 100%;
     padding-left: 15px;
@@ -349,8 +350,8 @@
   .order-caption {
     padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     background-color: transparent;
   }
 
