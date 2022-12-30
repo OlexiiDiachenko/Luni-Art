@@ -193,7 +193,7 @@
     padding-left: 10px;
     padding-right: 10px;
     max-width: 376px;
-    margin-bottom: 75px;
+    margin: 0 auto 75px;
   }
 
   /* Section With Photo */
@@ -272,13 +272,12 @@
   }
 
   .comparison-images img {
-    min-width: 0px;
-    width: 378px;
-    height: 500px;
+    width: 360px;
+    height: 430px;
   }
 
-  .comparison-images:nth-child(3) img {
-    height: 529px;
+  .dog-comparison .comparison-images img {
+    height: 460px;
   }
 
   /* Comparison button */
@@ -626,7 +625,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   .consult-info {
     height: 80vh;
     justify-content: flex-start;
@@ -640,8 +639,8 @@
   }
 }
 
-@media (max-width: 380px) and (max-height: 520px) {
+@media (max-width: 380px) and (max-height: 560px) {
   .consult-info {
-    height: 95vh;
+    height: 100vh;
   }
 }

@@ -5,6 +5,7 @@ import {
 
 import { setBody, openBody } from "./modules/FreezeBody.js";
 import { tabelCost, mobileTabelCost } from "./modules/CostTabs.js";
+import { setBlocks, setAnimation } from "./modules/Animations.js";
 // Function Comparison
 
 let comparisonWrappers = document.querySelectorAll(".comparison-images"),
@@ -136,28 +137,33 @@ function selectMessenger() {
   selectedMessenger.value = selectMessenger;
 }
 
-// Animation
+// Animations
 
-let child,
-  screenHeight = window.innerHeight,
-  location = {};
+let header = body.querySelector("header"),
+  screenHeight = window.innerHeight - 300,
+  location = {},
+  animatedElements = document.querySelectorAll(".animated");
 
-let animatedElements = document.querySelectorAll(".animated");
+const orientationType = () => {
+  return header.clientHeight >= window.innerHeight;
+};
 
-for (let i = 0; i < animatedElements.length; i++) {
-  child = animatedElements[i];
-  let childLocation = child.getBoundingClientRect().top;
-
-  if (childLocation !== 0) {
-    location[i] = childLocation;
-  }
-}
-
-window.onscroll = () => {
-  for (let number in location) {
-    if (scrollY > location[number] - screenHeight) {
-      let animation = animatedElements[number].getAttribute("data-animation");
-      animatedElements[number].classList.add(animation);
-    }
+const setAnimationForOrientation = () => {
+  if (!orientationType()) {
+    let animation = animatedElements[0].getAttribute("data-animation");
+    animatedElements[0].classList.add(animation);
   }
 };
+
+setAnimationForOrientation();
+
+setBlocks(animatedElements, location);
+window.addEventListener("scroll", () => {
+  setAnimation(location, screenHeight, animatedElements);
+});
+
+screen.addEventListener("orientationchange", () => {
+  setAnimationForOrientation();
+  setBlocks(animatedElements, location);
+  setAnimation(location, screenHeight, animatedElements);
+});

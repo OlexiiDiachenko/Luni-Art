@@ -118,13 +118,13 @@ slidersThree.forEach((slider) => {
     {
       loop: true,
       mode: "free-snap",
-      mode: "snap",
       slides: {
         perView: 3,
         spacing: 25,
       },
       breakpoints: {
         "(max-width: 1200px)": {
+          mode: "snap",
           slides: {
             perView: 1,
           },

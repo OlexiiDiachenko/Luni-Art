@@ -963,8 +963,8 @@
   /* Comparison photos */
 
   .comparison-images img {
-    width: 378px;
-    height: 533px;
+    width: 400px;
+    height: 520px;
   }
 
   /* Parents Comparison Block */
@@ -1410,8 +1410,8 @@
   /* Comparison photos */
 
   .comparison-images img {
-    width: 301px;
-    height: 427px;
+    width: 340px;
+    height: 420px;
   }
 
   /* Right column - text-column */
@@ -1500,6 +1500,10 @@
   }
 
   /* Images Carousel */
+
+  .images-slider img {
+    max-width: 400px;
+  }
 
   .slider_photo {
     margin-bottom: 15px;
@@ -1662,7 +1666,7 @@
 
   /* Our Menu */
   .consult-info {
-    max-height: 340px;
+    max-height: 360px;
     max-width: 250px;
     padding: 6px 20px 10px;
     border-radius: 11px;
@@ -1715,6 +1719,11 @@
   .submit {
     max-width: 125px;
     max-height: 30px;
+  }
+
+  .close img {
+    height: 12px;
+    width: 12px;
   }
 }
 
