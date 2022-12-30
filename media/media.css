@@ -61,6 +61,11 @@
     width: 717px;
     height: 862px;
   }
+
+  .dog-comparison .comparison-images img {
+    width: 640px;
+    height: 890px;
+  }
 }
 
 /* 24" Screens */
@@ -171,7 +176,7 @@
   /* Comparison global section */
   .comparison {
     margin-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
   }
 
   .comparison-section {
@@ -230,7 +235,7 @@
 
   .carousels {
     padding-top: 80px;
-    padding-bottom: 110px;
+    padding-bottom: 50px;
   }
 
   /* Carousels Header */
@@ -283,13 +288,13 @@
 
   .slider_photo_button {
     max-width: 365px;
-    margin-bottom: 145px;
+    margin-bottom: 50px;
   }
 
   /* Slider With Sizes */
 
   .sizes-slider {
-    margin-bottom: 110px;
+    margin-bottom: 50px;
   }
 
   /* Slider Size Item Settings */
@@ -660,7 +665,7 @@
   /* Comparison global section */
   .comparison {
     margin-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .comparison-section {
@@ -694,7 +699,7 @@
 
   .carousels {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
 
   /* Carousels Header */
@@ -744,7 +749,7 @@
   /* Slider With Sizes */
 
   .sizes-slider {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   /* Slider Size Item Settings */
@@ -953,7 +958,6 @@
   /* Comparison global section */
   .comparison {
     margin-top: 50px;
-    padding-bottom: 50px;
   }
 
   .comparison-section {
@@ -1016,7 +1020,7 @@
 
   .carousels {
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   /* Carousels Header */
@@ -1055,7 +1059,7 @@
   /* Slider With Sizes */
 
   .sizes-slider {
-    margin-bottom: 44px;
+    margin-bottom: 30px;
   }
 
   /* Slider Size Item Settings */
@@ -1460,7 +1464,7 @@
   /* Carousels */
 
   .carousels {
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   /* Carousels Header */
@@ -1517,13 +1521,13 @@
 
   .slider_photo_button {
     max-width: 175px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   /* Slider With Sizes */
 
   .sizes-slider {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   /* Slider Size Item Settings */
@@ -1632,6 +1636,11 @@
   .dog-comparison {
     margin-top: 40px;
     column-gap: 15px;
+  }
+
+  .dog-comparison .comparison-images img {
+    width: 320px;
+    height: 430px;
   }
 
   .dog-comparison .text-comparison {

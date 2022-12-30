@@ -242,7 +242,7 @@ main::before {
 .comparison {
   box-sizing: border-box;
   margin-top: 125px;
-  padding-bottom: 230px;
+  padding-bottom: 170px;
 }
 
 .comparison-section {
@@ -319,6 +319,10 @@ main::before {
 .text-comparison {
   text-align: center;
   max-width: 406px;
+}
+
+.text-comparison .large {
+  margin-bottom: 15px;
 }
 
 .text-comparison button {
