@@ -1002,13 +1002,13 @@ footer.footer {
 }
 
 .ipadHeader {
-  height: 30vh;
+  height: 30vh !important;
 }
 
 .ipadHeader .achivments .cell:nth-child(2) {
-  padding-left: 0px;
+  padding-left: 0px !important;
 }
 
 .ipadHeader .header-photo .link {
-  bottom: 40px;
+  bottom: 40px !important;
 }
