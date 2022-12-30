@@ -195,7 +195,7 @@
 
   .text-comparison {
     text-align: center;
-    max-width: 311px;
+    width: 311px;
   }
 
   .text-comparison img {
@@ -1023,6 +1023,12 @@
     padding-bottom: 30px;
   }
 
+  .images-slider img,
+  .slider_size_item img {
+    max-width: 400px;
+    max-width: 400px;
+  }
+
   /* Carousels Header */
 
   /* Tassel */
@@ -1509,10 +1515,6 @@
 
   /* Images Carousel */
 
-  .images-slider img {
-    max-width: 400px;
-  }
-
   .slider_photo {
     margin-bottom: 15px;
   }
@@ -1528,10 +1530,6 @@
 
   .sizes-slider {
     margin-bottom: 20px;
-  }
-
-  .slider_size_item img {
-    max-width: 400px;
   }
 
   /* Slider Size Item Settings */
