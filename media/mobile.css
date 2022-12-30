@@ -112,6 +112,10 @@
     height: 25px;
   }
 
+  .header .cell p strong {
+    color: var(--second-textcolor);
+  }
+
   /* Bottom order_now section */
 
   /* Section Order Now */
@@ -185,8 +189,7 @@
 
   .about_us-text {
     margin-bottom: 0;
-    row-gap: 0px;
-    max-width: 410px;
+    margin-top: 30px;
   }
 
   .cv {
@@ -246,9 +249,13 @@
     margin-top: 20px;
   }
 
-  .achivments_mobile img {
-    width: 30px;
-    height: 30px;
+  .achivments_mobile-text {
+    margin-top: 30px;
+  }
+
+  .achivments_mobile-text .normal {
+    font-size: 26px;
+    line-height: 32px;
   }
 
   /* Video SLider With Our Achivments */
@@ -258,9 +265,9 @@
 
   /* Comparison */
   .comparison {
-    margin-top: 14px;
     padding-bottom: 25px;
   }
+
   .comparison-section {
     flex-direction: column-reverse;
   }
@@ -301,10 +308,17 @@
   /* Text Under The Comparison */
 
   .text-comparison {
+    margin-top: 15px;
     margin-bottom: 10px;
-    max-width: 520px !important;
+    max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .text-comparison .large {
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: uppercase;
   }
 
   /* Button Get Order */
@@ -320,10 +334,12 @@
 
   .dog-comparison {
     row-gap: 60px;
+    margin-top: 0px;
   }
 
   .dog-comparison .text-comparison {
     margin-bottom: 30px;
+    max-width: 100%;
   }
 
   /* Order */
@@ -333,13 +349,14 @@
   .order-caption {
     padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 25px;
     background-color: transparent;
   }
 
   .order-caption .large {
     margin-bottom: 5px;
+    text-transform: uppercase;
   }
 
   /* Order Section Constructor ( Cards , Peoples etc ) */
@@ -431,17 +448,11 @@
     padding: 10px 10px 22px;
     row-gap: 10px;
     background-color: var(--pink-regular);
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
   .get-consult-mobile-text * {
     color: #fff;
-  }
-
-  .get-consult-mobile h2 {
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 29px;
   }
 
   /* Obligations */
@@ -629,6 +640,7 @@
   .consult-info {
     height: 80vh;
     justify-content: flex-start;
+    padding: 20px;
   }
 
   /* Text Under The Comparison */
