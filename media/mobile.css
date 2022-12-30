@@ -322,6 +322,10 @@
     text-transform: uppercase;
   }
 
+  .pair-comparison-section .text-comparison {
+    margin-bottom: 24px;
+  }
+
   /* Button Get Order */
 
   .parents-comparison-section .ellipse,
