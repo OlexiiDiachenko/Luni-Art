@@ -1184,6 +1184,11 @@
     column-gap: 20px;
   }
 
+  .dog-comparison .comparison-images img {
+    width: 400px;
+    height: 520px;
+  }
+
   .dog-comparison .text-comparison img {
     width: 67px;
     height: 67px;
