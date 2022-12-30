@@ -139,31 +139,43 @@ function selectMessenger() {
 
 // Animations
 
-let header = body.querySelector("header"),
-  screenHeight = window.innerHeight - 300,
-  location = {},
-  animatedElements = document.querySelectorAll(".animated");
+// Check for Ipad
 
-const orientationType = () => {
-  return header.clientHeight >= window.innerHeight;
-};
+let isiPad = navigator.userAgent.match(/iPad/i);
 
-const setAnimationForOrientation = () => {
-  if (!orientationType()) {
-    let animation = animatedElements[0].getAttribute("data-animation");
-    animatedElements[0].classList.add(animation);
-  }
-};
+if (isiPad) {
+  let animatedElements = document.querySelectorAll(".animated");
 
-setAnimationForOrientation();
+  animatedElements.forEach((element) => {
+    element.classList.remove("animated");
+  });
+} else {
+  let header = body.querySelector("header"),
+    screenHeight = window.innerHeight - 300,
+    location = {},
+    animatedElements = document.querySelectorAll(".animated");
 
-setBlocks(animatedElements, location);
-window.addEventListener("scroll", () => {
-  setAnimation(location, screenHeight, animatedElements);
-});
+  const orientationType = () => {
+    return header.clientHeight >= window.innerHeight;
+  };
 
-screen.addEventListener("orientationchange", () => {
+  const setAnimationForOrientation = () => {
+    if (!orientationType()) {
+      let animation = animatedElements[0].getAttribute("data-animation");
+      animatedElements[0].classList.add(animation);
+    }
+  };
+
   setAnimationForOrientation();
+
   setBlocks(animatedElements, location);
-  setAnimation(location, screenHeight, animatedElements);
-});
+  window.addEventListener("scroll", () => {
+    setAnimation(location, screenHeight, animatedElements);
+  });
+
+  screen.addEventListener("orientationchange", () => {
+    setAnimationForOrientation();
+    setBlocks(animatedElements, location);
+    setAnimation(location, screenHeight, animatedElements);
+  });
+}

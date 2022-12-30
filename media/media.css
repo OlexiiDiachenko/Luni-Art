@@ -1530,6 +1530,10 @@
     margin-bottom: 20px;
   }
 
+  .slider_size_item img {
+    max-width: 400px;
+  }
+
   /* Slider Size Item Settings */
 
   .slider_size_item_text {
