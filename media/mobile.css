@@ -56,6 +56,37 @@
 
   /* Slider settings */
 
+  /* Remove Arrows */
+
+  .arrow {
+    display: none;
+    outline: none;
+    opacity: 0;
+  }
+
+  /* Dots Under The Slider */
+
+  .sizes-slider .dots,
+  .dots {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+  }
+
+  .sizes-slider .dots .dot,
+  .dots .dot {
+    width: 9px;
+    height: 9px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+  }
+
+  .sizes-slider .dots .dot--active,
+  .dots .dot--active {
+    background-color: #a2a2a2;
+  }
+
   /* Siiders Items (Items Max Width) and Ограничивающая Оболочка */
   .slider_photo_item,
   .slider_video_item,
@@ -105,6 +136,8 @@
     line-height: 29px;
     max-height: 50px;
     height: 50px;
+    color: #fff;
+    background-image: var(--gradient-background-button);
   }
 
   .header .cell img {
@@ -386,16 +419,18 @@
   /* Label */
 
   .tab-label {
-    font-size: 22px;
-    line-height: 29px;
     display: flex;
     flex-direction: column;
+    opacity: 0.6;
+    border: 2px solid #000000;
+    border-radius: 14px;
+    padding: 10px 20px 12px;
   }
 
   /* Selected Material */
 
   .card-input:checked ~ label {
-    color: var(--green-color);
+    opacity: 1;
   }
 
   /* Table Cost Size */
@@ -452,7 +487,7 @@
     display: flex;
     padding: 10px 10px 22px;
     row-gap: 10px;
-    background-color: var(--pink-regular);
+    background-image: var(--gradient-background);
     margin-bottom: 25px;
   }
 
@@ -464,7 +499,7 @@
 
   .obligations {
     padding-top: 25px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     background-color: #ffffff;
   }
 
@@ -528,49 +563,44 @@
     height: 520px;
     width: 80vw;
     max-width: 100%;
-    padding: 30px 34px;
-    border-radius: 16px;
+    padding: 30px 35px;
+    border-radius: 25px;
   }
 
   .consult-info h2.middle {
     font-size: 22px;
     line-height: 29px;
-  }
-
-  /* Palit Image */
-  .consult_image {
-    max-height: 70px;
-    max-width: 70px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   /* Forms Text Inputs */
   .userInfo {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .userInfo-input,
+  .messageArea {
+    padding: 12px 24px;
   }
 
   /* Inputs And Lables*/
   .userInfo-input,
-  .userInfo-label {
+  .userInfo-label,
+  .messageArea {
     font-size: 22px;
     line-height: 29px;
   }
 
-  /* Little Animation. Up Lable */
-  .userInfo-input:focus + .userInfo-label,
-  .userInfo-input:valid + .userInfo-label {
-    transform: translateY(-25px) scale(0.8);
-  }
-
-  .userInfo::after {
-    font-size: 22px;
+  /* TextArea */
+  .messageArea {
+    padding: 12px 24px;
+    height: 109px;
   }
 
   /* How To Connect */
 
   .contact {
-    margin-top: 25px;
+    margin-top: 17px;
     font-size: 22px;
     line-height: 29px;
   }
@@ -579,31 +609,24 @@
   .messengers {
     padding-right: 5px;
     padding-left: 5px;
-    margin-top: 10px;
-    margin-bottom: 45px;
-    column-gap: 40px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    column-gap: 25px;
   }
 
   /* Messengers Icons */
   .messengers img {
-    width: 45px;
-    height: 45px;
-  }
-
-  /* Selected Messangers */
-  #selectedMessenger {
-    font-size: 22px;
-    line-height: 29px;
-    bottom: -40px;
+    width: 43px;
+    height: 43px;
   }
 
   /* Button Submit */
-  .submit {
+  .submit.middle {
     max-width: 230px;
-    max-height: 45px !important;
+    max-height: 43px !important;
     font-size: 22px;
     line-height: 29px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   /* Button Close Menu */

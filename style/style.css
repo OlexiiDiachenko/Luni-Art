@@ -1,6 +1,7 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap");
 
 /* General Settings */
 
@@ -214,7 +215,7 @@ main::before {
 .order_now {
   padding-top: 55px;
   padding-bottom: 55px;
-  background-color: #ff2d5f;
+  background-image: var(--gradient-background);
 }
 
 .order_now-text {
@@ -680,7 +681,7 @@ main::before {
   column-gap: 100px;
   padding-top: 46px;
   padding-bottom: 64px;
-  background-color: #ff2257;
+  background-image: var(--gradient-background);
 }
 
 .createPainting-text .large {
@@ -708,6 +709,34 @@ main::before {
 
 .order_now-bottom * {
   color: #ff2d5f;
+}
+
+/* Contacts */
+
+.contacts {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 14px;
+  margin-bottom: 30px;
+}
+
+.contact-section-caption {
+  text-align: center;
+}
+
+.contact-caption {
+  color: #6c6c6c;
+}
+
+.contact-description {
+  color: #000000;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 
 /* Footer */
@@ -775,28 +804,20 @@ footer.footer {
   max-width: 385px;
   width: 100%;
   padding: 15px 70px 30px;
-  background-color: #fbfbfb;
   border-radius: 42px;
-  border: 0.5px solid var(--pink-regular);
-  box-shadow: 0px 0px 7px var(--pink-regular);
+  background-image: var(--gradient-background);
   position: relative;
   z-index: 2;
 }
 
-/* Menu Header */
-.consult-info h2 {
-  color: var(--second-textcolor);
-  font-weight: 700;
-  margin-bottom: 15px;
+.consult-info * {
+  color: #fbfbfd;
 }
 
-/* Palit Image */
-.consult_image {
-  max-height: 58px;
-  height: 100%;
-  max-width: 58px;
-  width: 100%;
-  margin-top: 18px;
+/* Menu Header */
+.consult-info h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 /* Forms Text Inputs */
@@ -807,69 +828,58 @@ footer.footer {
 
 /* Inputs */
 .userInfo-input {
-  position: relative;
   font-size: 25px;
   line-height: 33px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  background-color: transparent;
-  transition: all 0.5s ease;
+  background-color: #ffffff;
+  border-radius: 28.5px;
+  color: #6c6c6c;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
 }
 
 /* Lables */
 .userInfo-label {
-  color: var(--sub-textcolor);
+  color: #6c6c6c;
   font-weight: 700;
   font-size: 25px;
   line-height: 32px;
   opacity: 0.7;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
   transition: all 1s ease;
+  pointer-events: none;
 }
 
 /* Little Animation. Up Lable */
 .userInfo-input:focus + .userInfo-label,
 .userInfo-input:valid + .userInfo-label {
-  transform: translateY(-25px) scale(0.8);
+  top: 0;
+  transform: translateY(-100%) scale(0.8);
   opacity: 0.5;
 }
 
-.userInfo::after {
-  content: "*";
-  color: red;
-  position: absolute;
-  top: 0;
-  right: 0;
+/* TextArea */
+
+.messageArea {
+  color: #6c6c6c;
   font-size: 25px;
-}
-
-.userInfo.valid::after {
-  color: green;
-}
-
-/* Example */
-.userInfo p {
-  position: absolute;
+  line-height: 33px;
+  border-radius: 28.5px;
+  padding: 12px 24px;
+  box-sizing: border-box;
   width: 100%;
-  bottom: -21px;
-  left: 0;
-  font-size: 18px;
-  line-height: 21px;
-  color: var(--pink-regular);
-}
-
-.userInfo-input:valid ~ .example {
-  color: green;
+  border: none;
+  outline: none;
 }
 
 /* How To Connect */
 
 .contact {
   margin-top: 40px;
-  color: var(--second-textcolor);
 }
 
 /* Messengers Block */
@@ -897,6 +907,10 @@ footer.footer {
   margin: 0;
 }
 
+.messenger_label {
+  opacity: 0.5;
+}
+
 /* Messengers Icons */
 .messengers img {
   width: 35px;
@@ -906,35 +920,32 @@ footer.footer {
 
 /* Contact Label For Checked Input */
 
-.messenger_images input:checked ~ label img {
-  box-shadow: 0 0 10px var(--pink-regular);
+.messenger_images input:checked ~ .messenger_label {
+  opacity: 1;
 }
 
 /* Selected Messenger */
 
 #selectedMessenger {
   position: absolute;
-  bottom: -25px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  border-bottom: 1px solid var(--pink-regular);
-  font-size: 18px;
-  line-height: 21px;
-  color: var(--pink-regular);
-  pointer-events: none;
-  background-color: transparent;
+  width: 0;
+  height: 0;
+  outline: 0;
+  padding: 0;
 }
 
 /* Button Submit */
 .submit {
+  box-sizing: border-box;
   max-width: 245px;
   width: 100%;
-  max-height: 50px;
+  max-height: 58px;
   height: 100%;
   font-size: 30px;
   line-height: 40px;
-  box-shadow: 0 0 6px rgba(220, 93, 93, 0.75);
+  border-radius: 36.5px;
+  border: 4px solid #fbfbfd;
+  color: #ffffff;
 }
 
 /* Button Close Menu */

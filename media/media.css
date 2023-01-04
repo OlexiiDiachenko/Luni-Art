@@ -474,13 +474,6 @@
     border-radius: 28px;
   }
 
-  /* Palit Image */
-  .consult_image {
-    max-height: 40px;
-    max-width: 40px;
-    margin-top: 13px;
-  }
-
   /* Forms Text Inputs */
   .userInfo {
     margin-bottom: 17px;
@@ -491,25 +484,6 @@
   .userInfo-input {
     font-size: 18px;
     line-height: 21px;
-  }
-
-  /* Little Animation. Up Lable */
-  .userInfo-input:focus + .userInfo-label,
-  .userInfo-input:valid + .userInfo-label {
-    transform: translateY(-20px) scale(0.8);
-  }
-
-  .userInfo::after {
-    font-size: 20px;
-  }
-
-  /* Example */
-  .userInfo p,
-  #selectedMessenger {
-    position: absolute;
-    width: 100%;
-    font-size: 13px;
-    line-height: 18px;
   }
 
   /* How To Connect */
@@ -531,16 +505,10 @@
     height: 30px;
   }
 
-  /* Selected messenger */
-
-  #selectedMessenger {
-    bottom: -20px;
-  }
-
   /* Button Submit */
   .submit {
     max-width: 170px;
-    max-height: 35px;
+    max-height: 43px;
     font-size: 25px;
     line-height: 33px;
   }
@@ -1227,13 +1195,6 @@
     border-radius: 16px;
   }
 
-  /* Palit Image */
-  .consult_image {
-    max-height: 30px;
-    max-width: 30px;
-    margin-top: 10px;
-  }
-
   /* Forms Text Inputs */
   .userInfo {
     margin-bottom: 10px;
@@ -1244,23 +1205,6 @@
   .userInfo-label,
   .userInfo-input {
     font-size: 10px;
-    line-height: 13px;
-  }
-
-  /* Little Animation. Up Lable */
-  .userInfo-input:focus + .userInfo-label,
-  .userInfo-input:valid + .userInfo-label {
-    transform: translateY(-13px) scale(0.8);
-  }
-
-  .userInfo::after {
-    font-size: 15px;
-  }
-
-  /* Example */
-  .userInfo p,
-  #selectedMessenger {
-    font-size: 8px;
     line-height: 13px;
   }
 
@@ -1282,16 +1226,10 @@
     height: 22px;
   }
 
-  /* Selected messenger */
-
-  #selectedMessenger {
-    bottom: -15px;
-  }
-
   /* Button Submit */
   .submit {
     max-width: 122px;
-    max-height: 25px;
+    max-height: 33px;
     font-size: 15px;
     line-height: 20px;
   }
@@ -1693,31 +1631,14 @@
     border-radius: 11px;
   }
 
-  /* Palit Image */
-  .consult_image {
-    max-height: 50px;
-    max-width: 50px;
-  }
-
   /* Fonts */
 
   .consult-info .middle,
   .consult-info .normal_order,
   .userInfo-label,
-  .userInfo-input,
-  #selectedMessenger {
+  .userInfo-input {
     font-size: 18px;
     line-height: 21px;
-  }
-
-  /* Little Animation. Up Lable */
-  .userInfo-input:focus + .userInfo-label,
-  .userInfo-input:valid + .userInfo-label {
-    transform: translateY(-18px) scale(0.7);
-  }
-
-  .userInfo::after {
-    font-size: 18px;
   }
 
   /* messengers Block */
@@ -1732,14 +1653,10 @@
     height: 30px;
   }
 
-  #selectedMessenger {
-    bottom: -25px;
-  }
-
   /* Button Submit */
   .submit {
     max-width: 125px;
-    max-height: 30px;
+    max-height: 38px;
   }
 
   .close img {

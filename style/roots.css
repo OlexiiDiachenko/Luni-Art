@@ -5,6 +5,13 @@
   --lightgreen-color: #4ca96c;
   --orange-color: #feaa43;
   --pink-regular: #ff2257;
+  --gradient-background: linear-gradient(
+    90deg,
+    rgb(37, 93, 183),
+    rgb(82, 169, 229)
+  );
+  --gradient-text-color: linear-gradient(90deg, #265eb7 17.33%, #52aae5 90%);
+  --gradient-background-button: linear-gradient(90deg, #255db7, #51a9e4);
 }
 
 h1,
@@ -201,20 +208,47 @@ button.size-button {
 }
 
 a.ellipse {
-  box-shadow: 0 0 4px rgba(141, 107, 20, 0.75);
   color: #fff;
-  background-color: var(--pink-regular);
+  background-image: var(--gradient-background-button);
   padding: 10px 20px;
 }
 
 .ellipse.white-button {
-  color: var(--pink-regular);
   background-color: #fff;
 }
 
+.ellipse.white-button span {
+  background: var(--gradient-text-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .ellipse.pink-button {
-  background-color: var(--pink-regular);
-  color: #fff;
+  position: relative;
+  background-image: var(--gradient-background);
+}
+
+.ellipse.pink-button span {
+  position: relative;
+  z-index: 2;
+  background-image: var(--gradient-text-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: inherit;
+  background-clip: text;
+}
+
+.ellipse.pink-button::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1px;
+  border-radius: inherit;
 }
 
 .comparison-button-order {
@@ -226,6 +260,15 @@ a.ellipse {
   width: 550px;
 }
 
+.order_button {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.order_button:active {
+  transform: scale(0.9);
+}
+
 /* Videos */
 
 video {
@@ -233,6 +276,13 @@ video {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+/* hr */
+
+hr {
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 @media (min-width: 1700px) and (max-height: 1050px) {
@@ -548,15 +598,10 @@ video {
   .small_black,
   .xsmall_light,
   .percent,
-  .individual_font {
+  .individual_font,
+  .xsmall {
     font-size: 15px;
     line-height: 18px;
-  }
-
-  .xsmall {
-    font-size: 11px;
-    line-height: 15px;
-    margin-right: 8px;
   }
 
   button.size-button {

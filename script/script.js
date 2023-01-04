@@ -80,30 +80,9 @@ function closeOrder() {
   openBody(body);
 }
 
-// A little validate a form in order menu
+// A little validate form in order menu
 
 const phone = document.querySelector("#phone");
-const name = document.querySelector("#name");
-let inputsConsult = document.querySelectorAll(".userInfo-input");
-
-for (let i = 0; i < inputsConsult.length; i++) {
-  inputsConsult[i].addEventListener("blur", validate);
-  inputsConsult[i].addEventListener("input", validate);
-}
-
-function validate() {
-  let lengthWrite = parseInt(this.value.length);
-  let validateLength = this.getAttribute("data-length");
-  if (lengthWrite < validateLength) {
-    this.style.borderBottom = "1px solid rgba(255 , 0 , 0 , 0.25)";
-    if (this.parentElement.classList.contains("valid")) {
-      this.parentElement.classList.remove("valid");
-    }
-  } else {
-    this.style.borderBottom = "1px solid rgba(0 , 255 , 0 , 0.25)";
-    this.parentElement.classList.add("valid");
-  }
-}
 
 phone.addEventListener("focus", startNubmer);
 phone.addEventListener("blur", removeNubmer);
