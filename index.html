@@ -127,7 +127,11 @@
 
       <!-- Order Now Button -->
       <div class="order_now-button flex-row mobile">
-        <button type="button" class="order_button ellipse white-button">
+        <button
+          type="button"
+          class="order_button ellipse white-button"
+          data-message="Хочу картину."
+        >
           ХОЧУ КАРТИНУ
         </button>
       </div>
@@ -305,7 +309,11 @@
         <!-- Order Now Text Clsoe -->
         <!-- Order Now Button -->
         <div class="order_now-button flex-row">
-          <button type="button" class="order_button ellipse white-button">
+          <button
+            type="button"
+            class="order_button ellipse white-button"
+            data-message="Хочу картину."
+          >
             <span>Хочу картину</span>
           </button>
         </div>
@@ -329,91 +337,62 @@
         class="sizes-slider mobile center_align animated"
         data-animation="to-right"
       >
+        <h2 class="middle center_align">РОЗМІРИ КАРТИН</h2>
         <div class="slider_mobile keen-slider">
           <!-- Size A5 -->
           <div class="slider_size_item keen-slider__slide">
             <!-- Size Caption -->
-            <div class="slider_size_item_text">
-              <h3 class="large">A5</h3>
-              <p class="normal_sub">Доступно.<br />Якісно</p>
-              <button class="slider-order-button order_button size-button">
-                Замовити >
+            <div class="slider_size_button">
+              <button class="order_button size-button middle" data-size="A5">
+                A5 Розмір
               </button>
             </div>
             <!-- Size Image -->
-            <img
-              loading="lazy"
-              src="./images/sliders/sizes/A5-Busya.webp"
-              alt=""
-            />
+            <img loading="lazy" src="./images/sliders/sizes/A5.webp" alt="" />
           </div>
           <!-- Size A4 -->
           <div class="slider_size_item keen-slider__slide">
             <!-- Size Caption -->
-            <div class="slider_size_item_text">
-              <h3 class="large">A4</h3>
-              <p class="normal_sub">Доступно.<br />Якісно</p>
-              <button class="slider-order-button order_button size-button">
-                Замовити >
+            <div class="slider_size_button">
+              <button class="order_button size-button middle" data-size="A4">
+                A4 Розмір
               </button>
             </div>
             <!-- Size Image -->
-            <img
-              loading="lazy"
-              src="./images/sliders/sizes/A4-Andrew.webp"
-              alt=""
-            />
+            <img loading="lazy" src="./images/sliders/sizes/A4.webp" alt="" />
           </div>
           <!-- Size A3 -->
           <div class="slider_size_item keen-slider__slide">
             <!-- Size Caption -->
-            <div class="slider_size_item_text">
-              <h3 class="large">A3</h3>
-              <p class="normal_sub">Доступно.<br />Якісно</p>
-              <button class="slider-order-button order_button size-button">
-                Замовити >
+            <div class="slider_size_button">
+              <button class="order_button size-button middle" data-size="A3">
+                A3 Розмір
               </button>
             </div>
             <!-- Size Image -->
-            <img
-              loading="lazy"
-              src="./images/sliders/sizes/A5-Busya.webp"
-              alt=""
-            />
+            <img loading="lazy" src="./images/sliders/sizes/A3.webp" alt="" />
           </div>
           <!-- Size A2 -->
           <div class="slider_size_item keen-slider__slide">
             <!-- Size Caption -->
-            <div class="slider_size_item_text">
-              <h3 class="large">A2</h3>
-              <p class="normal_sub">Доступно.<br />Якісно</p>
-              <button class="slider-order-button order_button size-button">
-                Замовити >
+            <div class="slider_size_button">
+              <button class="order_button size-button middle" data-size="A2">
+                A2 Розмір
               </button>
             </div>
             <!-- Size Image -->
-            <img
-              loading="lazy"
-              src="./images/sliders/sizes/A4-Andrew.webp"
-              alt=""
-            />
+            <img loading="lazy" src="./images/sliders/sizes/A2.webp" alt="" />
           </div>
           <!-- Size A1 -->
           <div class="slider_size_item keen-slider__slide">
             <!-- Size Caption -->
-            <div class="slider_size_item_text">
-              <h3 class="large">A1</h3>
-              <p class="normal_sub">Доступно.<br />Якісно</p>
-              <button class="slider-order-button order_button size-button">
-                Замовити >
+            <div class="slider_size_button">
+              <button class="order_button size-button middle" data-size="A1">
+                A1 Розмір
               </button>
             </div>
             <!-- Size Image -->
-            <img
-              loading="lazy"
-              src="./images/sliders/sizes/A4-Andrew.webp"
-              alt=""
-            />
+            <img loading="lazy" src="./images/sliders/sizes/A1.webp" alt="" />
           </div>
         </div>
       </div>
@@ -476,6 +455,7 @@
         >
           <button
             class="order_button ellipse pink-button comparison-button-order mobile"
+            data-message="Хочу картину вугіллям."
           >
             <span>Хочу вугілля</span>
           </button>
@@ -518,6 +498,7 @@
             <!-- Button Order -->
             <button
               class="order_button ellipse pink-button comparison-button-order screen"
+              data-message="Хочу картину вугіллям."
             >
               <span>Хочу вугілля</span>
             </button>
@@ -531,6 +512,7 @@
         >
           <button
             class="order_button ellipse pink-button comparison-button-order mobile"
+            data-message="Хочу картину олією."
           >
             <span>Хочу олію</span>
           </button>
@@ -569,6 +551,7 @@
             <!-- Button Order -->
             <button
               class="order_button ellipse pink-button comparison-button-order screen"
+              data-message="Хочу картину олією."
             >
               <span>Хочу олію</span>
             </button>
@@ -859,6 +842,7 @@
           <button
             type="button"
             class="order_button slider_photo_button ellipse pink-button"
+            data-message="Хочу здивувати близьких."
           >
             <span>Здивувати близьких</span>
           </button>
@@ -872,85 +856,90 @@
               <!-- Size A5 -->
               <div class="slider_size_item keen-slider__slide">
                 <!-- Size Caption -->
-                <div class="slider_size_item_text">
-                  <h3 class="large">A5</h3>
-                  <p class="normal_sub">Доступно.<br />Якісно</p>
-                  <button class="slider-order-button order_button size-button">
-                    Замовити >
+                <div class="slider_size_button">
+                  <button
+                    class="order_button size-button middle"
+                    data-size="A5"
+                  >
+                    A5 Розмір
                   </button>
                 </div>
                 <!-- Size Image -->
                 <img
                   loading="lazy"
-                  src="./images/sliders/sizes/A5-Busya.webp"
+                  src="./images/sliders/sizes/A5.webp"
                   alt=""
                 />
               </div>
               <!-- Size A4 -->
               <div class="slider_size_item keen-slider__slide">
                 <!-- Size Caption -->
-                <div class="slider_size_item_text">
-                  <h3 class="large">A4</h3>
-                  <p class="normal_sub">Доступно.<br />Якісно</p>
-                  <button class="slider-order-button order_button size-button">
-                    Замовити >
+                <div class="slider_size_button">
+                  <button
+                    class="order_button size-button middle"
+                    data-size="A4"
+                  >
+                    A4 Розмір
                   </button>
                 </div>
                 <!-- Size Image -->
                 <img
                   loading="lazy"
-                  src="./images/sliders/sizes/A4-Andrew.webp"
+                  src="./images/sliders/sizes/A4.webp"
                   alt=""
                 />
               </div>
               <!-- Size A3 -->
               <div class="slider_size_item keen-slider__slide">
                 <!-- Size Caption -->
-                <div class="slider_size_item_text">
-                  <h3 class="large">A3</h3>
-                  <p class="normal_sub">Доступно.<br />Якісно</p>
-                  <button class="slider-order-button order_button size-button">
-                    Замовити >
+                <div class="slider_size_button">
+                  <button
+                    class="order_button size-button middle"
+                    data-size="A3"
+                  >
+                    A3 Розмір
                   </button>
                 </div>
                 <!-- Size Image -->
                 <img
                   loading="lazy"
-                  src="./images/sliders/sizes/A5-Busya.webp"
+                  src="./images/sliders/sizes/A3.webp"
                   alt=""
                 />
               </div>
               <!-- Size A2 -->
               <div class="slider_size_item keen-slider__slide">
                 <!-- Size Caption -->
-                <div class="slider_size_item_text">
-                  <h3 class="large">A2</h3>
-                  <p class="normal_sub">Доступно.<br />Якісно</p>
-                  <button class="slider-order-button order_button size-button">
-                    Замовити >
+                <div class="slider_size_button">
+                  <button
+                    class="order_button size-button middle"
+                    data-size="А2"
+                  >
+                    А2 Розмір
                   </button>
                 </div>
                 <!-- Size Image -->
                 <img
                   loading="lazy"
-                  src="./images/sliders/sizes/A4-Andrew.webp"
+                  src="./images/sliders/sizes/A2.webp"
                   alt=""
                 />
               </div>
               <!-- Size A1 -->
               <div class="slider_size_item keen-slider__slide">
                 <!-- Size Caption -->
-                <div class="slider_size_item_text">
-                  <h3 class="large">A1</h3>
-                  <p class="normal_sub">Доступно.<br />Якісно</p>
-                  <button class="slider-order-button order_button size-button">
-                    Замовити >
+                <div class="slider_size_button">
+                  <button
+                    class="order_button size-button middle"
+                    data-size="А1"
+                  >
+                    А1 Розмір
                   </button>
                 </div>
                 <!-- Size Image -->
                 <img
                   loading="lazy"
-                  src="./images/sliders/sizes/A4-Andrew.webp"
+                  src="./images/sliders/sizes/A1.webp"
                   alt=""
                 />
               </div>
@@ -1077,6 +1066,7 @@
           <div class="slider-button">
             <button
               class="order_button slider_video_button ellipse pink-button"
+              data-message="Хочу картину з відео"
             >
               <span>Хочу з відео</span>
             </button>
@@ -1111,7 +1101,11 @@
                 id="tab-coal"
                 checked
               />
-              <label class="tab-label" for="tab-coal" data-for="coal"
+              <label
+                class="tab-label"
+                for="tab-coal"
+                data-for="coal"
+                data-material="вугіллям"
                 ><img src="./images/tabel_cost/coal_mobile.webp" alt="" />
                 Вугілля</label
               >
@@ -1124,7 +1118,11 @@
                 name="material"
                 id="tab-oil"
               />
-              <label class="tab-label" for="tab-oil" data-for="oil"
+              <label
+                class="tab-label"
+                for="tab-oil"
+                data-for="oil"
+                data-material="олією"
                 ><img src="./images/tabel_cost/oil_mobile.webp" alt="" />
                 Олія</label
               >
@@ -1145,7 +1143,11 @@
                   name="material"
                   id="coal"
                 />
-                <label class="card-label" for="coal"></label>
+                <label
+                  class="card-label"
+                  for="coal"
+                  data-material="вугіллям"
+                ></label>
               </div>
               <!-- Sub Text -->
               <div class="card-sub center_align">
@@ -1164,7 +1166,11 @@
                   name="material"
                   id="oil"
                 />
-                <label class="card-label" for="oil"></label>
+                <label
+                  class="card-label"
+                  for="oil"
+                  data-material="олією"
+                ></label>
               </div>
               <!-- Sub Text -->
               <div class="card-sub center_align">
@@ -1205,104 +1211,8 @@
           <div class="size-tabel">
             <!-- Coal Size Cost -->
             <div class="size-cost-block coal-tabel active">
-              <!-- A-5 -->
-              <div class="tabel-size-cell order_button">
-                <!-- Top Part -->
-                <div class="flex-row space-between top-part-cell">
-                  <div class="size">
-                    <p class="small_black">A-5</p>
-                  </div>
-                  <div class="cost">
-                    <p class="xsmall_light">860₴</p>
-                  </div>
-                </div>
-                <!-- Bottom Part -->
-                <div class="flex-row space-between flex-end">
-                  <!-- Prepayment Text -->
-                  <div class="prepayment">
-                    <p class="xsmall">Нова ціна:</p>
-                  </div>
-                  <!-- Prepayment Cost -->
-                  <div class="cost">
-                    <p class="percent">172₴</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- A-4 -->
-              <div class="tabel-size-cell order_button">
-                <!-- Top Part -->
-                <div class="flex-row space-between top-part-cell">
-                  <div class="size">
-                    <p class="small_black">A-4</p>
-                  </div>
-                  <div class="cost">
-                    <p class="xsmall_light">1570₴</p>
-                  </div>
-                </div>
-                <!-- Bottom Part -->
-                <div class="flex-row space-between flex-end">
-                  <!-- Prepayment Text -->
-                  <div class="prepayment">
-                    <p class="xsmall">Нова ціна:</p>
-                  </div>
-                  <!-- Prepayment Cost -->
-                  <div class="cost">
-                    <p class="percent">314₴</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- A-3 -->
-              <div class="tabel-size-cell order_button">
-                <!-- Top Part -->
-                <div class="flex-row space-between top-part-cell">
-                  <div class="size">
-                    <p class="small_black">A-3</p>
-                  </div>
-                  <div class="cost">
-                    <p class="xsmall_light">2160₴</p>
-                  </div>
-                </div>
-                <!-- Bottom Part -->
-                <div class="flex-row space-between flex-end">
-                  <!-- Prepayment Text -->
-                  <div class="prepayment">
-                    <p class="xsmall">Нова ціна:</p>
-                  </div>
-                  <!-- Prepayment Cost -->
-                  <div class="cost">
-                    <p class="percent">432₴</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- A-2 -->
-              <div class="tabel-size-cell cell-popular-size order_button">
-                <!-- Top Part -->
-                <div class="flex-row space-between top-part-cell">
-                  <div class="size">
-                    <p class="small_black">A-2</p>
-                  </div>
-                  <div class="cost">
-                    <p class="xsmall_light">3570₴</p>
-                  </div>
-                </div>
-                <!-- Bottom Part -->
-                <div class="flex-row space-between flex-end">
-                  <!-- Prepayment Text -->
-                  <div class="prepayment">
-                    <p class="xsmall">Нова ціна:</p>
-                  </div>
-                  <!-- Prepayment Cost -->
-                  <div class="cost">
-                    <p class="percent">714₴</p>
-                  </div>
-                </div>
-              </div>
-
               <!-- A-1 -->
-              <div class="tabel-size-cell order_button">
+              <div class="tabel-size-cell order_button" data-size="A1">
                 <!-- Top Part -->
                 <div class="flex-row space-between top-part-cell">
                   <div class="size">
@@ -1325,6 +1235,105 @@
                 </div>
               </div>
 
+              <!-- A-2 -->
+              <div
+                class="tabel-size-cell cell-popular-size order_button"
+                data-size="A2"
+              >
+                <!-- Top Part -->
+                <div class="flex-row space-between top-part-cell">
+                  <div class="size">
+                    <p class="small_black">A-2</p>
+                  </div>
+                  <div class="cost">
+                    <p class="xsmall_light">3570₴</p>
+                  </div>
+                </div>
+                <!-- Bottom Part -->
+                <div class="flex-row space-between flex-end">
+                  <!-- Prepayment Text -->
+                  <div class="prepayment">
+                    <p class="xsmall">Нова ціна:</p>
+                  </div>
+                  <!-- Prepayment Cost -->
+                  <div class="cost">
+                    <p class="percent">714₴</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- A-3 -->
+              <div class="tabel-size-cell order_button" data-size="A3">
+                <!-- Top Part -->
+                <div class="flex-row space-between top-part-cell">
+                  <div class="size">
+                    <p class="small_black">A-3</p>
+                  </div>
+                  <div class="cost">
+                    <p class="xsmall_light">2160₴</p>
+                  </div>
+                </div>
+                <!-- Bottom Part -->
+                <div class="flex-row space-between flex-end">
+                  <!-- Prepayment Text -->
+                  <div class="prepayment">
+                    <p class="xsmall">Нова ціна:</p>
+                  </div>
+                  <!-- Prepayment Cost -->
+                  <div class="cost">
+                    <p class="percent">432₴</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- A-4 -->
+              <div class="tabel-size-cell order_button" data-size="A4">
+                <!-- Top Part -->
+                <div class="flex-row space-between top-part-cell">
+                  <div class="size">
+                    <p class="small_black">A-4</p>
+                  </div>
+                  <div class="cost">
+                    <p class="xsmall_light">1570₴</p>
+                  </div>
+                </div>
+                <!-- Bottom Part -->
+                <div class="flex-row space-between flex-end">
+                  <!-- Prepayment Text -->
+                  <div class="prepayment">
+                    <p class="xsmall">Нова ціна:</p>
+                  </div>
+                  <!-- Prepayment Cost -->
+                  <div class="cost">
+                    <p class="percent">314₴</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- A-5 -->
+              <div class="tabel-size-cell order_button" data-size="A5">
+                <!-- Top Part -->
+                <div class="flex-row space-between top-part-cell">
+                  <div class="size">
+                    <p class="small_black">A-5</p>
+                  </div>
+                  <div class="cost">
+                    <p class="xsmall_light">860₴</p>
+                  </div>
+                </div>
+                <!-- Bottom Part -->
+                <div class="flex-row space-between flex-end">
+                  <!-- Prepayment Text -->
+                  <div class="prepayment">
+                    <p class="xsmall">Нова ціна:</p>
+                  </div>
+                  <!-- Prepayment Cost -->
+                  <div class="cost">
+                    <p class="percent">172₴</p>
+                  </div>
+                </div>
+              </div>
+
               <!-- Individual -->
               <div
                 class="order_button tabel-size-cell center_align space-between order_button"
@@ -1343,15 +1352,15 @@
 
             <!-- Oil Size Cost -->
             <div class="size-cost-block oil-tabel">
-              <!-- A-5 -->
-              <div class="tabel-size-cell order_button">
+              <!-- A-1 -->
+              <div class="tabel-size-cell order_button" data-size="A1">
                 <!-- Top Part -->
                 <div class="flex-row space-between top-part-cell">
                   <div class="size">
-                    <p class="small_black">A-5</p>
+                    <p class="small_black">A-1</p>
                   </div>
                   <div class="cost">
-                    <p class="xsmall_light">1820₴</p>
+                    <p class="xsmall_light">9540₴</p>
                   </div>
                 </div>
                 <!-- Bottom Part -->
@@ -1362,61 +1371,16 @@
                   </div>
                   <!-- Prepayment Cost -->
                   <div class="cost">
-                    <p class="percent">364₴</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- A-4 -->
-              <div class="tabel-size-cell order_button">
-                <!-- Top Part -->
-                <div class="flex-row space-between top-part-cell">
-                  <div class="size">
-                    <p class="small_black">A-4</p>
-                  </div>
-                  <div class="cost">
-                    <p class="xsmall_light">3340₴</p>
-                  </div>
-                </div>
-                <!-- Bottom Part -->
-                <div class="flex-row space-between flex-end">
-                  <!-- Prepayment Text -->
-                  <div class="prepayment">
-                    <p class="xsmall">Нова ціна:</p>
-                  </div>
-                  <!-- Prepayment Cost -->
-                  <div class="cost">
-                    <p class="percent">668₴</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- A-3 -->
-              <div class="tabel-size-cell order_button">
-                <!-- Top Part -->
-                <div class="flex-row space-between top-part-cell">
-                  <div class="size">
-                    <p class="small_black">A-3</p>
-                  </div>
-                  <div class="cost">
-                    <p class="xsmall_light">4600₴</p>
-                  </div>
-                </div>
-                <!-- Bottom Part -->
-                <div class="flex-row space-between flex-end">
-                  <!-- Prepayment Text -->
-                  <div class="prepayment">
-                    <p class="xsmall">Нова ціна:</p>
-                  </div>
-                  <!-- Prepayment Cost -->
-                  <div class="cost">
-                    <p class="percent">920₴</p>
+                    <p class="percent">1908₴</p>
                   </div>
                 </div>
               </div>
 
               <!-- A-2 -->
-              <div class="tabel-size-cell cell-popular-size order_button">
+              <div
+                class="tabel-size-cell cell-popular-size order_button"
+                data-size="A2"
+              >
                 <!-- Top Part -->
                 <div class="flex-row space-between top-part-cell">
                   <div class="size">
@@ -1439,15 +1403,15 @@
                 </div>
               </div>
 
-              <!-- A-1 -->
-              <div class="tabel-size-cell order_button">
+              <!-- A-3 -->
+              <div class="tabel-size-cell order_button" data-size="A3">
                 <!-- Top Part -->
                 <div class="flex-row space-between top-part-cell">
                   <div class="size">
-                    <p class="small_black">A-1</p>
+                    <p class="small_black">A-3</p>
                   </div>
                   <div class="cost">
-                    <p class="xsmall_light">9540₴</p>
+                    <p class="xsmall_light">4600₴</p>
                   </div>
                 </div>
                 <!-- Bottom Part -->
@@ -1458,7 +1422,55 @@
                   </div>
                   <!-- Prepayment Cost -->
                   <div class="cost">
-                    <p class="percent">1908₴</p>
+                    <p class="percent">920₴</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- A-4 -->
+              <div class="tabel-size-cell order_button" data-size="A4">
+                <!-- Top Part -->
+                <div class="flex-row space-between top-part-cell">
+                  <div class="size">
+                    <p class="small_black">A-4</p>
+                  </div>
+                  <div class="cost">
+                    <p class="xsmall_light">3340₴</p>
+                  </div>
+                </div>
+                <!-- Bottom Part -->
+                <div class="flex-row space-between flex-end">
+                  <!-- Prepayment Text -->
+                  <div class="prepayment">
+                    <p class="xsmall">Нова ціна:</p>
+                  </div>
+                  <!-- Prepayment Cost -->
+                  <div class="cost">
+                    <p class="percent">668₴</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- A-5 -->
+              <div class="tabel-size-cell order_button" data-size="A5">
+                <!-- Top Part -->
+                <div class="flex-row space-between top-part-cell">
+                  <div class="size">
+                    <p class="small_black">A-5</p>
+                  </div>
+                  <div class="cost">
+                    <p class="xsmall_light">1820₴</p>
+                  </div>
+                </div>
+                <!-- Bottom Part -->
+                <div class="flex-row space-between flex-end">
+                  <!-- Prepayment Text -->
+                  <div class="prepayment">
+                    <p class="xsmall">Нова ціна:</p>
+                  </div>
+                  <!-- Prepayment Cost -->
+                  <div class="cost">
+                    <p class="percent">364₴</p>
                   </div>
                 </div>
               </div>
@@ -1500,6 +1512,7 @@
           <button
             type="button"
             class="order_button ellipse white-button get-consult"
+            data-message="Потрібна консультація."
           >
             <span>Отримати консультацію</span>
           </button>
@@ -1518,6 +1531,7 @@
           <button
             type="button"
             class="order_button ellipse white-button get-consult"
+            data-message="Потрібна консультація"
           >
             <span>КОНСУЛЬТАЦІЯ</span>
           </button>
@@ -1601,7 +1615,10 @@
       </div>
       <!-- Button Under Video Slider -->
       <div class="slider-button mobile center_align">
-        <button class="order_button slider_video_button ellipse pink-button">
+        <button
+          class="order_button slider_video_button ellipse pink-button"
+          data-message="Хочу картину з відео"
+        >
           <span>Хочу з відео</span>
         </button>
       </div>
@@ -1647,6 +1664,7 @@
             <!-- Button Order -->
             <button
               class="order_button ellipse pink-button comparison-button-order screen"
+              data-message="Хочу замовити картину"
             >
               <span>Замовити</span>
             </button>
@@ -1661,6 +1679,7 @@
         <p class="normal">Та отримайте подарунок!</p>
         <button
           class="order_button ellipse pink-button comparison-button-order mobile"
+          data-message="Хочу замовити картину"
         >
           <span>Замовити</span>
         </button>
@@ -1797,7 +1816,7 @@
           <a href="#" target="_blank"
             ><img loading="lazy" src="./images/footer/telegram.webp" alt=""
           /></a>
-          <a  href="viber://chat?number=%2B380930156521" target="_blank"
+          <a href="viber://chat?number=%2B380930156521" target="_blank"
             ><img loading="lazy" src="./images/footer/viber.webp" alt=""
           /></a>
         </div>
@@ -1824,7 +1843,7 @@
               pattern="[A-Za-zА-Яа-яІіЇїЁёЄє]{1,}"
               required
             />
-            <label class="userInfo-label center_align" for="name">Ім’я *</label>
+            <label class="userInfo-label" for="name">Ім’я *</label>
           </div>
 
           <div class="userInfo">
@@ -1839,18 +1858,20 @@
               onkeyup="this.value = this.value.replace(/[A-Za-zА-Яа-яЇїЁёІі]/g,'');"
               required
             />
-            <label class="userInfo-label center_align" for="phone"
-              >Телефон *</label
-            >
+            <label class="userInfo-label" for="phone">Телефон *</label>
           </div>
 
-          <textarea
-            class="messageArea"
-            name="messageArea"
-            id="messageArea"
-            cols="30"
-            rows="10"
-          ></textarea>
+          <div class="userInfo messageAreaBlock">
+            <textarea
+              class="messageArea"
+              name="messageArea"
+              id="messageArea"
+              cols="30"
+              rows="10"
+              minlength="2"
+            ></textarea>
+            <label class="userInfo-label" for="messageArea">Повідомлення</label>
+          </div>
 
           <h4 class="contact normal_order">Як з вами зв’язатися?</h4>
 
@@ -1861,7 +1882,7 @@
                 type="radio"
                 name="contact"
                 id="Phone"
-                data-messenger="Вайбер"
+                data-messenger="Мобільний телефон"
               />
               <label class="messenger_label" for="Phone">
                 <img

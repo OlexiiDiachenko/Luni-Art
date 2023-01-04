@@ -438,12 +438,14 @@ main::before {
 
 /* Slider Size Text Settings */
 
-.slider_size_item_text {
+.slider_size_button {
   position: absolute;
-  top: 50px;
-  right: 0;
-  left: 0;
+  bottom: 23px;
+  left: 40px;
   z-index: 2;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  border-radius: 25.5px;
 }
 
 /* SLider Size Images ettings */
@@ -619,6 +621,21 @@ main::before {
   display: none;
 }
 
+.xsmall_light {
+  position: relative;
+}
+
+.xsmall_light::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #8f8f8f;
+  transform: translateY(-0.5px);
+}
+
 .size-cost-block.active {
   display: grid;
 }
@@ -728,6 +745,7 @@ main::before {
 
 .contact-section-caption {
   text-align: center;
+  font-weight: 600;
 }
 
 .contact-caption {
@@ -837,6 +855,7 @@ footer.footer {
   padding-top: 12px;
   padding-bottom: 12px;
   box-sizing: border-box;
+  width: 100%;
 }
 
 /* Lables */
@@ -854,14 +873,6 @@ footer.footer {
   pointer-events: none;
 }
 
-/* Little Animation. Up Lable */
-.userInfo-input:focus + .userInfo-label,
-.userInfo-input:valid + .userInfo-label {
-  top: 0;
-  transform: translateY(-100%) scale(0.8);
-  opacity: 0.5;
-}
-
 /* TextArea */
 
 .messageArea {
@@ -874,6 +885,16 @@ footer.footer {
   width: 100%;
   border: none;
   outline: none;
+}
+
+.messageAreaBlock .userInfo-label {
+  top: 22px;
+}
+
+/* Little Animation. Label Remove */
+.userInfo-input:focus + .userInfo-label,
+.userInfo-input:valid + .userInfo-label {
+  display: none;
 }
 
 /* How To Connect */

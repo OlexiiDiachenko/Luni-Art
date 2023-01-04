@@ -191,10 +191,12 @@ label {
 }
 
 button.size-button {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  color: var(--pink-regular);
+  font-weight: 800;
+  color: #52aae5;
+  background: var(--gradient-text-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .ellipse {
@@ -339,11 +341,6 @@ hr {
 
   /* Buttons And Labels Hover Effects */
 
-  button.size-button {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
   .ellipse {
     font-size: 30px;
     line-height: 40px;
@@ -409,11 +406,6 @@ hr {
   }
 
   /* Buttons And Labels Hover Effects */
-
-  button.size-button {
-    font-size: 12px;
-    line-height: 17px;
-  }
 
   .ellipse {
     font-size: 25px;
@@ -495,11 +487,6 @@ hr {
 
   /* Buttons And Labels Hover Effects */
 
-  button.size-button {
-    font-size: 10px;
-    line-height: 13px;
-  }
-
   .ellipse {
     font-size: 20px;
     line-height: 27px;
@@ -560,11 +547,6 @@ hr {
 
   /* Buttons And Labels Hover Effects */
 
-  button.size-button {
-    font-size: 7px;
-    line-height: 9px;
-  }
-
   .ellipse {
     font-size: 15px;
     line-height: 20px;
@@ -600,13 +582,17 @@ hr {
   .percent,
   .individual_font,
   .xsmall {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 23px;
   }
 
-  button.size-button {
-    font-size: 20px;
-    line-height: 24px;
+  .xsmall_light {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  button {
+    text-transform: uppercase !important;
   }
 
   .ellipse {

@@ -47,10 +47,12 @@ let tabs = document.querySelectorAll(".tab-label");
 
 materials.forEach((material) => {
   material.addEventListener("click", tabelCost);
+  material.addEventListener("click", materialChoose);
 });
 
 tabs.forEach((material) => {
   material.addEventListener("click", mobileTabelCost);
+  material.addEventListener("click", materialChoose);
 });
 
 // Cost Table Open End
@@ -61,7 +63,14 @@ let order = document.querySelectorAll(".order_button"),
   consult = document.querySelector(".consult"),
   close = document.querySelector(".close"),
   messengers = document.querySelectorAll(".messenger_label"),
-  selectedMessenger = document.getElementById("selectedMessenger");
+  selectedMessenger = document.getElementById("selectedMessenger"),
+  textarea = document.querySelector("#messageArea"),
+  material = false;
+
+function materialChoose() {
+  material = this.getAttribute("data-material");
+  console.log(material);
+}
 
 for (let i = 0; i < order.length; i++) {
   order[i].addEventListener("click", showOrder);
@@ -70,6 +79,20 @@ for (let i = 0; i < order.length; i++) {
 function showOrder() {
   consult.style.display = "flex";
   setBody(body);
+  let size = this.getAttribute("data-size") || false,
+    message = this.getAttribute("data-message") || false;
+  if (size) {
+    if (material) {
+      textarea.innerHTML = `Картина ${material} ${size} розміру. `;
+      removeHolder();
+    } else {
+      textarea.innerHTML = `Картина ${size} розміру.`;
+      removeHolder();
+    }
+  } else {
+    textarea.innerHTML = `${message}`;
+    removeHolder();
+  }
 }
 
 consult.addEventListener("click", closeOrder);
@@ -100,6 +123,21 @@ function removeNubmer() {
     this.value = "";
   } else {
     this.value = this.value;
+  }
+}
+
+textarea.addEventListener("focus", removeHolder);
+textarea.addEventListener("blur", removePlaceHolder);
+
+function removeHolder() {
+  textarea.nextElementSibling.style.display = "none";
+}
+
+function removePlaceHolder() {
+  if (this.value.length == 0) {
+    this.nextElementSibling.style.display = "block";
+  } else {
+    this.nextElementSibling.style.display = "none";
   }
 }
 
