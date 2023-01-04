@@ -229,7 +229,7 @@
     padding-left: 10px;
     padding-right: 10px;
     max-width: 376px;
-    margin: 0 auto 75px;
+    margin: 0 auto 70px;
   }
 
   /* Section With Photo */
@@ -252,14 +252,10 @@
   /* Slider With Sizes  */
   /* Slider Size Text Settings */
 
-  .sizes-slider h3 {
-    font-size: 28px;
-    line-height: 37px;
-  }
-
-  .sizes-slider .normal_sub {
-    font-size: 15px;
-    line-height: 20px;
+  .sizes-slider h2.middle {
+    margin-bottom: 30px;
+    font-weight: 800;
+    color: #000000;
   }
 
   /* Video Process Text */
