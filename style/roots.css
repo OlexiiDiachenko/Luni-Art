@@ -578,17 +578,20 @@ hr {
   }
 
   .small_black,
-  .xsmall_light,
   .percent,
-  .individual_font,
-  .xsmall {
+  .individual_font {
     font-size: 18px;
     line-height: 23px;
   }
 
-  .xsmall_light {
-    font-size: 13px;
+  .xsmall_light,
+  .xsmall {
+    font-size: 14px;
     line-height: 17px;
+  }
+
+  .xsmall {
+    padding-bottom: 3px;
   }
 
   button {

@@ -441,7 +441,7 @@ main::before {
 .slider_size_button {
   position: absolute;
   bottom: 23px;
-  left: 40px;
+  left: 30px;
   z-index: 2;
   padding: 10px 15px;
   background-color: #ffffff;
@@ -746,6 +746,7 @@ main::before {
 .contact-section-caption {
   text-align: center;
   font-weight: 600;
+  color: #000000;
 }
 
 .contact-caption {
@@ -755,6 +756,10 @@ main::before {
 .contact-description {
   color: #000000;
   font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.contact-description:last-child {
+  font-family: "Playfair Display", serif;
 }
 
 /* Footer */
@@ -861,10 +866,9 @@ footer.footer {
 /* Lables */
 .userInfo-label {
   color: #6c6c6c;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 25px;
   line-height: 32px;
-  opacity: 0.7;
   position: absolute;
   top: 50%;
   left: 24px;
