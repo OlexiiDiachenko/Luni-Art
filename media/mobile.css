@@ -232,6 +232,10 @@
     margin: 0 auto 70px;
   }
 
+  .cv p.middle {
+    color: #000000;
+  }
+
   /* Section With Photo */
 
   .about_us .photo_from_header {
