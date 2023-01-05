@@ -595,7 +595,11 @@ hr {
   }
 
   button {
-    text-transform: uppercase !important;
+    text-transform: uppercase;
+  }
+
+  .size-button {
+    text-transform: none;
   }
 
   .ellipse {
