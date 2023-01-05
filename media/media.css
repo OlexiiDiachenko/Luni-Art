@@ -136,10 +136,6 @@
     padding-bottom: 60px;
   }
 
-  .about_us-achivments {
-    gap: 57px;
-  }
-
   [class*="cell-video"] {
     max-width: 365px;
     max-height: 460px;
@@ -587,10 +583,6 @@
 
   /* About Us */
 
-  .about_us-achivments {
-    gap: 50px;
-  }
-
   [class*="cell-video"] {
     max-width: 315px;
     max-height: 420px;
@@ -873,19 +865,11 @@
     padding-bottom: 40px;
   }
 
-  .about_us-achivments {
-    gap: 37px;
-  }
-
   [class*="cell-video"] {
     max-width: 235px;
     max-height: 300px;
     box-sizing: border-box;
   }
-
-  /* .about_us-achivments-cell {
-    row-gap: 15px;
-  } */
 
   /* Order Now Section */
 
@@ -1299,10 +1283,6 @@
 
   .about_us {
     padding-bottom: 35px;
-  }
-
-  .about_us-achivments {
-    gap: 27px;
   }
 
   [class*="cell-video"] {

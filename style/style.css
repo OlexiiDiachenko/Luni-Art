@@ -178,13 +178,9 @@ main::before {
   margin-bottom: 60px;
 }
 
-.about_us-achivments {
-  align-items: flex-start;
-  gap: 70px;
-}
-
 .about_us-achivments-cell {
   row-gap: 50px;
+  justify-content: flex-start;
 }
 
 [class*="cell-video"] {
