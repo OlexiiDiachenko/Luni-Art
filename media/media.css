@@ -432,10 +432,10 @@
     height: 103px;
   }
 
-  /* Slider Sizes Bottom */
+  /* Contacts */
 
-  .sizes-slider-bottom {
-    margin-bottom: 50px;
+  .contacts-list {
+    margin-top: 25px;
   }
 
   /* Footer */
@@ -446,6 +446,11 @@
 
   .footer .links {
     column-gap: 16px;
+  }
+
+  .footer .links img {
+    height: 38px;
+    width: 38px;
   }
 
   /* Consult */

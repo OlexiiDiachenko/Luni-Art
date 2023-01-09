@@ -524,6 +524,39 @@
     color: #000000;
   }
 
+  /* Contacts */
+
+  .contacts {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .contact-section-caption {
+    text-transform: uppercase;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 14px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .contacts-list::after {
+    content: "";
+    position: static;
+  }
+
+  .contacts-list-item:nth-child(2) {
+    margin-left: 0px;
+  }
+
+  .contact-description:last-child {
+    font-family: "Playfair Display", serif;
+  }
+
   /* Footer */
 
   footer.footer {
