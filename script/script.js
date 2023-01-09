@@ -208,10 +208,7 @@ if (isiPad) {
 }
 
 if (window.innerWidth <= 520) {
-  let orientation = screen.orientation.type;
   screen.addEventListener("orientationchange", () => {
-    screen.orientation.type = orientation;
+    Screen.lockOrientation("portrait");
   });
 }
-
-console.log(window.innerWidth);
