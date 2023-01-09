@@ -209,6 +209,6 @@ if (isiPad) {
 
 if (window.innerWidth <= 520) {
   screen.addEventListener("orientationchange", () => {
-    Screen.lockOrientation("portrait");
+    Screen.lockOrientation("portrait-primary");
   });
 }
