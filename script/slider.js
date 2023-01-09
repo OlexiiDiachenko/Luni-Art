@@ -100,7 +100,7 @@ slidersTwo.forEach((slider) => {
         spacing: 15,
       },
       breakpoints: {
-        "(max-width: 1180px)": {
+        "(max-width: 1350px)": {
           mode: "snap",
           slides: {
             perView: 2,
@@ -123,7 +123,7 @@ slidersThree.forEach((slider) => {
         spacing: 25,
       },
       breakpoints: {
-        "(max-width: 1180px)": {
+        "(max-width: 1350px)": {
           mode: "snap",
           slides: {
             perView: 2,

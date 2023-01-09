@@ -490,6 +490,10 @@
 @media (max-width: 1350px) {
   /* Header */
 
+  header.header {
+    background-color: transparent;
+  }
+
   .header-text {
     padding-top: 30px;
   }
@@ -638,16 +642,9 @@
   }
 
   .arrow {
-    width: 32px;
-    height: 32px;
-  }
-
-  .arrow--left {
-    left: 50px;
-  }
-
-  .arrow--right {
-    right: 50px;
+    width: 0;
+    height: 0;
+    display: none;
   }
 
   /* Images Carousel */
@@ -942,12 +939,6 @@
 
   .tassel::before {
     width: 28px;
-  }
-
-  .arrow {
-    width: 0;
-    height: 0;
-    display: none;
   }
 
   /* Carousels Header Sub */
