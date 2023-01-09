@@ -104,6 +104,7 @@ slidersTwo.forEach((slider) => {
           mode: "snap",
           slides: {
             perView: 2,
+            spacing: 25,
           },
         },
       },
@@ -127,6 +128,7 @@ slidersThree.forEach((slider) => {
           mode: "snap",
           slides: {
             perView: 2,
+            spacing: 25,
           },
         },
       },
