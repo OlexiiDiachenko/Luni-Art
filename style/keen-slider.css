@@ -31,22 +31,23 @@
   min-height: 100%;
 }
 
-.sizes-slider .dots {
+.dots {
   margin-top: 35px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: center;
   column-gap: 10px;
 }
 
-.sizes-slider .dots .dot {
-  width: 17px;
-  height: 17px;
+.dots .dot {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #d9d9d9;
   cursor: pointer;
 }
 
-.sizes-slider .dots .dot--active {
+.dots .dot--active {
   background-color: var(--pink-regular);
 }
 
