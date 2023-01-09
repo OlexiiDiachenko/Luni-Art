@@ -210,7 +210,7 @@ if (isiPad) {
 if (window.innerWidth <= 520) {
   let orientation = screen.orientation.type;
   screen.addEventListener("orientationchange", () => {
-    screen.orientation.type = "landscape-primary";
+    screen.orientation.type = orientation;
   });
 }
 

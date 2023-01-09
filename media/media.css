@@ -438,12 +438,6 @@
     margin-bottom: 50px;
   }
 
-  /* Section Order Now Bottom */
-
-  .order_now-bottom {
-    margin-bottom: 50px;
-  }
-
   /* Footer */
 
   footer.footer {
@@ -456,43 +450,14 @@
 
   /* Consult */
 
-  /* Our Menu */
-  .consult-info {
-    max-height: 370px;
-    max-width: 280px;
-    padding: 11px 40px 20px;
-    border-radius: 28px;
-  }
-
   /* Forms Text Inputs */
   .userInfo {
     margin-bottom: 17px;
   }
 
-  /* Inputs Lables */
-  .userInfo-label,
-  .userInfo-input {
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  /* How To Connect */
-
-  .contact {
-    margin-top: 30px;
-  }
-
   /* messengers Block */
   .messengers {
-    margin-top: 10px;
-    margin-bottom: 35px;
     column-gap: 32px;
-  }
-
-  /* Messengers Icons */
-  .messengers img {
-    width: 30px;
-    height: 30px;
   }
 
   /* Button Submit */
@@ -501,18 +466,6 @@
     max-height: 43px;
     font-size: 25px;
     line-height: 33px;
-  }
-
-  /* Button Close Menu */
-  .close {
-    top: 14px;
-    right: 14px;
-  }
-
-  /* Close Image X */
-  .close img {
-    height: 11px;
-    width: 11px;
   }
 }
 @media (max-width: 1440px) {
@@ -1135,12 +1088,6 @@
     margin-bottom: 30px;
   }
 
-  /* Section Order Now Bottom */
-
-  .order_now-bottom {
-    margin-bottom: 40px;
-  }
-
   /* Footer */
 
   footer.footer {
@@ -1149,67 +1096,6 @@
 
   .footer .links {
     column-gap: 10px;
-  }
-
-  /* Consult */
-
-  /* Our Menu */
-  .consult-info {
-    max-height: 270px;
-    max-width: 200px;
-    padding: 8px 35px 16px;
-    border-radius: 16px;
-  }
-
-  /* Forms Text Inputs */
-  .userInfo {
-    margin-bottom: 10px;
-  }
-
-  /* Inputs */
-
-  .userInfo-label,
-  .userInfo-input {
-    font-size: 10px;
-    line-height: 13px;
-  }
-
-  /* How To Connect */
-
-  .contact {
-    margin-top: 20px;
-  }
-
-  /* messengers Block */
-  .messengers {
-    margin-bottom: 25px;
-    column-gap: 22px;
-  }
-
-  /* Messengers Icons */
-  .messengers img {
-    width: 22px;
-    height: 22px;
-  }
-
-  /* Button Submit */
-  .submit {
-    max-width: 122px;
-    max-height: 33px;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  /* Button Close Menu */
-  .close {
-    top: 10px;
-    right: 10px;
-  }
-
-  /* Close Image X */
-  .close img {
-    height: 8px;
-    width: 8px;
   }
 }
 
@@ -1560,12 +1446,6 @@
     margin-bottom: 30px;
   }
 
-  /* Section Order Now Bottom */
-
-  .order_now-bottom {
-    margin-bottom: 30px;
-  }
-
   /* Footer */
 
   footer.footer {
@@ -1578,47 +1458,6 @@
   }
 
   /* Consult */
-
-  /* Our Menu */
-  .consult-info {
-    max-height: 360px;
-    max-width: 250px;
-    padding: 6px 20px 10px;
-    border-radius: 11px;
-  }
-
-  /* Fonts */
-
-  .consult-info .middle,
-  .consult-info .normal_order,
-  .userInfo-label,
-  .userInfo-input {
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  /* messengers Block */
-  .messengers {
-    column-gap: 35px;
-    margin-bottom: 40px;
-  }
-
-  /* Messengers Icons */
-  .messengers img {
-    width: 30px;
-    height: 30px;
-  }
-
-  /* Button Submit */
-  .submit {
-    max-width: 125px;
-    max-height: 38px;
-  }
-
-  .close img {
-    height: 12px;
-    width: 12px;
-  }
 }
 
 @media (min-width: 480px) and (orientation: portrait) {
