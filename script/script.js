@@ -205,10 +205,13 @@ if (isiPad) {
   window.addEventListener("scroll", () => {
     setAnimation(location, screenHeight, animatedElements);
   });
+}
 
+if (window.innerWidth <= 520) {
+  let orientation = screen.orientation.type;
   screen.addEventListener("orientationchange", () => {
-    setAnimationForOrientation();
-    setBlocks(animatedElements, location);
-    setAnimation(location, screenHeight, animatedElements);
+    screen.orientation.type = "landscape-primary";
   });
 }
+
+console.log(window.innerWidth);
