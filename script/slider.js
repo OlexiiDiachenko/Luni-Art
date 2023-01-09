@@ -103,7 +103,7 @@ slidersTwo.forEach((slider) => {
         "(max-width: 1180px)": {
           mode: "snap",
           slides: {
-            perView: 1,
+            perView: 2,
           },
         },
       },
@@ -126,7 +126,7 @@ slidersThree.forEach((slider) => {
         "(max-width: 1180px)": {
           mode: "snap",
           slides: {
-            perView: 1,
+            perView: 2,
           },
         },
       },
