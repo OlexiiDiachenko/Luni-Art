@@ -166,6 +166,9 @@ if (isiPad) {
   animatedElements.forEach((element) => {
     element.classList.remove("animated");
   });
+  let div = document.createElement("div");
+  div.classList.add("header-photo-image");
+  document.querySelector(".header-photo").prepend(div);
   if (
     screen.orientation.type == "portrait-secondary" ||
     screen.orientation.type == "portrait-primary"

@@ -506,6 +506,12 @@
     max-width: 500px;
   }
 
+  .header-photo-image {
+    width: 500px;
+    height: 441px;
+    background-image: url("../images/header/header.webp");
+  }
+
   .header-photo .link {
     bottom: 15px;
   }
@@ -1119,6 +1125,11 @@
 
   .header-photo img {
     max-width: 385px;
+  }
+
+  .header-photo-image {
+    width: 385px;
+    height: 264px;
   }
 
   .header-photo .link {
