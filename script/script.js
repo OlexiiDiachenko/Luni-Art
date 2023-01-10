@@ -206,9 +206,3 @@ if (isiPad) {
     setAnimation(location, screenHeight, animatedElements);
   });
 }
-
-if (window.innerWidth <= 520) {
-  Screen.addEventListener("orientationchange", () => {
-    Screen.lockOrientation("portrait-primary");
-  });
-}

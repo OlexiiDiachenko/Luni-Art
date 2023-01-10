@@ -15,6 +15,25 @@
       name="keywords"
       content="Картина, подарунок, малюнок, свято, презент, вугілля, фарба, олівець, масло, художник, студія, арт, портрет, дизайн, луніарт, gift, holiday, painting, art, luniart."
     />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.innerWidth <= 520) {
+          let elements = document.querySelectorAll(".screen");
+
+          elements.forEach((element) => {
+            let parent = element.parentElement;
+            parent.removeChild(element);
+          });
+        } else {
+          let elements = document.querySelectorAll(".mobile");
+
+          elements.forEach((element) => {
+            let parent = element.parentElement;
+            parent.removeChild(element);
+          });
+        }
+      });
+    </script>
     <!-- Header Settings -->
     <!-- Roots. Fonts, Displaies etc -->
     <link rel="stylesheet" href="./style/roots.css" />
