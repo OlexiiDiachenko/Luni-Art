@@ -510,6 +510,9 @@
     width: 500px;
     height: 441px;
     background-image: url("../images/header/header.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .header-photo .link {
@@ -680,7 +683,7 @@
 
   .slider_video_button {
     max-width: 215px;
-    margin-bottom: 100px;
+    margin-bottom: 35px;
   }
 
   /* Order */
@@ -921,8 +924,7 @@
   /* Carousels */
 
   .carousels {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   .images-slider img,
@@ -1029,7 +1031,7 @@
   /* Count Peoples */
 
   .constructor-wrapper {
-    padding-left: 175px;
+    padding-left: 160px;
   }
 
   .peoples {
@@ -1047,14 +1049,13 @@
 
   .size-cost-block {
     row-gap: 20px;
-    grid-template-columns: repeat(3, 120px);
+    grid-template-columns: repeat(3, 145px);
   }
 
   /* Table Cell */
 
   .tabel-size-cell {
-    padding: 5px 5px 4px;
-    max-height: 45px;
+    padding: 7px 10px 4px;
   }
 
   /* Cell Popular Size */

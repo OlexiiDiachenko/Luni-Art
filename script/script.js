@@ -169,24 +169,6 @@ if (isiPad) {
   let div = document.createElement("div");
   div.classList.add("header-photo-image");
   document.querySelector(".header-photo").prepend(div);
-  if (
-    screen.orientation.type == "portrait-secondary" ||
-    screen.orientation.type == "portrait-primary"
-  ) {
-    header.classList.add("ipadHeader");
-  }
-  screen.addEventListener("orientationchange", () => {
-    if (
-      screen.orientation.type == "portrait-secondary" ||
-      screen.orientation.type == "portrait-primary"
-    ) {
-      header.classList.add("ipadHeader");
-    } else {
-      if (header.classList.contains("ipadHeader")) {
-        header.classList.remove("ipadHeader");
-      }
-    }
-  });
 } else {
   let screenHeight = window.innerHeight - 300,
     location = {};

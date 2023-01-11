@@ -1031,15 +1031,3 @@ footer.footer {
     bottom: 0%;
   }
 }
-
-.ipadHeader {
-  height: 30vh !important;
-}
-
-.ipadHeader .achivments .cell:nth-child(2) {
-  padding-left: 0px !important;
-}
-
-.ipadHeader .header-photo .link {
-  bottom: 40px !important;
-}

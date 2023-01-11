@@ -196,7 +196,6 @@ button.size-button {
   background: var(--gradient-text-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .ellipse {
@@ -461,28 +460,24 @@ hr {
   }
 
   .small_black {
-    font-size: 10px;
-    line-height: 11px;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .xsmall_light {
-    font-size: 9px;
-    line-height: 10px;
+    font-size: 13px;
+    line-height: 15px;
   }
 
-  .percent {
-    font-size: 12px;
-    line-height: 13px;
+  .percent,
+  .individual_font {
+    font-size: 15px;
+    line-height: 17px;
   }
 
   .xsmall {
-    font-size: 7px;
-    line-height: 8px;
-  }
-
-  .individual_font {
-    font-size: 10px;
-    line-height: 11px;
+    font-size: 12px;
+    line-height: 15px;
   }
 
   /* Buttons And Labels Hover Effects */
