@@ -176,7 +176,7 @@ if (isiPad) {
   } else {
     screenHeight = window.innerHeight - 300;
   }
-  location = {};
+  let location = {};
 
   const orientationType = () => {
     return header.clientHeight >= window.innerHeight;
