@@ -1474,7 +1474,7 @@
   /* Consult */
 }
 
-@media (min-width: 480px) and (orientation: portrait) {
+@media (min-width: 520px) and (orientation: portrait) {
   header.header {
     height: 40vh;
   }
@@ -1489,5 +1489,10 @@
 
   .header .header-photo img {
     max-width: 300px;
+  }
+
+  .header-photo-image {
+    width: 300px;
+    height: 264px;
   }
 }
