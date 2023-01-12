@@ -158,7 +158,8 @@ function selectMessenger() {
 
 // Check for Ipad
 
-let isiPad = navigator.userAgent.match(/iPad/i);
+let isiPad = navigator.userAgent.match(/iPad/i),
+  screenHeight;
 
 let header = body.querySelector("header"),
   animatedElements = document.querySelectorAll(".animated");
@@ -170,8 +171,12 @@ if (isiPad) {
   div.classList.add("header-photo-image");
   document.querySelector(".header-photo").prepend(div);
 } else {
-  let screenHeight = window.innerHeight - 300,
-    location = {};
+  if (window.innerWidth <= 520) {
+    screenHeight = window.innerHeight - 100;
+  } else {
+    screenHeight = window.innerHeight - 300;
+  }
+  location = {};
 
   const orientationType = () => {
     return header.clientHeight >= window.innerHeight;

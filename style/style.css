@@ -551,14 +551,6 @@ main::before {
   max-height: 320px;
 }
 
-/* Popular Material Border */
-
-.card-coal .card-label {
-  box-sizing: border-box;
-  border: 3px solid var(--lightgreen-color);
-  box-shadow: 0px 0px 5px var(--lightgreen-color);
-}
-
 /* Selected Material */
 
 .card-input:checked ~ label.card-label,
